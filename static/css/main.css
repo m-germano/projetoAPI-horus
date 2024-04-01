@@ -90,8 +90,7 @@ a {
   align-items: center;
   column-gap: .25rem;
   font-weight: var(--font-semi-bold);
-  /* Color highlighting when pressed on mobile devices */
-  /*-webkit-tap-highlight-color: transparent;*/
+  
 }
 
 .nav__logo i {
@@ -121,7 +120,7 @@ a {
   opacity: 0;
 }
 
-/* Navigation for mobile devices */
+
 @media screen and (max-width: 1118px) {
   .nav__menu {
     position: absolute;
@@ -130,9 +129,9 @@ a {
     width: 100%;
     height: calc(100vh - 3.5rem);
     overflow: auto;
-    /* pointer-events: none;
+    pointer-events: none;
     opacity: 0;
-    transition: top .4s, opacity .3s; */
+    transition: top .4s, opacity .3s;
   }
   .nav__menu::-webkit-scrollbar {
     width: 0;
