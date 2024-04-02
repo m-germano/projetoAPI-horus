@@ -51,7 +51,7 @@ a {
 }
 
 .container {
-  max-width: 1600px;
+  max-width: 1120px;
   margin-inline: 1.5rem;
 }
 
@@ -64,6 +64,11 @@ a {
   background-color: var(--black-color);
   box-shadow: 0 2px 16px hsla(220, 32%, 8%, .3);
   z-index: var(--z-fixed);
+}
+
+
+.header + * {
+  margin-top: calc(2 * var(--header-height));
 }
 
 /*=============== NAV ===============*/
@@ -217,6 +222,7 @@ a {
   max-height: 0;
   overflow: hidden;
   transition: max-height .4s ease-out;
+
 }
 
 /* Show dropdown menu & submenu */
@@ -320,3 +326,15 @@ a {
     transition: top .3s;
   }
 }
+
+
+
+@media screen and (max-width: 1700px) {
+  .dropdown__submenu:last-child {
+    /* Adicione os estilos específicos para telas menores que 1700px aqui */
+    left: auto;
+    right: 100%;
+  }
+}
+
+
