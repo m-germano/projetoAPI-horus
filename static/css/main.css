@@ -1,7 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
 
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
 :root {
-  --header-height: 3.5rem;
+  --header-height: 4rem;
 
 
   --black-color: hsl(220, 24%, 12%);
@@ -9,6 +12,7 @@
   --black-color-lighten: hsl(220, 20%, 18%);
   --white-color: #fff;
   --body-color: hsl(220, 100%, 97%);
+
 
  
   --body-font: "Montserrat", sans-serif;
@@ -34,12 +38,15 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  
 }
 
 body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
+  overflow-y: auto;
+ 
 }
 
 ul {
@@ -55,6 +62,10 @@ a {
   margin-inline: 1.5rem;
 }
 
+.h-home{
+  height: 90vh;
+}
+
 /*=============== HEADER ===============*/
 .header {
   position: fixed;
@@ -66,10 +77,11 @@ a {
   z-index: var(--z-fixed);
 }
 
-
 .header + * {
-  margin-top: calc(2 * var(--header-height));
+  
+  padding-top:  calc(var(--header-height) + 2rem);
 }
+
 
 /*=============== NAV ===============*/
 .nav {
@@ -253,6 +265,8 @@ a {
     margin-inline: auto;
   }
 
+  
+
   .nav {
     height: calc(var(--header-height) + 2rem);
     display: flex;
@@ -325,16 +339,40 @@ a {
     pointer-events: initial;
     transition: top .3s;
   }
-}
 
-
-
-@media screen and (max-width: 1700px) {
-  .dropdown__submenu:last-child {
-    /* Adicione os estilos específicos para telas menores que 1700px aqui */
+  .dropdown__item:last-child .dropdown__submenu{
     left: auto;
     right: 100%;
+    border-right:2.5rem solid transparent
   }
 }
+
+@media screen and (max-width: 2000px) {
+  .dropdown__item:last-child .dropdown__submenu{
+    left: auto;
+    right: 100%;
+    border-right:2.5rem solid transparent
+  }
+}
+
+
+@media screen and (min-width: 1700px) {
+  .nav.container {
+    max-width: 1420px;
+    margin-inline: auto;
+  }
+}
+
+
+
+@media screen and (min-width: 2001px) {
+  .dropdown__item:last-child .dropdown__submenu{
+    left: 100%;
+    right: auto;
+    border-right:2.5rem solid transparent
+  }
+}
+
+@import url('/static/css/index.css');
 
 
