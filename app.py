@@ -7,6 +7,34 @@ app = Flask(__name__)
 def home():
     return render_template('index.html')
 
+@app.route('/conceitos/<id>')
+def conceitos(id):
+    if id == 'definicoes':
+        return render_template('definicoes.html')
+    elif id == 'kanban':
+        return render_template('kanban.html')
+    elif id == 'definitionReadyDone':
+        return render_template('definitionReadyDone.html')
+
+
+
+@app.route('/responsabilidades/<id>')
+def responsabilidades(id):
+    if id == 'scrum':
+        return render_template('scrum_master.html')
+    elif id == 'po':
+        return render_template('product_owner.html')
+    elif id == 'dev':
+        return render_template('dev.html')
+    else:
+        return 'Página não encontrada'
+
+@app.route('/eventos-scrum')
+def eventos_scrum():
+    return render_template('eventos_scrum.html')
+   
+
+
 
 
 if __name__ == "__main__":

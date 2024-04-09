@@ -8,10 +8,13 @@
     <div class="index-content">
         <h1>Aprenda SCRUM</h1>
         <p>Descubra todos os processos e artefatos da metodologia ágil Scrum com conceitos e fundamentos</p>
-        <a href="" class="btn ">Começar</a>
+        <a href="{{url_for('conceitos', id='definicoes')}}" class="btn ">Começar</a>
     </div>
 
 </div>
+
+
+
 
 <div class="index-container-section-one">
     <div class="index-cards">
@@ -20,7 +23,7 @@
         <div class="index-cards-body">
             <h2>Eventos de Scrum</h2>
              <p>Explore os eventos fundamentais do Scrum: planeje, revise e melhore. Descubra como Sprint Planning, Daily Scrum, Sprint Review e Sprint Retrospective impulsionam a colaboração e a entrega de valor.</p>
-            <a href="">Saiba mais</a>
+            <a href="{{url_for('eventos_scrum')}}">Saiba mais</a>
         </div>
         
     </div>
@@ -39,9 +42,41 @@
 
 <div class="index-container-section-two">
 
-<h2>Questionarios</h2>
-<p></p>
+<h2>Papéis fundamentais na metodologia Scrum</h2>
+
+<div class="card-container">
+    <div class="link-card-section" onclick="window.location.href='www.google.com'">
+        <img src="/static/imagens/brain.svg" alt="">
+        <h3>Scrum Master</h3>
+    </div>
+
+    <div class="link-card-section" onclick="window.location.href='www.google.com'">
+        <img src="/static/imagens/teacher.svg" alt="">
+        <h3>Product Owner</h3>
+    </div>
+
+    <div class="link-card-section" onclick="window.location.href='www.google.com'">
+        <img src="/static/imagens/programming-monitor.svg" alt="">
+        <h3>DEVs</h3>
+    </div>
+</div>
 
 </div>
+
+
+<div class="index-container-section-three">
+
+    <h2>Questionarios e Flashcards</h2>
+    <p>Teste seus conhecimentos!</p>
+    <div class="links-quiz">
+        <a href="">Questionários</a>
+        <a href="">Flashcards</a>
+    </div>
+   
+    </div>
+
+    
+
+
 
 {%endblock conteudo%}
