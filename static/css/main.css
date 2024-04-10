@@ -12,6 +12,7 @@
   --black-color-lighten: hsl(220, 20%, 18%);
   --white-color: #fff;
   --body-color: hsl(220, 100%, 97%);
+  --green-theme:#00C1B3;
 
 
  
@@ -374,5 +375,6 @@ a {
 }
 
 @import url('/static/css/index.css');
+@import url('/static/css/eventos.css');
 
 
