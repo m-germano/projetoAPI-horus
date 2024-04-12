@@ -40,10 +40,11 @@
 }
 
 .texto {
-    margin-left: 150px;
-    margin-bottom: 100px;
+    margin-left: 100px;
+    padding-right: 800px;
     color: aliceblue;
-}
+*}
+    
 
 .background-img {
     background-color:rgb(35, 34, 34)
