@@ -1,0 +1,50 @@
+/* subtitulo */
+.subt {
+    font-size: 25px
+}
+
+/* background*/
+.background {
+    background-color: #86aeff45;
+}
+
+/* 3 blocos  */
+.subt2{
+    font-size: 30px;
+    margin-top: 50px;
+    margin-left: 70px;
+    margin-right: 100px;
+}
+
+.topic {
+    font-size: 20px;
+    word-wrap: break-word;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 100px;
+}
+
+
+/* Tópicos expandidos */
+
+.titulo {
+    margin-left: 200px;
+    margin-bottom: 30px;
+    color: aliceblue;
+}
+
+.subt3 {
+    margin-left: 150px;
+    margin-top: 50px;
+    color: aliceblue;
+}
+
+.texto {
+    margin-left: 150px;
+    margin-bottom: 100px;
+    color: aliceblue;
+}
+
+.background-img {
+    background-color:rgb(35, 34, 34)
+}
