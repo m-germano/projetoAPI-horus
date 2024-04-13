@@ -37,7 +37,7 @@ Desenvolver um site informativo simples e funcional sobre a Metodologia Ágil qu
 | -------- |-------- |-------- |
 |**Matheus Germano da Silva**|Scrum Master|[@GitHub](https://github.com/m-germano)|
 |**Eduardo Fonseca Ribeiro**|Product Owner|[@GitHub](https://github.com/haisper)|
-|**Celso Moreira Freitas**|Product Owner|[@GitHub](https://github.com/yCels)|
+|**Celso Moreira Freitas**|Desenvolvedor|[@GitHub](https://github.com/yCels)|
 |**Josue da Cunha Olopes**|Desenvolvedor|[@GitHub](https://github.com/jo-olopes)|
 |**Vanessa da Costa Rodrigues**|Desenvolvedor|[@GitHub](https://github.com/Doryumi)|
 |**Victor Hugo Barbosa Souza**|Desenvolvedor|[@GitHub](https://github.com/victor4486)|
@@ -74,11 +74,3 @@ Desenvolver um site informativo simples e funcional sobre a Metodologia Ágil qu
 2- Pressione 'S' e 'Enter' para confirmar.
 ```
 
-• Se todas essas ações ainda não habilitarem o uso do site para você, será necessário instalar o ambiente virtual no seu terminal usando os seguintes códigos:
-
-```
-1- python -m venv venv 
-2- .\venv\Scripts\activate
-3- pip install flask 
-4- flask run 
-```
