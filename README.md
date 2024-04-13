@@ -6,13 +6,16 @@ Desenvolver um site informativo simples e funcional sobre a Metodologia Ágil qu
 
 ## 📍 Requisitos Funcionais
 •	Desenvolver uma interface web com os seguintes artefatos ágeis: Linguagem Python (Requisito Fatec), Linguagem HTML e CSS (Requisito Fatec), Uso do framework Bootstrap, Apresentação via Github, Processo Scrum, Burndown, Product Backlog,  Sprint, Sprint Planning,  Sprint Review, Sprint Backlog, Dailys, Retrospective, DOR – Definition of Ready, DOD – Definition of Done, Planning Poker, Kanban e  MVP.
+<br>
 •	Desenvolver um sistema web intuitivo e não ter poluições de informações.
+<br>
 •	Desenvolver um sistema de avaliação (Processo, Produto e Conhecimento em disciplina, SM., PO., TD)
 
 
 ## 📍 Requisitos não-funcionais
 
 •	Manual do Usuário (Github);
+<br>
 •	Guia de instalação (Github);
 
 ## 🔧 Tecnologias utilizadas
@@ -39,7 +42,7 @@ Desenvolver um site informativo simples e funcional sobre a Metodologia Ágil qu
 |**Vanessa da Costa Rodrigues**|Desenvolvedor|[@GitHub](https://github.com/Doryumi)|
 |**Victor Hugo Barbosa Souza**|Desenvolvedor|[@GitHub](https://github.com/victor4486)|
 
-
+<br><br>
 
 ## ❓ Como usar o site no seu computador
 
@@ -65,7 +68,7 @@ Desenvolver um site informativo simples e funcional sobre a Metodologia Ágil qu
 
 1- Set-ExecutionPolicy -ExecutionPolicy AllSigned
 
-• Pressione 'S' e 'Enter' para confirmar.
+2- Pressione 'S' e 'Enter' para confirmar.
 
 • Se todas essas ações ainda não habilitarem o uso do site para você, será necessário instalar o ambiente virtual no seu terminal usando os seguintes códigos:
 
