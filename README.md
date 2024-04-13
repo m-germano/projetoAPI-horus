@@ -56,24 +56,29 @@ Desenvolver um site informativo simples e funcional sobre a Metodologia Ágil qu
 
 • Nele, digite os seguintes comandos:
 
+```
 1- python -m venv venv 
 2- .\venv\Scripts\activate 
 3- pip install -r requirements.txt 
 4- flask run
 
+```
 
 • Copie o link do site e cole-o em seu navegador.
 
 • Existem dois possíveis erros que podem ocorrer durante essas etapas. O primeiro é a falta de permissão de execução em seu computador. Para corrigir isso, abra o PowerShell do seu computador como administrador e digite os seguintes comandos:
 
+```
 1- Set-ExecutionPolicy -ExecutionPolicy AllSigned
 
 2- Pressione 'S' e 'Enter' para confirmar.
+```
 
 • Se todas essas ações ainda não habilitarem o uso do site para você, será necessário instalar o ambiente virtual no seu terminal usando os seguintes códigos:
 
+```
 1- python -m venv venv 
 2- .\venv\Scripts\activate
 3- pip install flask 
 4- flask run 
-
+```
