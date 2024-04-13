@@ -450,5 +450,11 @@ footer p{
 
 
 @import url('/static/css/index.css');
-@import url('/static/css/eventos.css');
+
+@import url('/static/css/scrumaster.css');
+
+@import url('/static/css/dev.css');
+
+@import url('/static/css/po.css');
+
 
