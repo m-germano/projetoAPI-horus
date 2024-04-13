@@ -33,13 +33,17 @@ def responsabilidades(id):
 def eventos_scrum():
     return render_template('eventos_scrum.html')
    
-   
-@app.route('/artefatosdescrum/<id>')
-def artefatosdescrum(id):
-    if id == 'productbacklog':
+@app.route('/artefatos-scrum/<id>')
+def artefatos_scrum(id):
+    if id == 'sprint-backlog':
+        return render_template('sprint_backlog.html')
+    elif id == 'mvp':
+        return render_template('mvp.html')
+    elif id == 'productbacklog':
         return render_template('product_backlog.html')
     elif id == 'productincrement':
         return render_template('product_increment.html')
+
 
 
 

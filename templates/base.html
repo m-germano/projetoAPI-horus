@@ -110,14 +110,14 @@
 
                     <ul class="dropdown__menu">
                        <li>
-                          <a href="#" class="dropdown__link">
+                          <a href="{{ url_for('artefatos_scrum', id='sprint-backlog')}}" class="dropdown__link">
                              <i class="ri-pie-chart-line"></i> Sprint Backlog
                           </a>                          
                        </li>
 
                        <li>
-                        <a href="#"class="dropdown__link" id="mvp">
-                           <i class="ri-pie-chart-line"></i>MVP
+                        <a href="{{ url_for('artefatos_scrum', id='mvp')}}"class="dropdown__link">
+                           <i class="ri-pie-chart-line"></i> MVP
                         </a>                        
                       </li>
 
@@ -130,13 +130,13 @@
 
                           <ul class="dropdown__submenu">
                              <li>
-                                <a href="{{ url_for('artefatosdescrum', id='productbacklog') }}" class="dropdown__sublink">
+                                <a href="{{ url_for('artefatos_scrum', id='productbacklog') }}" class="dropdown__sublink">
                                    Product Backlog
                                 </a>
                              </li>
      
                              <li>
-                                <a href="{{ url_for('artefatosdescrum', id='productincrement') }}" class="dropdown__sublink">
+                                <a href="{{ url_for('artefatos_scrum', id='productincrement') }}" class="dropdown__sublink">
                                    Product Increment
                                 </a>
                              </li>
