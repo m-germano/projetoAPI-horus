@@ -33,7 +33,12 @@ def responsabilidades(id):
 def eventos_scrum():
     return render_template('eventos_scrum.html')
    
-
+@app.route('/artefatos-scrum/<id>')
+def artefatos_scrum(id):
+    if id == 'sprint-backlog':
+        return render_template('sprint_backlog.html')
+    elif id == 'mvp':
+        return render_template('mvp.html')
 
 
 
