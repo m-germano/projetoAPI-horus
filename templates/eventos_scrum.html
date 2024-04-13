@@ -1,18 +1,105 @@
 {% extends 'base.html' %}
 
-{%block css%}{%endblock css%}
+{%block css%}<link rel="stylesheet" href="../static/css/eventos.css">{%endblock css%}
     
-{% block title %}{% endblock title %}
+{% block title %}Eventos de Scrum{% endblock title %}
+
+
 
 {%block conteudo%}
 
+<div class="container-eventos">
+    <div class="sumario">
+    <details>
+        <summary>Sumário</summary>
+        <ol>
+            <li><a href="#introducao">Introdução</a></li>
+            <li><a href="#sprint">O que é uma sprint?</a></li>
+            <li><a href="#sprint-planning">Sprint Planning </a></li>
+            <li><a href="#daily-scrum">Daily Scrum</a></li>
+            <li><a href="#sprint-review">Sprint Review</a></li>
+            <li><a href="#sprint-retrospective">Sprint Retrospective </a></li>
+
+        </ol>
+    </details>
+    </div>
 
 
+    <div class="section-content">
+        <h2 id="introducao">Introdução</h2>
+        <p>As metodologias de gestão de projetos têm evoluído cada vez mais para acompanhar as necessidades de gerenciamento de cada tipo de projeto. Os projetos de TI, por exemplo, que são constantemente mutáveis e envolvem muitos interessados, adotaram as metodologias e frameworks ágeis para acompanhar as etapas de execução de perto e manter todos os envolvidos na mesma página. Dentro desse contexto, o framework Scrum é o mais famoso, e seu ponto chave é a segmentação do trabalho em Sprints.</p>
+        <p>Neste texto, vamos aprender o que é uma Sprint, quem faz parte dela e como ela se organiza dentro de um projeto ágil.</p>
+        <p>Pronto para começar? Boa leitura!</p>
+    </div>
+
+    <div class="section-content">
+        <h2 id="sprint">O que é uma sprint?</h2>
+        <p>Sprint, no framework Scrum, é um período de tempo limitado a um mês ou menos, no qual uma versão incremental e usável de um produto é desenvolvida.</p>
+        <p>Esse conceito vem do termo Sprint, em inglês, que se refere a um tipo de corrida de velocidade em que o atleta percorre uma distância curta num período de tempo mais curto ainda. Sendo assim, a ideia da Sprint no Scrum é que deve-se cumprir uma meta dentro de um período determinado, e que ao final o produto seja “Pronto”.</p>
+        <p>A duração da Sprint é time-boxed, isto é, limitada a um tempo, e pode variar de uma a quatro semanas, dependendo da produtividade do time para entregar uma funcionalidade completa (no caso dos projetos de TI) ou uma parte funcional do produto (em projetos de outras áreas). Porém, uma vez decidida a duração da Sprint, ela deve ser mantida até o final do projeto.</p>
+        <p>Assim, conforme a definição de o que é um projeto, a Sprint pode até ser considerada um projeto, já que tem delimitação de tempo, um plano de execução e um padrão de resultado esperado.</p>
+        <p>Curioso para saber como a Sprint é realizada na prática? Veja a seguir!</p>
+        <div class="img">
+            <img src="/static/imagens/sprint-definicao.png" alt="">
+        </div>
+    </div>
 
 
+    <div class="section-content">
+    <h2 id="sprint-planning">Sprint Planning (Reunião de Planejamento da Sprint)</h2>
+    <p>A Reunião de Planejamento da Sprint (Sprint Planning) é um evento que acontece antes de cada Sprint, tendo como objetivo definir</p>
+    <ul>
+        <li><b>O que poderá ser entregue</b> na próxima Sprint; e</li>
+        <li><b>Como será realizado o trabalho</b> para produzir a entrega.</li>
+    </ul>
+    <p>Todos os integrantes do Time Scrum participam desta reunião, sendo que o time-box máximo é de 8 horas de duração. Em Sprints menores, a duração tende a ser proporcionalmente menor.</p>
+    <p>O Product Owner começa a reunião apresentando os itens do Backlog do Produto que precisam ser entregues na próxima Sprint, e o Time de Desenvolvimento avalia o que será possível entregar no período.</p>
+    <p>Estabelece-se a meta da Sprint, que corresponde ao(s) item(s) do Backlog do Produto, e o Time de Desenvolvimento então decide como irá construir as funcionalidades necessárias.</p>
+    <p>Para isso, o Time começa a desenhar o sistema e separar o trabalho em unidades de um dia de duração ou menos, podendo inclusive convidar outras pessoas para participar da Reunião e contribuir com opinião técnica.</p>
+    <p>Como resultado, é produzido o <strong><a href="#">Backlog da Sprint (ou Sprint Backlog)</a></strong>, que é a junção dos itens selecionados do Backlog do Produto e seus respectivos planos de entrega.</p>
+
+    </div>
+
+    <div class="section-content">
+    <h2 id="daily-scrum">Daily Scrum (Reunião Diária)</h2>
+    <p>Ao longo da execução da Sprint, o Time de Desenvolvimento se reúne diariamente para avaliar como está o <b>andamento das atividades</b> e definir o que será feito no dia para alcançar a meta da Sprint. São as chamadas Reuniões Diárias (ou Daily Sprints).</p>
+    <p>O time-box dessas reuniões é de 15 minutos, e elas são comumente realizadas no mesmo local e no mesmo horário. Recomenda-se que o time de Desenvolvimento faça a Reunião Diária em pé, para não correr o risco de ultrapassar o limite de tempo.</p>
+    <p>É bom lembrar, também, que o Product Owner e o Scrum Master não participam dessas reuniões, já que o Time de Desenvolvimento é auto organizado e tem autonomia para decidir sozinho como o trabalho será realizado.</p>
+    <p>Há três perguntas que devem ser respondidas na Reunião Diária:</p>
+    <ul>
+        <li><b>O que eu fiz ontem</b> que ajudou o time de Desenvolvimento a alcançar a meta da Sprint?</li>
+        <li><b>O que eu farei hoje</b> para ajudar o time de Desenvolvimento a alcançar a meta da Sprint?</li>
+        <li><b>Existe algum obstáculo</b> que impeça o Time de Desenvolvimento de alcançar a meta da Sprint?</li>
+    </ul>
+
+    <div class="img">
+        <img src="/static/imagens/burndown-example.jpg" alt="">
+    </div>
+    </div>
+
+    <div class="section-content">
+        <h2 id="sprint-review">Sprint Review (revisão da Sprint)</h2>
+        <p>Quando a Sprint chega ao final, é necessário realizar a Revisão da Sprint (ou Sprint Review) para inspecionar o resultado e adaptar o Backlog do Produto, se for o caso. Todo o Time Scrum participa do Evento, que tem time-box máximo de 4 horas.</p>
+        <p>Os principais pontos de discussão da Revisão envolvem o esclarecimento sobre os itens que foram “Prontos” e os que não foram, a reflexão sobre o que foi bem e os problemas que foram encontrados, e as sugestões do Time Scrum para o que deve ser feito a seguir, levando em consideração as mudanças do mercado, a linha do tempo, o orçamento e as prioridades.</p>
+        <p>Como resultado dessa reunião é produzida uma nova versão do Backlog do Produto, que poderá ser utilizada na próxima Sprint.</p>
+        
+    </div>
+
+    <div class="section-content">
+    <h2 id="sprint-retrospective">Sprint Retrospective (retrospectiva da Sprint)</h2>
+    <p>A Sprint Retrospective é realizada após a Sprint Review e antes da próxima reunião de planejamento de Sprint. O propósito dessa reunião é refletir sobre o último sprint e identificar:</p>
+
+    <ul>
+        <li>O que funcionou bem;</li>
+        <li>O que deu errado;</li>
+        <li>Quais ações podem ser tomadas para melhorar o próximo sprint.</li>
+    </ul>
+
+    <img src="/static/imagens/scrum-processo.jpg" alt="">
+    </div>
 
 
-
+</div>
 
 
 
