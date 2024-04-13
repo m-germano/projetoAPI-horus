@@ -39,6 +39,11 @@ def artefatos_scrum(id):
         return render_template('sprint_backlog.html')
     elif id == 'mvp':
         return render_template('mvp.html')
+    elif id == 'productbacklog':
+        return render_template('product_backlog.html')
+    elif id == 'productincrement':
+        return render_template('product_increment.html')
+
 
 
 
