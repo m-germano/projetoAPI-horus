@@ -9,8 +9,8 @@ def home():
 
 @app.route('/conceitos/<id>')
 def conceitos(id):
-    if id == 'definicoes':
-        return render_template('definicoes.html')
+    if id == 'introducao':
+        return render_template('introducao.html')
     elif id == 'kanban':
         return render_template('kanban.html')
     elif id == 'definitionReadyDone':
