@@ -14,6 +14,14 @@
   --body-color: hsl(220, 100%, 97%);
   --green-theme:#00C1B3;
 
+  --index-body-color: #fff9f9;
+  --color-red: rgb(255,0,0);
+  --main-container-height:60rem;
+  --grey-color:rgb(40, 42, 53);
+  --green-theme:#00C1B3;
+  --yellow:#fff4a3;
+  --tomato:#FF6347;
+
 
  
   --body-font: "Montserrat", sans-serif;
@@ -374,7 +382,73 @@ a {
   }
 }
 
+/* SCROLL ITEM */
+
+#scroll img{
+  width: 4rem;
+  height: 4rem;
+  display: inline;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+}
+
+/* FOOTER EDIT */
+footer{
+  width: screen;
+  margin-bottom: 0vh;
+  border: 0;
+  height: auto;
+  text-align: center;
+  font-family: "Arvo", serif;
+  color: #fff;
+}
+
+footer h3{
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+
+footer p{
+  margin: 0;
+  padding: 1rem ;
+}
+
+.footer-content{
+  width: screen;
+  background-color: #171C26;
+  height: 14rem;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: justify;
+}
+
+.footer-copyright{
+  width: screen;
+  background-color: #111214;
+  margin: 0;
+}
+
+
+.git-icone li{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem;
+}
+
+.git-icone img{
+  height: 3rem;
+  width: 3rem;
+}
+
+
+
 @import url('/static/css/index.css');
 @import url('/static/css/eventos.css');
-
 
