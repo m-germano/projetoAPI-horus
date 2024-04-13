@@ -2,3 +2,11 @@
     text-align: center;
 }
 
+.div_principal_sc{
+    width: 100%;
+}
+
+.div_conteudo_sc{
+    width: 80%;
+    margin: 0 auto;
+}

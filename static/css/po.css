@@ -1,3 +1,13 @@
 .titulo_po{
     text-align: center;
 }
+
+.div_principal_po{
+    width: 100%;
+
+}
+
+.div_conteudo_po{
+    width: 80%;
+    margin: 0 auto;
+}

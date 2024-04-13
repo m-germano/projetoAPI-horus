@@ -1,3 +1,12 @@
 .titulo_dev{
     text-align: center;
 }
+
+.div._principal_dev{
+    width: 100%;
+}
+
+.div_conteudo_dev{
+    width: 80%;
+    margin: 0 auto;
+}
