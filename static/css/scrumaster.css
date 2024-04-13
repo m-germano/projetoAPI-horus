@@ -1,12 +1,20 @@
 .titulo_scrum{
     text-align: center;
+    margin-top: 5%;
+    color: rgb(4, 220, 166);
 }
 
 .div_principal_sc{
     width: 100%;
+    background-color: rgb(232, 241, 240);
 }
 
 .div_conteudo_sc{
     width: 80%;
     margin: 0 auto;
+    margin-bottom: 5%;
+}
+
+h4{
+    color: rgb(4, 220, 166);
 }
