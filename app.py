@@ -43,6 +43,19 @@ def artefatos_scrum(id):
         return render_template('product_backlog.html')
     elif id == 'productincrement':
         return render_template('product_increment.html')
+    
+@app.route('/questionarios')
+def questionarios_home():
+    return render_template('questionarios.html') 
+
+@app.route('/questionarios/<id>')
+def questionarios(id):
+    if id=="dev":
+        return render_template('questionario_dev.html')
+    if id=="scrum-master":
+        return render_template('questionario_sm.html')
+    if id=="po":
+        return render_template('questionario_po.html')
 
 
 

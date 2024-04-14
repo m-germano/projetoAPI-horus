@@ -1,64 +1,64 @@
 {% extends 'base.html' %}
 
-{%block css%} <link rel="stylesheet" href="../static/css/po.css"> {%endblock css%}
+{%block css%} <link rel="stylesheet" href="../static/css/celso.css"> {%endblock css%}
     
 {% block title %}Product Owner{% endblock title %}
 
 {%block conteudo%}
-<div class="div_principal_po">
-    <div class="div_conteudo_po">
+<div class="div_principal">
+    <div class="div_conteudo">
 
         <h1 class="titulo_po">Product Owner</h1>
-        <br>
+
 
         <p>O Product Owner desempenha um papel vital no desenvolvimento ágil de software, atuando como o principal elo entre a equipe de desenvolvimento e os stakeholders do projeto. Responsável por representar os interesses do cliente e definir as prioridades do produto, o Product Owner desempenha um papel crucial na garantia de que o produto desenvolvido atenda às necessidades do usuário final e atinja os objetivos de negócio.</p>
 
-        <br><br>
+        <h2>Características</h2>
 
+      
+        
+        <p><b>Definir a Visão do Produto:</b></p>
+        
+        <p>Estabelecer uma visão clara e abrangente para o produto, alinhada aos objetivos estratégicos da empresa.
+        Comunicar e compartilhar essa visão com a equipe de desenvolvimento e demais stakeholders.</p>
 
+        <p><b>Gerenciar o Backlog do Produto</b>:</p>
+        
+        <p>Criar e priorizar itens no backlog do produto, representando as necessidades e requisitos dos clientes e stakeholders.
+        Manter o backlog constantemente atualizado, refinando e ajustando os itens conforme necessário.</p>
+        
+        <p><b>Colaborar com a Equipe de Desenvolvimento:</b></p>
+        
+        <p>Trabalhar em estreita colaboração com a equipe de desenvolvimento, esclarecendo dúvidas, fornecendo feedback e garantindo que as expectativas dos stakeholders sejam compreendidas e atendidas.
+        Participar de reuniões diárias de scrum e outras atividades de planejamento e revisão.</p>
 
-        <h4>Características Product Owner</h4>
-        <br>
-        <ul>
+        <p><b>Tomar Decisões Prioritárias:</b></p>
         
-        <li><p><b>Definir a Visão do Produto:</b><br>
-        
-        Estabelecer uma visão clara e abrangente para o produto, alinhada aos objetivos estratégicos da empresa.
-        Comunicar e compartilhar essa visão com a equipe de desenvolvimento e demais stakeholders.</p></li>
+        <p>Tomar decisões rápidas e informadas sobre quais funcionalidades e melhorias devem ser implementadas em cada ciclo de desenvolvimento.
+        Considerar fatores como valor para o cliente, retorno sobre o investimento e necessidades do mercado ao definir as prioridades.</p>
 
-        <li><b>Gerenciar o Backlog do Produto</b>:<br>
+        <p><b>Validar e Aceitar Entregas:</b></p>
         
-        <li><p>Criar e priorizar itens no backlog do produto, representando as necessidades e requisitos dos clientes e stakeholders.
-        Manter o backlog constantemente atualizado, refinando e ajustando os itens conforme necessário.</p></li>
-        
-        <li><p><b>Colaborar com a Equipe de Desenvolvimento:</b><br>
-        
-        Trabalhar em estreita colaboração com a equipe de desenvolvimento, esclarecendo dúvidas, fornecendo feedback e garantindo que as expectativas dos stakeholders sejam compreendidas e atendidas.
-        Participar de reuniões diárias de scrum e outras atividades de planejamento e revisão.</p></li>
+        <p> Avaliar as entregas da equipe de desenvolvimento para garantir que atendam aos critérios de aceitação e às expectativas dos stakeholders.
+        Fornecer feedback construtivo e orientações para melhorias contínuas.</p>
 
-        <li><p><b>Tomar Decisões Prioritárias:</b><br>
+        <p><b>Manter o Foco no Valor do Negócio:</b></p>
         
-        Tomar decisões rápidas e informadas sobre quais funcionalidades e melhorias devem ser implementadas em cada ciclo de desenvolvimento.
-        Considerar fatores como valor para o cliente, retorno sobre o investimento e necessidades do mercado ao definir as prioridades.</p></li>
+        <p>Assegurar que o desenvolvimento do produto esteja alinhado aos objetivos de negócio e que cada funcionalidade implementada agregue valor tangível para os usuários e a empresa.
+        Priorizar a entrega de recursos que maximizem o retorno sobre o investimento.</p>
 
-        <li><p><b>Validar e Aceitar Entregas:</b><br>
+        <p><b>Adaptar-se às Mudanças:</b></p>
         
-        Avaliar as entregas da equipe de desenvolvimento para garantir que atendam aos critérios de aceitação e às expectativas dos stakeholders.
-        Fornecer feedback construtivo e orientações para melhorias contínuas.</p></li>
-
-        <li><p><b>Manter o Foco no Valor do Negócio:</b><br>
+        <p>Estar preparado para mudanças nos requisitos do produto e no ambiente de mercado, ajustando as prioridades e o backlog do produto conforme necessário.
+        Facilitar uma mentalidade de adaptação e aprendizado contínuo dentro da equipe.</p>
         
-        Assegurar que o desenvolvimento do produto esteja alinhado aos objetivos de negócio e que cada funcionalidade implementada agregue valor tangível para os usuários e a empresa.
-        Priorizar a entrega de recursos que maximizem o retorno sobre o investimento.</p></li>
-
-        <li><p><b>Adaptar-se às Mudanças:</b><br>
-        
-        Estar preparado para mudanças nos requisitos do produto e no ambiente de mercado, ajustando as prioridades e o backlog do produto conforme necessário.
-        Facilitar uma mentalidade de adaptação e aprendizado contínuo dentro da equipe.</p></li>
-        </ul>
 
     </div>
-        
+    
+    <div class="quiz-link">
+        <h2>Para reforçar o conhecimento adquirido nesse topico: </h2>
+        <a href="{{url_for('questionarios', id='po')}}">Ir para questionário</a>
+    </div>
         
         
         

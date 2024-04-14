@@ -51,7 +51,7 @@
     border: 1px solid black;
     border-radius: 1.5rem;
     background-color: var(--green-theme);
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease-in-out;
     color: white;
     border: 0.1rem solid var(--green-theme);
 }
@@ -118,7 +118,7 @@
     border-radius: 2rem;
     padding: 1rem;
     background-color: #00C1B3;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease-in-out;
     
 
 }
@@ -176,7 +176,7 @@
     cursor: pointer;
     padding: 1rem;
     justify-content: space-between;
-    transition: all 0.3 ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .link-card-section:hover{
@@ -226,6 +226,7 @@
     font-size: 3rem;
     font-weight: 600;
     color: white;
+    transition: all 0.3s ease-in-out;
     
 
 }

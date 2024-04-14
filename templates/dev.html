@@ -1,12 +1,12 @@
 {% extends 'base.html' %}
 
-{%block css%}<link rel="stylesheet" href="../static/css/dev.css"> {%endblock css%}
+{%block css%}<link rel="stylesheet" href="../static/css/celso.css"> {%endblock css%}
     
 {% block title %}{% endblock title %}
 
 {%block conteudo%}
-<div class="div_principal_dev">
-    <div class="div_conteudo_dev">
+<div class="div_principal">
+    <div class="div_conteudo">
         <h1 class="titulo_dev">Time de Desenvolvimento</h1>
         <br>
         <p>O time de desenvolvimento é um componente essencial em projetos de desenvolvimento de software, responsável por transformar os requisitos do cliente em produtos funcionais e de alta qualidade. Composto por uma equipe multidisciplinar de profissionais de diferentes áreas, o time de desenvolvimento trabalha em colaboração para criar soluções inovadoras e eficientes que atendam às necessidades e expectativas dos usuários finais.</p>
@@ -57,7 +57,10 @@
         </ul>
     </div>
 
-
+    <div class="quiz-link">
+        <h2>Para reforçar o conhecimento adquirido nesse topico: </h2>
+        <a href="{{url_for('questionarios', id='dev')}}">Ir para questionário</a>
+    </div>
 
 
 </div>

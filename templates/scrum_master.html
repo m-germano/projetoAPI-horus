@@ -1,12 +1,12 @@
 {% extends 'base.html' %}
 
-{%block css%} <link rel="stylesheet" href="../static/css/scrumaster.css">  {%endblock css%}
+{%block css%} <link rel="stylesheet" href="../static/css/celso.css">  {%endblock css%}
     
 {% block title %}Scrum Master{% endblock title %}
 
 {%block conteudo%}
-<div class="div_principal_sc">
-    <div class="div_conteudo_sc">
+<div class="div_principal">
+    <div class="div_conteudo">
         <h1 class="titulo_scrum">Scrum Master</h1>
         <br>
 
@@ -16,7 +16,7 @@
 
 
 
-        <h4>Características do Scrum Master</h4>
+        <h2>Características do Scrum Master</h2>
         <br>
         <ul>
             <li><p><b>Facilitador:</b><br> 
@@ -50,17 +50,8 @@
         </ul>
     </div>    
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
+<div class="quiz-link">
+    <h2>Para reforçar o conhecimento adquirido nesse topico: </h2>
+    <a href="{{url_for('questionarios', id='scrum-master')}}">Ir para questionário</a>
+</div>
 {%endblock conteudo%}
