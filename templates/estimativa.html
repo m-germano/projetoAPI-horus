@@ -1,0 +1,98 @@
+{% extends 'base.html' %}
+
+{%block css%}<link rel="stylesheet" href="../static/css/estimativa.css">{%endblock css%}
+    
+{% block title %}Planning Poker{% endblock title %}
+
+{%block conteudo%}
+
+    <section class="contt">
+        <h2 class="title">Planning Poker</h2>
+    </section>
+
+    <section class="contp">
+
+        <div class="sub1">
+            <h3 class="subtitle1">O que é estimativa?</h3>
+            <p class="paragrafo">Segundo o dicionário, a palavra estimativa significa 
+                “avaliação ou cálculo aproximado de algo”. <br> No caso do Planning Poker, 
+                essa conta aproximada busca avaliar a complexidade de cada tarefa do backlog, <br>
+                considerando o esforço que deverá ser empregado,
+                o tempo que será gasto e o risco envolvido.</p>
+        </div>
+        
+        <div class="sub2">
+            <div class="sub2txt">
+                <h3 class="subtitle2">Como funciona o Planning Poker?</h3>
+                <p class="paragrafo">O Planning Poker se baseia em um jogo de cartas bastante simples. <br>
+                Cada participante recebe um baralho de cartas contendo valores numéricos. 
+                <br>Cada número representa o nível de esforço que o participante acha necessário para <br>
+                desenvolver o projeto em discussão no jogo.</p>
+
+                <p class="paragrafo">Na regra clássica do Planning Poker, o baralho entregue a cada participante contém 10 cartas, <br>
+                    que seguem a seguinte sequência numérica: 0, 1, 2, 3, 5, 8, 13, 20, 40 e 100. <br>
+                    Quanto maior for o número da carta escolhida pelo participante, <br>maior é o nível de complexidade
+                    estimado para realizar o projeto em discussão.
+                    </p>
+            </div>
+            <img src="../static/imagens/planning-poker-1-e1608806334625.png" height="40%" width="40%" class="sub2img">
+        </div>
+        <div class="sub3">
+            <img src="../static/imagens/trokaideias.png" height="40%" width="40%" #fbf3e3>
+                <div class="sub3cont">
+                    <h3 class="subtitle3">O jogo consiste nas seguintes etapas:</h3>
+                    <ol class="lista">
+                        <li>Um moderador descreve uma tarefa e os jogadores escolhem a carta <br>que melhor representa sua opnião 
+                          sobre a dificuldade e tempo que se pode realizar a tarefa.
+                        </li> <br>
+                        <li>Em seguida, o grupo discute sobre o projeto abertamente. <br>Cada participante deve descrever como imagina lidar com o trabalho,
+                            quantas pessoas estima que estariam <br> envolvidas,
+                        quais conjuntos de habilidades serão necessários e quais obstáculos ele vê retardando o progresso.  </li> <br>
+                        <li>Após a discussão é realizada outra votação com as cartas. <br>Caso a maioria dos jogadores tenham entrado em 
+                            consenso sobre o nível de dificuldade do projeto, <br>a estimativa é considerada finalizada,
+                            e ou tras tarefas podem ser colocadas em pauta. <br>
+                            Porém, se persistirem divergências significativas, novas discussões podem ser realizadas.
+                        </li>
+                    </ol>
+                </div>
+        </div>
+
+        <!-- <div>
+            <div>
+                <h3>Sequência de Fibonacci</h3>
+                <p>A sequência de Fibonacci contém números que aumentam exponencialmente. <br>
+                   É justamente por isso que os times de metodologia ágil passaram a usar <br>
+                   a escala de Fibonacci para os negócios. <br>
+                   No geral, a escala de Fibonacci no Scrum é um método poderoso para garantir <br>
+                   que o trabalho seja distribuído a todos por igual, além de poder ajudar a garantir que <br>
+                   todos sejam precisos ao estimar o trabalho e o tempo necessário para realizar um projeto.</p>
+            </div>
+            <img src="" alt="">
+        </div> -->
+
+        <div class="sub5">
+            <div class="sub5cont">
+                <h3 class="subtitle5">Vantagens do Planning Poker</h3>
+                <p class="paragrafo">A principal vantagem do Scrum Poker é auxiliar seu time a não ficar trabalhando <br>
+                    em estimativas durante
+                    muito tempo. Esta técnica fornece resultados em <br> um tempo bem curto e com um bom nível de precisão. <br><br>
+                    Além disso, um dos principais benefícios é gerar a discussão sobre as User Stories, <br>ganhando assim maior
+                    entendimento sobre o projeto. Isto deverá acelerar o <br>desenvolvimento uma vez que todos na sua equipe
+                    sabem cada vez mais o que <br> estão fazendo e onde devem chegar.</p>
+            </div>
+            <img src="../static/imagens/VantagensPlanningPoker.png" height="40%" width="40%">
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+{%endblock conteudo%}
