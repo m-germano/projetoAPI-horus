@@ -10,54 +10,55 @@ const questoes = [
     // },
 
     {
-        questao:"Qual é uma das principais responsabilidades de um Scrum Master durante uma reunião diária (Daily Scrum)?",
-        respostas:[
-            {texto:"Dar ordens e direcionar a equipe", valor: false},
-            {texto:"Facilitar a reunião e remover impedimentos", valor: true},
-            {texto:"Fornecer atualizações detalhadas sobre o progresso do projeto", valor: false},
-            {texto:"Desenvolver novos recursos do produto", valor: false},
-        ]
-    },
+        questao:"Qual é a principal responsabilidade do Time de Desenvolvimento em um projeto Scrum?",
+    respostas:[
+        {texto:"Desenvolver e entregar as funcionalidades do produto", valor: true},
+        {texto:"Realizar o planejamento financeiro do projeto", valor: false},
+        {texto:"Coordenar as reuniões diárias", valor: false},
+        {texto:"Garantir a satisfação do cliente", valor: false},
+    ]
+},
 
-    {
-        questao:"Qual é o papel do Scrum Master em relação ao Product Owner?",
-        respostas:[
-            {texto:"Desenvolver e priorizar o Product Backlog", valor: false},
-            {texto:"Tomar decisões finais sobre os requisitos do projeto", valor: false},
-            {texto:"Facilitar a colaboração entre o Product Owner e a equipe de desenvolvimento", valor: true},
-            {texto:"Definir metas de sprint e estimar o tempo necessário para cada tarefa", valor: false},
-        ]
-    },
+{
+    questao:"O que significa a auto-organização do Time de Desenvolvimento?",
+    respostas:[
+        {texto:"Cada membro do time decide suas próprias férias", valor: false},
+        {texto:"Os membros do time escolhem suas próprias tarefas e como executá-las", valor: true},
+        {texto:"O time é supervisionado diretamente pelo Product Owner", valor: false},
+        {texto:"Os membros do time trabalham sem interação com outras equipes", valor: false},
+    ]
+},
 
-    {
-        questao:"Como um Scrum Master pode ajudar a equipe a resolver conflitos?",
-        respostas:[
-            {texto:"Ignorando os conflitos e deixando a equipe resolver por conta própria", valor: false},
-            {texto:"Intervindo diretamente e tomando partido em disputas", valor: false},
-            {texto:"Facilitando discussões construtivas e ajudando a encontrar soluções colaborativas", valor: true},
-            {texto:"Evitando situações conflituosas e priorizando o progresso do projeto", valor: false},
-        ]
-    },
+{
+    questao:"Quem é responsável por determinar quanto trabalho o Time de Desenvolvimento pode realizar em um sprint?",
+    respostas:[
+        {texto:"Scrum Master", valor: false},
+        {texto:"Product Owner", valor: false},
+        {texto:"O próprio Time de Desenvolvimento", valor: true},
+        {texto:"Gerente de Projeto", valor: false},
+    ]
+},
 
-    {
-        questao:"Quais são algumas das habilidades-chave que um Scrum Master deve possuir?",
-        respostas:[
-            {texto:"Habilidades técnicas avançadas em desenvolvimento de software", valor: false},
-            {texto:"Fortes habilidades de liderança e comunicação", valor: true},
-            {texto:"Experiência extensa em gerenciamento de projetos tradicionais", valor: false},
-            {texto:"Capacidade de tomar decisões unilaterais sem consultar a equipe", valor: false},
-        ]
-    },
+{
+    questao:"Qual é uma das práticas recomendadas para garantir a qualidade do trabalho realizado pelo Time de Desenvolvimento?",
+    respostas:[
+        {texto:"Terceirização de parte do desenvolvimento", valor: false},
+        {texto:"Revisões trimestrais por uma equipe externa", valor: false},
+        {texto:"Testes automatizados e revisões de código", valor: true},
+        {texto:"Depender exclusivamente do Product Owner para validação", valor: false},
+    ]
+},
 
-    {
-        questao:"O que um Scrum Master faz para ajudar a equipe a melhorar continuamente?",
-        respostas:[
-            {texto:"Facilitar retrospectivas de sprint e identificar áreas de melhoria", valor: true},
-            {texto:"Estabelecer metas individuais para cada membro da equipe", valor: false},
-            {texto:"Realizar revisões de desempenho trimestrais", valor: false},
-            {texto:"Fornecer recompensas financeiras por bom desempenho individual", valor: false},
-        ]
-    }
+{
+    questao:"Como o Time de Desenvolvimento pode garantir uma comunicação eficaz durante o sprint?",
+    respostas:[
+        {texto:"Realizando reuniões longas diárias para revisar o progresso", valor: false},
+        {texto:"Usando uma ferramenta de gestão de projetos online", valor: true},
+        {texto:"Dependendo de e-mails para todas as comunicações", valor: false},
+        {texto:"Esperando pela reunião de revisão do sprint para compartilhar atualizações", valor: false},
+    ]
+}
+    
 
 ];
 

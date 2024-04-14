@@ -25,15 +25,9 @@
     <header class="header">
         <nav class="nav container">
            <div class="nav__data">
-              <a href="#" class="nav__logo">
-                 <!-- <img src="../static/imagens/scrum.svg" alt="" height="100px" width="100px"> -->
-                 <i class="ri-pie-chart-line"></i>
+              <a href="{{ url_for('home') }}" class="nav__logo">
+                 <img src="../static/imagens/eye-of-horus-svgrepo-com.svg" alt="" height="70rem" width="70rem">
               </a>
-              
-              <div class="nav__toggle" id="nav-toggle">
-                 <i class="ri-menu-line nav__burger"></i>
-                 <i class="ri-close-line nav__close"></i>
-              </div>
            </div>
 
            <!--=============== NAV MENU ===============-->
@@ -145,33 +139,7 @@
                           </ul>
                        </li>
 
-                       <li class="dropdown__subitem">
-                        <div class="dropdown__link">
-                           <i class="ri-bar-chart-line"></i> Estimativa <i class="ri-add-line dropdown__add"></i>
-                        </div>
-
-                        <ul class="dropdown__submenu">
-                          <li>
-                              <a href="#" class="dropdown__sublink">
-                                 Definição 
-                              </a>
-                           </li>
-
-                           <li>
-                              <a href="#" class="dropdown__sublink">
-                                 Planning Poker
-                              </a>
-                           </li>
-   
-                           <li>
-                              <a href="#" class="dropdown__sublink">
-                                 Sequencia de Fibonacci
-                              </a>
-                           </li>
-
-   
-                        </ul>
-                     </li>
+                       
                     </ul>
                  </li>
 
@@ -183,13 +151,19 @@
 
                     <ul class="dropdown__menu">
                        <li>
-                          <a href="#" class="dropdown__link">
-                             <i class="ri-pie-chart-line"></i> Questionarios
+                          <a href="{{url_for('questionarios_home')}}" class="dropdown__link">
+                             Questionarios
                           </a>                          
                        </li>
                        <li>
                         <a href="#" class="dropdown__link">
-                           <i class="ri-pie-chart-line"></i> Flashcards
+                           Flashcards
+                        </a>                          
+                     </li>
+
+                     <li>
+                        <a href="{{url_for('estimativas')}}" class="dropdown__link">
+                           Estimativas
                         </a>                          
                      </li>
 
@@ -213,16 +187,18 @@
      <footer>
       <div class="footer-content">
          <h3>Hórus</h3>
-         <p>Empresa de DEVs cursando o 1 semestre de ADS na Fatec</p>
+         
+         <p>Desenvolvida por estudantes no primeiro semestre da FATEC</p>
          <ul class="git-icone">
             <li><a href="https://github.com/m-germano/projetoAPI-horus" target="_blank"><img src="../static/imagens/github.svg" alt=""></a></li>
          </ul>
       </div>
       <div class="footer-copyright">
-         <p>Copyright &copy;2024 <span>Hórus</span></p>
+         <p>Copyright &copy;2024 Hórus</p>
       </div>
 
      </footer>
+   
     <!-- ===================SCRIPTS=========================== -->
     {%block script%}{%endblock script%}
    <script rel="script" src="/static/js/scripts.js"></script>

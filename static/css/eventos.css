@@ -13,6 +13,14 @@
     font-weight: 500;
 }
 
+.container-eventos h3{
+    color: var( --green-theme);
+    font-family: "Arvo", serif;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-top: 5rem;
+}
+
 .container-eventos p{
     font-family: "Arvo", serif;
     font-size: 1.2rem;
@@ -34,39 +42,9 @@
 
 
 
-.sumario summary{
-   text-align: center;
-   color: var( --green-theme);
-    font-family: "Arvo", serif;
-    font-size: 2.6rem;
-    font-weight: 500;
-
-}
-
-.sumario details{
-    border: 0.1rem solid black;
-    padding: 1rem;
-}
-
-.sumario ol li{
-    list-style: disc;
-}
-
-
-
-.sumario a{
-    text-decoration: none;
-    color: var(--green-theme);
-    font-family: "Arvo", serif;
-    font-size: 1.5rem;
-    margin-top: 2rem;
-    line-height: 2.4rem;
-    text-align: justify;
-
-}
 
 .section-content{
-    margin-top: 6rem;
+    margin-top: 8rem
 }
 
 .section-content ul li{

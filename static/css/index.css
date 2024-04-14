@@ -3,7 +3,7 @@
     background-color: var(--grey-color);
 
     height: var(--main-container-height);
-    width: 100%;
+    width: screen;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -247,3 +247,12 @@
 
 /* ================================================ */
 
+@media screen and (max-width: 1118px)  {
+    .links-quiz{
+        .index-container-section-three{
+         display: flex;
+         flex-direction: column;
+         justify-content: space-around;
+        }
+    }
+}

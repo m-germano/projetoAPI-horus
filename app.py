@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, send_from_directory
 app = Flask(__name__)
 
 
@@ -56,8 +56,15 @@ def questionarios(id):
         return render_template('questionario_sm.html')
     if id=="po":
         return render_template('questionario_po.html')
+    
+@app.route('/estimativa')
+def estimativas():
+    return render_template('estimativa.html')
+   
 
-
+@app.route('/download/<path:filename>')
+def download_file(filename):
+    return send_from_directory('static', filename, as_attachment=True)
 
 
 if __name__ == "__main__":
