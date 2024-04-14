@@ -1,0 +1,59 @@
+.principal{
+    background-color: transparent;
+    padding: 10rem 25%;
+    margin-top: calc(var( --header-height)+2rem);
+}
+
+p{
+    font-family: "Arvo", serif;
+    font-size: 1.5rem;
+    text-align: justify;
+    margin-bottom: 2%;
+    line-height: 3rem;
+}
+
+h1{
+    color: var( --green-theme);
+    font-family: "Arvo", serif;
+    font-size: 3rem;
+    margin: 5rem 0;
+}
+
+h2{
+    color: var( --green-theme);
+    font-family: "Arvo", serif;
+    font-size: 2rem;
+
+    margin: 3rem 0;
+}
+
+.principal img{
+    width: 70%;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.img{
+    text-align: center;
+}
+
+.a{
+    color: black;
+    font-family: "Arvo", serif;
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+.li{
+    font-family: "Arvo", serif;
+    font-size: 1.5rem;
+    margin-top: 4rem;
+}
+
+.principal-content{
+    margin: 4rem 0;
+}
+
+.div_conteudo{
+    width: 50%;
+}

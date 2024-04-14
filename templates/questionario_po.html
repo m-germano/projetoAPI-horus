@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{%block css%}<link rel="stylesheet" href="../static/css/questionario.css">{%endblock css%}
+
+    
+{% block title %}{% endblock title %}
+
+{%block conteudo%}
+<div class="app-container">
+    <h1>Quiz - Product Owner</h1>
+    <div class="quiz">
+        <h2 id="questao-local">Local da Questao</h2>
+        <div id="answer-buttons">
+            <button class="btn">Respostas 1</button>
+            <button class="btn">Respostas 2</button>
+            <button class="btn">Respostas 3</button>
+            <button class="btn">Respostas 4</button>
+        </div>
+        <button id="next-btn">Próximo</button>
+
+    </div>
+
+</div>
+
+<img class="img-return" src="/static/imagens/return-58.svg" alt="" onclick="window.location.href='/responsabilidades/po'">
+
+{%endblock conteudo%}
+{%block script%}<script src="../static/js/questionario_po.js"></script>{%endblock script%}
