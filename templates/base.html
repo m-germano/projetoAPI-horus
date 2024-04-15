@@ -28,6 +28,13 @@
               <a href="{{ url_for('home') }}" class="nav__logo">
                  <img src="../static/imagens/eye-of-horus-svgrepo-com.svg" alt="" height="70rem" width="70rem">
               </a>
+
+              <div class="nav__toggle" id="nav-toggle">
+               <i class="ri-menu-line nav__burger"></i>
+               <i class="ri-close-line nav__close"></i>
+             </div>
+         </div>
+
            </div>
 
            <!--=============== NAV MENU ===============-->
@@ -44,7 +51,7 @@
                     <ul class="dropdown__menu">
                        <li>
                           <a href="{{ url_for('conceitos', id='introducao') }}" class="dropdown__link">
-                             <i class="ri-pie-chart-line"></i> Introdução
+                              Introdução
                           </a>                          
                        </li>
 
@@ -54,25 +61,25 @@
                        <!--=============== DROPDOWN SUBMENU ===============-->
                        <li class="dropdown__subitem">
                           <div class="dropdown__link">
-                             <i class="ri-bar-chart-line"></i> Responsabilidades e Papéis <i class="ri-add-line dropdown__add"></i>
+                              Responsabilidades e Papéis <i class="ri-add-line dropdown__add"></i>
                           </div>
 
                           <ul class="dropdown__submenu">
                              <li>
                                 <a href="{{ url_for('responsabilidades', id='scrum') }}" class="dropdown__sublink">
-                                   <i class="ri-file-list-line"></i> Scrum Master
+                                    Scrum Master
                                 </a>
                              </li>
      
                              <li>
                                 <a href="{{ url_for('responsabilidades', id='po') }}" class="dropdown__sublink">
-                                   <i class="ri-cash-line"></i> Product Owner
+                                    Product Owner
                                 </a>
                              </li>
      
                              <li>
                                 <a href="{{ url_for('responsabilidades', id='dev') }}" class="dropdown__sublink">
-                                   <i class="ri-refund-2-line"></i> Desenvolvedores
+                                    Desenvolvedores
                                 </a>
                              </li>
 
@@ -81,12 +88,12 @@
                        </li>
                        <li>
                         <a href="{{ url_for('conceitos', id='definitionReadyDone') }}" class="dropdown__link">
-                           <i class="ri-arrow-up-down-line"></i> DOR / DOD
+                            DOR / DOD
                         </a>
                      </li>
                      <li>
                         <a href="{{ url_for('conceitos', id='kanban') }}" class="dropdown__link">
-                           <i class="ri-arrow-up-down-line"></i> Kanban
+                           Kanban
                         </a>
                      </li>
                     </ul>
@@ -106,13 +113,13 @@
                     <ul class="dropdown__menu">
                        <li>
                           <a href="{{ url_for('artefatos_scrum', id='sprint-backlog')}}" class="dropdown__link">
-                             <i class="ri-pie-chart-line"></i> Sprint Backlog
+                             Sprint Backlog
                           </a>                          
                        </li>
 
                        <li>
                         <a href="{{ url_for('artefatos_scrum', id='mvp')}}"class="dropdown__link">
-                           <i class="ri-pie-chart-line"></i> MVP
+                            MVP
                         </a>                        
                       </li>
 
@@ -120,7 +127,7 @@
                        <!--=============== DROPDOWN SUBMENU ===============-->
                        <li class="dropdown__subitem">
                           <div class="dropdown__link">
-                             <i class="ri-bar-chart-line"></i> Product <i class="ri-add-line dropdown__add"></i>
+                            Product <i class="ri-add-line dropdown__add"></i>
                           </div>
 
                           <ul class="dropdown__submenu">
