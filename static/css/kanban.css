@@ -16,6 +16,10 @@ header {
     background-color: #86aeff45;
 }
 
+.container-fluid{
+    background: cornflowerblue;
+}
+
 /* 3 blocos  */
 .subt2{
     font-size: 30px;
