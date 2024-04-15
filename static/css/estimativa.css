@@ -1,6 +1,4 @@
-* {
-    font-family: "Arvo",serif;
-}
+
 
 .contt{
     margin-top: calc(var(--header-height)+2rem);
@@ -10,9 +8,13 @@
     justify-content: center;
     padding:10rem 0;
 }
+.contp{
+    font-family: "Arvo",serif;
+}
 
 .contp p{
     font-size: 1.5rem;
+
 }
 .contp h3{
     margin:3rem 0;
