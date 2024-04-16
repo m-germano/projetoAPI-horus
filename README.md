@@ -43,6 +43,12 @@ Desenvolver um site informativo simples e funcional sobre a Metodologia Ágil qu
 |**Victor Hugo Barbosa Souza**|Desenvolvedor|[@GitHub](https://github.com/victor4486)|
 
 <br><br>
+## 📽️ Vídeo do protótipo
+
+
+https://github.com/m-germano/projetoAPI-horus/assets/107308515/5e84e16a-0893-48e1-8057-933bebb8b9e8
+
+
 
 ## ❓ Como usar o site no seu computador
 
