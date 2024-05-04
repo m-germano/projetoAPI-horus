@@ -37,6 +37,12 @@ p{
     margin: 0 auto;
     margin-top: 10vh;
     margin-bottom: 10vh;
+   display: flex;
+   flex-direction: column;
+}
+
+.img{
+  text-align: center;
 }
 .div_conteudo h1{
     text-align: center;
@@ -68,6 +74,12 @@ h4{
     font-size: 2.1rem;
     margin: 3rem 0;
     
+}
+
+.div_conteudo img{
+    width: 700px;
+    height: 510px;
+    text-align: center;
 }
 
 
@@ -108,3 +120,8 @@ h4{
 .quiz-link a:hover{
     transform: scale(1.1);
 }
+
+.content{
+  
+}
+
