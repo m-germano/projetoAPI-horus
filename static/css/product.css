@@ -3,39 +3,44 @@ body{
     margin: 0;
     border: 0;
 }
+
 .principal{
-    background-color: transparent;
-    padding: 10rem 25%;
+    background-color: #ffffffe7;
+    margin: auto;
     margin-top: calc(var( --header-height)+2rem);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.692);
+    
+    /* responsividade */
+    max-width: 60%;
+    min-width: 320px;
 }
 
 p{
     font-family: "Arvo", serif;
     font-size: 1.5rem;
     text-align: justify;
-    margin-bottom: 2%;
+    margin-bottom: 2rem;
     line-height: 3rem;
 }
 
 h1{
     color: var( --green-theme);
     font-family: "Arvo", serif;
-    font-size: 3rem;
-    margin: 5rem 0;
+    font-size: 250%;
+    margin: 3rem 0 1rem 0;
 }
 
 h2{
     color: var( --green-theme);
     font-family: "Arvo", serif;
-    font-size: 2rem;
-
-    margin: 3rem 0;
+    font-size: 200%;
+    margin: 2.5rem 0 1rem;
 }
 
 .principal img{
-    width: 70%;
-    margin-top: 4rem;
-    margin-bottom: 4rem;
+    width: 90%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 .img{
@@ -56,7 +61,8 @@ h2{
 }
 
 .principal-content{
-    margin: 4rem 0;
+    padding: 2rem;
+    margin: auto;
 }
 
 .div_conteudo{
