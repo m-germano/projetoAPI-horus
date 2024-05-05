@@ -1,82 +1,261 @@
-{% extends 'base.html' %}
+{% extends 'base2.html' %}
 
 {%block css%}<link rel="stylesheet" href="../static/css/index.css">{%endblock css%}
 {%block title%} SCRUM {%endblock title%}
 {%block conteudo%}
-<div class="main-container">
-
-    <div class="index-content">
-        <h1>Aprenda Scrum</h1>
-        <p>Descubra todos os processos e artefatos da metodologia ágil Scrum com conceitos e fundamentos</p>
-        <a href="{{url_for('conceitos', id='introducao')}}" class="btn ">Introdução</a>
-    </div>
-
-</div>
 
 
+<div class="container-video">
 
-
-<div class="index-container-section-one">
-    <div class="index-cards">
-
-        <img src="/static/imagens/eventos-scrum.png" alt="">
-        <div class="index-cards-body">
-            <h2>Eventos de Scrum</h2>
-             <p>Explore os eventos fundamentais do Scrum: planeje, revise e melhore. Descubra como Sprint Planning, Daily Scrum, Sprint Review e Sprint Retrospective impulsionam a colaboração e a entrega de valor.</p>
-            <a href="{{url_for('eventos_scrum')}}">Saiba mais</a>
-        </div>
+    <video autoplay loop muted plays-inline class="background-clip">
+        <source src="/static/imagens/business.mp4" type="video/mp4">
+    </video>
+    <div class="overlay"></div>
+    <div class="content">
+        <h1 class="animated">SCRUM</h1>
+        <p class="animated">Aprenda o framework de gestão de projetos <br> mais utilizado pelas grandes empresas.</p>
         
+ 
+       
+        <a href="#quemsomos" class="animated">Saiba Mais</a>
     </div>
+</div>
 
-    <div class="index-cards">
-        <img src="/static/imagens/product-artefact.jpg" alt="">
-        <div class="index-cards-body">
-            <h2>Artefatos de Scrum</h2>
-            <p>Conheça os artefatos essenciais do Scrum: Product Backlog, Sprint Backlog e Product Increment. Saiba como esses elementos auxiliam na definição, planejamento e entrega de produtos de alta qualidade.</p>
-            <a href="">Saiba mais</a>
+
+<!-- CARDS -->
+
+<div class="quemsomos" id="quemsomos" >
+<h2 id="quemsomos" class="animated">Quem somos?</h2>
+<p>Somos o Grupo Horus, uma equipe apaixonada por trazer conhecimento prático e acessível sobre a metodologia Scrum. Nosso objetivo é fornecer recursos educacionais que ajudem indivíduos e organizações a entender e implementar o Scrum de maneira eficaz.</p>
+
+<p>Com uma abordagem centrada no aprendizado prático e na didática eficiente, buscamos tornar o Scrum acessível a todos, desde iniciantes até profissionais experientes. Acreditamos que a aprendizagem é mais eficaz quando combinamos teoria e prática, e é por isso que nos esforçamos para oferecer conteúdo claro, envolvente e aplicável.</p>
+
+<p>Empresas como Google, Amazon, Microsoft, Spotify e muitas outras têm incorporado o Scrum em suas culturas organizacionais. Essas empresas reconhecem os benefícios de adotar uma abordagem ágil para o desenvolvimento de produtos e serviços, permitindo-lhes responder rapidamente às mudanças no mercado, manter a competitividade e fornecer valor contínuo aos clientes.</p>
+
+<div class="container-fluid">
+    <div class="container">
+    <div class="carousel slide"  id="carouselDemo" data-bs-wrap="true"  data-bs-ride="carousel">
+
+        <div class="carousel-inner">
+
+            <div class="carousel-item active" data-bs-interval="3000" onclick="window.location.href = '/html';" style="cursor: pointer;">
+                <img src="/static/imagens/google-background.jpg" class="w-100">
+                <div class="carousel-caption">
+                    
+                    
+                
+
+                </div>
+            </div>
+
+            <div class="carousel-item "  data-bs-interval="3000" onclick="window.location.href = '/js';" style="cursor: pointer;">
+                <img src="/static/imagens/embraer-background.jpg" class="w-100">
+                <div class="carousel-caption">
+                
+                    
+                </div>
+            </div>
+
+            <div class="carousel-item " data-bs-interval="3000" onclick="window.location.href = '/python';" style="cursor: pointer;">
+                <img src="/static/imagens/johnson-background.png" class="w-100">
+                <div class="carousel-caption">
+                
+                    
+                </div>
+            </div>
+
+            <div class="carousel-item " data-bs-interval="3000" onclick="window.location.href = '/nodejs';" style="cursor: pointer;">
+                <img src="/static/imagens/background-todas-empresa.png" class="w-100">
+                <div class="carousel-caption">
+                
+                    
+                </div>
+            </div>
+
+           
+
         </div>
-    </div>
 
+        <button class="carousel-control-prev" 
+        type="button"
+        data-bs-target="#carouselDemo" 
+        data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <button class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselDemo"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        </button>
+
+        <div class="carousel-indicators">
+            <button type="button" class="active"
+                data-bs-target="#carouselDemo"
+                data-bs-slide-to="0">
+                <img src="/static/imagens/google-background.jpg" />
+            </button>
+
+            <button type="button" 
+            data-bs-target="#carouselDemo"
+            data-bs-slide-to="1">
+                <img src="/static/imagens/embraer-background.jpg" />
+            </button>
+
+            <button type="button"
+            data-bs-target="#carouselDemo"
+            data-bs-slide-to="2">
+                <img src="/static/imagens/johnson-background.png" />
+            </button>
+
+            <button type="button"
+            data-bs-target="#carouselDemo"
+            data-bs-slide-to="3">
+                <img src="/static/imagens/background-todas-empresa.png" />
+            </button>
+
+         
+            
+        </div>
+
+    </div>
+    </div>
 </div>
 
 
-<div class="index-container-section-two">
 
-<h2>Papéis fundamentais na metodologia Scrum</h2>
 
-<div class="card-container">
-    <div class="link-card-section" onclick="window.location.href='/responsabilidades/scrum'">
-        <img src="/static/imagens/brain.svg" alt="">
-        <h3>Scrum Master</h3>
-    </div>
-
-    <div class="link-card-section" onclick="window.location.href='/responsabilidades/po'">
-        <img src="/static/imagens/teacher.svg" alt="">
-        <h3>Product Owner</h3>
-    </div>
-
-    <div class="link-card-section" onclick="window.location.href='/responsabilidades/dev'">
-        <img src="/static/imagens/programming-monitor.svg" alt="">
-        <h3>DEVs</h3>
-    </div>
+<p>Ao aprender e implementar o Scrum, você se junta a uma comunidade global de profissionais e organizações que estão transformando a maneira como trabalham e entregam valor. Esteja você começando sua jornada ágil ou buscando aprimorar suas habilidades existentes, o Scrum oferece um caminho comprovado para o sucesso em um mundo cada vez mais dinâmico e complexo.</p>
 </div>
 
+<svg  id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 100" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(34, 34, 34, 1)" offset="0%"></stop><stop stop-color="rgba(34, 34, 34, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,30L60,25C120,20,240,10,360,20C480,30,600,60,720,73.3C840,87,960,83,1080,76.7C1200,70,1320,60,1440,46.7C1560,33,1680,17,1800,20C1920,23,2040,47,2160,55C2280,63,2400,57,2520,53.3C2640,50,2760,50,2880,46.7C3000,43,3120,37,3240,38.3C3360,40,3480,50,3600,56.7C3720,63,3840,67,3960,63.3C4080,60,4200,50,4320,53.3C4440,57,4560,73,4680,66.7C4800,60,4920,30,5040,26.7C5160,23,5280,47,5400,46.7C5520,47,5640,23,5760,11.7C5880,0,6000,0,6120,15C6240,30,6360,60,6480,61.7C6600,63,6720,37,6840,31.7C6960,27,7080,43,7200,55C7320,67,7440,73,7560,66.7C7680,60,7800,40,7920,35C8040,30,8160,40,8280,50C8400,60,8520,70,8580,75L8640,80L8640,100L8580,100C8520,100,8400,100,8280,100C8160,100,8040,100,7920,100C7800,100,7680,100,7560,100C7440,100,7320,100,7200,100C7080,100,6960,100,6840,100C6720,100,6600,100,6480,100C6360,100,6240,100,6120,100C6000,100,5880,100,5760,100C5640,100,5520,100,5400,100C5280,100,5160,100,5040,100C4920,100,4800,100,4680,100C4560,100,4440,100,4320,100C4200,100,4080,100,3960,100C3840,100,3720,100,3600,100C3480,100,3360,100,3240,100C3120,100,3000,100,2880,100C2760,100,2640,100,2520,100C2400,100,2280,100,2160,100C2040,100,1920,100,1800,100C1680,100,1560,100,1440,100C1320,100,1200,100,1080,100C960,100,840,100,720,100C600,100,480,100,360,100C240,100,120,100,60,100L0,100Z"></path></svg>
+
+<div class="cards-section" id="trilha" >
+    <h2 id="trilha" >Trilha de Aprendizado</h2>
+    <div class="ag-format-container">
+        <div class="ag-courses_box">
+          <div class="ag-courses_item">
+            <a href="{{url_for('conceitos', id='introducao')}}" class="ag-courses-item_link animated">
+              <div class="ag-courses-item_bg"></div>
+      
+              <div class="ag-courses-item_title">
+                Introdução ao SCRUM
+              </div>
+      
+          
+            </a>
+          </div>
+
+          <div class="ag-courses_item">
+            <a href="#" class="ag-courses-item_link animated">
+              <div class="ag-courses-item_bg"></div>
+      
+              <div class="ag-courses-item_title">
+                Scrum x Kanban
+              </div>
+            </a>
+          </div>
+      
+          <div class="ag-courses_item">
+            <a href="{{url_for('responsabilidades', id='scrum')}}" class="ag-courses-item_link animated">
+              <div class="ag-courses-item_bg"></div>
+      
+              <div class="ag-courses-item_title">
+                Responsabilidades
+              </div>
+      
+            </a>
+          </div>
+      
+          <div class="ag-courses_item">
+            <a href="{{url_for('eventos_scrum')}}" class="ag-courses-item_link animated">
+              <div class="ag-courses-item_bg"></div>
+      
+              <div class="ag-courses-item_title">
+                Eventos de Scrum
+              </div>
+      
+          
+            </a>
+          </div>
+      
+          <div class="ag-courses_item">
+            <a href="{{url_for('artefatos_scrum', id='sprint-backlog')}}" class="ag-courses-item_link animated">
+              <div class="ag-courses-item_bg"></div>
+      
+              <div class="ag-courses-item_title">
+                Artefatos de Scrum
+              </div>
+      
+             
+            </a>
+          </div>
+      
+          <div class="ag-courses_item">
+            <a href="{{url_for('estimativas')}}" class="ag-courses-item_link animated">
+              <div class="ag-courses-item_bg"></div>
+      
+              <div class="ag-courses-item_title">
+                Estimativas
+              </div>
+      
+             
+            </a>
+          </div>
+
+        </div>
+      </div>
+
 </div>
 
+<svg id="wave" style="transform:rotate(180deg); transition: 0.3s" viewBox="0 0 1440 140" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(34, 34, 34, 1)" offset="0%"></stop><stop stop-color="rgba(34, 34, 34, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,84L240,86.3C480,89,960,93,1440,81.7C1920,70,2400,42,2880,42C3360,42,3840,70,4320,67.7C4800,65,5280,33,5760,32.7C6240,33,6720,65,7200,74.7C7680,84,8160,70,8640,60.7C9120,51,9600,47,10080,44.3C10560,42,11040,42,11520,56C12000,70,12480,98,12960,100.3C13440,103,13920,79,14400,77C14880,75,15360,93,15840,102.7C16320,112,16800,112,17280,109.7C17760,107,18240,103,18720,88.7C19200,75,19680,51,20160,51.3C20640,51,21120,75,21600,74.7C22080,75,22560,51,23040,56C23520,61,24000,93,24480,107.3C24960,121,25440,117,25920,100.3C26400,84,26880,56,27360,44.3C27840,33,28320,37,28800,51.3C29280,65,29760,89,30240,84C30720,79,31200,47,31680,39.7C32160,33,32640,51,33120,65.3C33600,79,34080,89,34320,93.3L34560,98L34560,140L34320,140C34080,140,33600,140,33120,140C32640,140,32160,140,31680,140C31200,140,30720,140,30240,140C29760,140,29280,140,28800,140C28320,140,27840,140,27360,140C26880,140,26400,140,25920,140C25440,140,24960,140,24480,140C24000,140,23520,140,23040,140C22560,140,22080,140,21600,140C21120,140,20640,140,20160,140C19680,140,19200,140,18720,140C18240,140,17760,140,17280,140C16800,140,16320,140,15840,140C15360,140,14880,140,14400,140C13920,140,13440,140,12960,140C12480,140,12000,140,11520,140C11040,140,10560,140,10080,140C9600,140,9120,140,8640,140C8160,140,7680,140,7200,140C6720,140,6240,140,5760,140C5280,140,4800,140,4320,140C3840,140,3360,140,2880,140C2400,140,1920,140,1440,140C960,140,480,140,240,140L0,140Z"></path></svg>
 
-<div class="index-container-section-three">
-
-    <h2>Questionarios e Flashcards</h2>
-    <p>Teste seus conhecimentos!</p>
-    <div class="links-quiz">
-        <a href="{{url_for('questionarios_home')}}">Questionários</a>
-        <a href="">Flashcards</a>
-    </div>
+<div class="container-quiz animated" id="quiz-container" >
+    <h2 >Teste seus conhecimentos!</h2>
+    <a href="" class="btn-flip animated-y" data-back="Acessar" data-front="Questionários"></a>
+  
+  </div>
    
+
+
+  <div class="faq-container animated" id="faq" >
+    <div class="row">
+      <div class="col-10 offset-1">
+        <h2 style="text-align: center">FAQ - Perguntas Frequentes</h2>
+        <br />
+          <details>
+            <summary>O que é a metodologia Scrum e por que devo considerar aprendê-la?</summary>
+            <p>O Scrum é uma abordagem ágil para gerenciamento de projetos que enfatiza a entrega contínua de valor aos clientes. Aprender Scrum é importante para empresas e indivíduos, pois permite uma melhor gestão de projetos, aumento da eficiência, colaboração entre equipes e maior adaptabilidade às mudanças no mercado.</p>
+          </details>
+
+          <details>
+            <summary>Quais são os benefícios que minha empresa ou eu posso obter ao adotar o Scrum?</summary>
+            <p>Ao adotar o Scrum, você pode esperar benefícios como entregas mais rápidas e frequentes, melhor colaboração entre equipes, maior foco nas necessidades do cliente, redução de riscos e maior transparência nos processos de desenvolvimento de produtos ou projetos.</p>
+          </details>
+
+          <details>
+            <summary>Quais são os papéis essenciais no Scrum e como se aplicam dentro da minha empresa ou projeto?</summary>
+            <p>Os principais papéis no Scrum são o Product Owner, o Scrum Master e a Equipe de Desenvolvimento. O Product Owner representa os interesses dos stakeholders, o Scrum Master facilita o processo Scrum e remove obstáculos, enquanto a Equipe de Desenvolvimento é responsável por entregar o trabalho.</p>
+          </details>
+
+          <details>
+            <summary>Como posso implementar o Scrum na minha empresa ou projeto?</summary>
+            <p>A implementação do Scrum envolve etapas como a definição do backlog do produto, o planejamento de sprints, a realização de reuniões diárias e a revisão e retrospectiva dos resultados. É importante treinar a equipe, estabelecer rituais e práticas ágeis e promover uma cultura de transparência e colaboração.</p>
+          </details>
+
+          <details>
+            <summary>Como a Horus pode auxiliar minha empresa ou eu a aprender e implementar o Scrum de maneira eficaz?</summary>
+            <p>A Horus oferece uma variedade de cursos, workshops, treinamentos e consultorias especializadas em Scrum. Com nossa experiência e expertise, podemos fornecer orientação personalizada, recursos práticos e suporte contínuo para ajudá-lo a adotar e implementar com sucesso o Scrum na sua empresa ou projeto.</p>
+          </details>
+
+          <details>
+            <summary>Além dos cursos e consultorias, quais outros recursos a Horus oferece para auxiliar na jornada de aprendizado e implementação do Scrum?</summary>
+            <p>Além dos cursos e consultorias, a Horus oferece uma variedade de recursos adicionais, como materiais educacionais, ensino prático, questionários parciais e flashcards de estudo. </p>
+          </details>
+      </div>
     </div>
-
-    
-
+  </div>
 
 
 {%endblock conteudo%}
