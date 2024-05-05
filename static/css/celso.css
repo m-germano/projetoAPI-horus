@@ -1,14 +1,13 @@
-
-h1{
+h1 {
     color: var(--green-theme);
     font-weight: 700;
     font-family: "Arvo", serif;
     font-size: 3rem;
 
-    
+
 }
 
-h2{
+h2 {
     color: var(--green-theme);
     font-weight: 400;
     font-family: "Arvo", serif;
@@ -16,50 +15,52 @@ h2{
 
 }
 
-p{
+p {
     line-height: 2.5rem;
     font-family: "Arvo", serif;
     font-size: 1.2rem;
-    margin:2rem 0;
+    margin: 2rem 0;
 
 }
 
 
 /* ================================================================= */
 
-.div_principal{
+.div_principal {
     width: 100%;
- 
+
 }
 
-.div_conteudo{
+.div_conteudo {
     width: 60%;
     margin: 0 auto;
     margin-top: 10vh;
     margin-bottom: 10vh;
-   display: flex;
-   flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
-.img{
-  text-align: center;
-}
-.div_conteudo h1{
+.img {
     text-align: center;
 }
 
-.div_conteudo li:first-child{
+.div_conteudo h1 {
+    text-align: center;
+}
+
+.div_conteudo li:first-child {
     margin-top: 4rem;
 }
 
-.div_conteudo li:not(:last-child){
+.div_conteudo li:not(:last-child) {
     margin-bottom: 4rem;
 }
 
-h4{
-    color:  var(--green-theme);
+h4 {
+    color: var(--green-theme);
 }
-.div_conteudo h2{
+
+.div_conteudo h2 {
     color: var(--green-theme);
     font-weight: 700;
     font-family: "Arvo", serif;
@@ -67,35 +68,36 @@ h4{
     text-align: center;
     margin: 4rem 0;
 }
-.div_conteudo h3{
+
+.div_conteudo h3 {
     color: var(--green-theme);
     font-weight: 400;
     font-family: "Arvo", serif;
     font-size: 2.1rem;
     margin: 3rem 0;
-    
+
 }
 
-.div_conteudo img{
-    width: 700px;
-    height: 510px;
+.div_conteudo img {
+    width: 900px;
+    height: 550px;
     text-align: center;
 }
 
 
-.conteudo-caract  h2{
+.conteudo-caract h2 {
     font-weight: 700;
     font-size: 2.5rem;
     text-align: center;
 
 }
 
-.conteudo-caract p{
+.conteudo-caract p {
     padding-left: 1rem;
 }
 
 
-.quiz-link{
+.quiz-link {
     width: 60%;
     margin: 0 auto;
     height: 30vh;
@@ -104,7 +106,7 @@ h4{
     justify-content: space-around;
 }
 
-.quiz-link a{
+.quiz-link a {
     border-radius: 2rem;
     padding: 2rem;
     background: var(--tomato);
@@ -113,15 +115,10 @@ h4{
     color: white;
     transition: all 0.3s ease-in-out;
     text-align: center;
-    
+
 
 }
 
-.quiz-link a:hover{
+.quiz-link a:hover {
     transform: scale(1.1);
 }
-
-.content{
-  
-}
-
