@@ -2,10 +2,53 @@
 
 {%block css%}{%endblock css%}
     
-{% block title %}{% endblock title %}
+{% block title %}DoR e DoD{% endblock title %}
 
 {%block conteudo%}
 
+<div class="dor-dod-intro">
+    <h1>DoD e DoR, você sabe a diferença?</h1>
+</div>
+
+<div class="section-content" >
+
+    <h2>Entendendo o conceito de DOR</h2>
+    <p>É muito comum que o Product Owner tenha dificuldades em saber quando cada item da sua lista de necessidades está preparado o suficiente para entrar no backlog da Sprint.  Para uma maior compreensão é necessário um entendimento entre a área de negócio e a equipe técnica, representada no Scrum como o Time de Desenvolvimento.  Se por um lado existe uma dificuldade de compreensão técnica pela área de negócio, por outro existe uma barreira de conhecimento de negócio por parte do time técnico.</p>
+    <p>Mediante esse cenário, com o intuito de romper esses obstáculos e manter a transparência seguindo a definição do Scrum, surge o refinamento do backlog do produto com o intuito de alinhar todas as partes interessadas.  O refinamento ocorre durante o andamento da Sprint e normalmente destina-se 10% do tamanho da Sprint para o refinamento do backlog do produto.  Neste evento o time de desenvolvimento entende o propósito dos próximos itens priorizados pelo PO, elenca os desafios técnicos, alinhando as expectativas com a área de negócio. </p>
+
+    <h2 id="introducao">DOR - Definition of Ready</h2>
+    <p> Para apoiar esse refinamento, surge o primeiro conceito, o DOR (Definition of Ready) que traduzindo para o português, significa a definição de preparado.  O DOR, trata-se de uma listagem de requisitos que determinada história ou tarefa necessita para que possa estar apta a entrar no backlog da Sprint. Normalmente essa lista fica vinculada a tarefa e cada item é marcado com check se está atendido ou não. A história só deve ser movida para o backlog da Sprint se todos os itens levantados durante o refinamento estiverem marcados, caso contrário a mesma ainda não está preparada para entrar na esteira de produção.</p>
+    <p>Exemplificando uma história, na qual necessitará consultar outra aplicação, podemos citar na lista do DOR alguns itens como:</p>
+    <ul>
+        <li>Histórias de usuário devem ser escritas no padrão BDD</li>
+        <li>O(s) critério(s) de aceite estão claros</li>
+        <li>Serviço de Integração disponível para consulta</li>
+        <li>Design pronto</li>
+        <li>HTML pronto</li>
+        <li>Dados para teste</li>
+        <li>Acesso GET/POST a aplicação</li>
+    </ul>
+   
+</div>
+
+<div class="section-content" >
+    <h2 id="introducao">Entendendo o conceito de DOD </h2>
+    <p>Na primeira parte deste artigo, elencamos o quanto a definição de DOR é importante, quando é aplicada e como ela pode ajudar no refinamento de cada item backlog. Até o momento falamos de um item em sua fase planejamento, agora precisamos entender o segundo conceito, e como ele pode ajudar a definir o seu status de pronto.</p>
+    <h2>DOD - Definition of Done</h2>
+    <p>O conceito de DOD (Definition of Done), ou traduzindo definição de feito, ajuda o time a elencar os pontos necessários para que uma determinada tarefa seja classificada como concluída. Não existe uma definição de pronto oficial que deve ser seguida por todas as organizações e equipes de desenvolvimento, até porque, cada produto tem sua complexidade. Cada equipe deve desenvolver sua definição de pronto, levando sempre em consideração o desafio do produto, as ferramentas tecnológicas que estão sendo utilizadas, as necessidades dos usuários e etc.</p>
+    <p>Essa definição é gerada antes de iniciar o desenvolvimento do produto, normalmente antes mesmo da primeira Sprint. Sua evolução ocorre no caminhar da vida útil do produto e quanto mais maduro o time, mais rigorosa a definição de concluído, o que gera como resultado o aumento na qualidade da entrega do sprint. Caso seja necessário rever a definição de pronto, o momento mais adequado é no evento de retrospectiva da Sprint.</p>
+    <p>Assim como no DOR, pode-se aplicar a mesma estratégia montando uma lista que será verificado no momento de desenvolvimento da tarefa. A tarefa só pode ser considerada pronta se atender os itens anexados ao DOD.</p>
+    <p>Seguindo o exemplo citado, podemos especificar como DOD os seguintes pontos:</p>
+    <ul>
+        <li>Teste de caixa preta executado</li>
+        <li>Tratar os principais retornos negativos da API (Application Programming Interface)</li>
+        <li>Código revisado por outro membro do time</li>
+        <li>Funcionalidades atende aos critérios de aceite</li>
+    </ul>
+
+    <p>Como vimos, embora possa haver certa confusão, conseguir entender os conceitos de DOR E DOD é peça chave no desenvolvimento ágil de produtos. É importante ressaltar que esses conceitos podem até variar de acordo com cada projeto, mas para o sucesso da sua entrega é fundamental que toda a equipe esteja por dentro desses conceitos.</p>
+    
+</div>
 
 
 

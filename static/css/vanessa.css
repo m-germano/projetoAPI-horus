@@ -17,9 +17,10 @@
     color: var( --green-theme);
     font-family: "Arvo", serif;
     font-size: 3.6rem;
-    font-weight: 500;
+    font-weight: 700;
     text-align: center;
     margin-bottom: 5rem;
+    margin-top: 5rem;
 }
 
 .introducao_conteudo h2{

@@ -2,28 +2,50 @@
 
 {%block css%}<link rel="stylesheet" href="../static/css/estimativa.css">{%endblock css%}
     
-{% block title %}Planning Poker{% endblock title %}
+{% block title %}Estimativas{% endblock title %}
 
 {%block conteudo%}
 
-    <section class="contt">
-        <h2 class="title">Planning Poker</h2>
-    </section>
+    <div class="contt">
+        <h2 class="title">Estimativas</h2>
+    </div>
 
     <section class="contp">
 
         <div class="sub1">
             <h3 class="subtitle1">O que é estimativa?</h3>
-            <p class="paragrafo">Segundo o dicionário, a palavra estimativa significa 
-                “avaliação ou cálculo aproximado de algo”. <br> No caso do Planning Poker, 
-                essa conta aproximada busca avaliar a complexidade de cada tarefa do backlog, <br>
-                considerando o esforço que deverá ser empregado,
-                o tempo que será gasto e o risco envolvido.</p>
+            <p class="paragrafo">Em metodologia Scrum, a estimativa é o processo de avaliar o esforço necessário para concluir uma determinada tarefa, funcionalidade ou conjunto de trabalho dentro de um projeto. Essas estimativas são cruciais para o planejamento e a gestão eficazes de um projeto Scrum.</p>
         </div>
         
+        <div class="resume-section">
+            <div class="resume-title">
+                <h2>Existem diversos tipos de estimativas utilizadas no Scrum:</h2>
+            </div>
+            <div class="resume-card">
+                <h3>Planning Poker</h3>
+                <p>O Planning Poker é uma técnica popular para estimar o esforço necessário para concluir uma história. Cada membro da equipe recebe um baralho de cartas com valores de pontos de história ou horas. O Product Owner apresenta uma história e a equipe discute brevemente os detalhes. Em seguida, cada membro da equipe escolhe uma carta que representa sua estimativa para o esforço necessário. As estimativas são reveladas ao mesmo tempo e discutidas em caso de divergências significativas.</p>
+            </div>
+            <div class="resume-card">
+                <h3>Estimativa de Pontos de História (Story Points)</h3>
+                <p>Nesse método, as histórias de usuário são estimadas com base em uma escala relativa de complexidade ou esforço. Em vez de estimar em horas, o Time de Desenvolvimento atribui pontos às histórias com base em sua complexidade percebida, em relação a outras histórias. Essa abordagem ajuda a evitar o viés associado às estimativas de tempo e facilita a comparação de esforços entre histórias diferentes.</p>
+            </div>
+            <div class="resume-card">
+                <h3>Estimativa em Horas (Hour-Based Estimation)</h3>
+                <p>Além ou em conjunto com os pontos de história, algumas equipes de Scrum podem optar por estimar as histórias em horas. Isso envolve a atribuição de uma quantidade de horas esperada para concluir cada história ou tarefa. Embora mais precisas em termos de tempo, essas estimativas podem ser mais difíceis de fazer e podem levar a discussões sobre detalhes específicos da implementação.</p>
+            </div>
+            
+            <div class="resume-card">
+                <h3>Estimativa de Tamanho de Sprint (Sprint Sizing):</h3>
+                <p>Além de estimar o esforço necessário para histórias individuais, as equipes de Scrum também estimam o tamanho do sprint. Isso envolve a seleção de uma quantidade de trabalho que a equipe acredita poder realizar durante o sprint. Essa estimativa é fundamental para a capacidade de prever a velocidade da equipe e determinar quantas histórias podem ser incluídas em cada sprint.</p>
+            </div>
+         
+          
+          
+           
+        </div>
         <div class="sub2">
             <div class="sub2txt">
-                <h3 class="subtitle2">Como funciona o Planning Poker?</h3>
+                <h3 class="subtitle2">O que é Planning Poker e como funciona?</h3>
                 <p class="paragrafo">O Planning Poker se baseia em um jogo de cartas bastante simples. <br>
                 Cada participante recebe um baralho de cartas contendo valores numéricos. 
                 <br>Cada número representa o nível de esforço que o participante acha necessário para <br>
@@ -57,18 +79,6 @@
                 </div>
         </div>
 
-        <!-- <div>
-            <div>
-                <h3>Sequência de Fibonacci</h3>
-                <p>A sequência de Fibonacci contém números que aumentam exponencialmente. <br>
-                   É justamente por isso que os times de metodologia ágil passaram a usar <br>
-                   a escala de Fibonacci para os negócios. <br>
-                   No geral, a escala de Fibonacci no Scrum é um método poderoso para garantir <br>
-                   que o trabalho seja distribuído a todos por igual, além de poder ajudar a garantir que <br>
-                   todos sejam precisos ao estimar o trabalho e o tempo necessário para realizar um projeto.</p>
-            </div>
-            <img src="" alt="">
-        </div> -->
 
         <div class="sub5">
             <div class="sub5cont">
@@ -82,6 +92,16 @@
             </div>
             <img src="../static/imagens/VantagensPlanningPoker.png" height="40%" width="40%">
         </div>
+
+        <div class="sub1">
+
+            <h3>Sequência de Fibonacci</h3>
+            <p>A sequência de Fibonacci contém números que aumentam exponencialmente. <br>
+               É justamente por isso que os times de metodologia ágil passaram a usar <br>
+               a escala de Fibonacci para os negócios. <br>
+               No geral, a escala de Fibonacci no Scrum é um método poderoso para garantir <br>
+               que o trabalho seja distribuído a todos por igual, além de poder ajudar a garantir que <br>
+    </div>
     </section>
 
 

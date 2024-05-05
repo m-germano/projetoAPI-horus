@@ -108,9 +108,29 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-inline: 5vh;
+  color: var(--white-color);
+  
+
 }
 
+.nav__data h1{
+  font-size: 2rem;
+  padding-left: 1rem;
+  color: var(--white-color);
+  font-weight: 700;
+  
+
+}
+
+.nav__data {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 5vh;
+
+  
+}
 .nav__logo {
   display: inline-flex;
   align-items: center;
@@ -414,25 +434,26 @@ footer h3{
 footer p{
   margin: 0;
   padding: 1rem ;
+  display: inline-block;
 }
 
+
 .footer-content{
-  width: screen;
+  width: 100%;
   background-color: #171C26;
   height: 14rem;
   margin: 0;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  text-align: justify;
+ 
 }
 
 .footer-copyright{
-  width: screen;
+  width: 100%;
   background-color: #111214;
   margin: 0;
-}
 
+ 
+
+}
 
 .git-icone li{
   list-style: none;
@@ -448,10 +469,155 @@ footer p{
 }
 
 
+.download-div h1{
+  color: var( --green-theme);
+  font-family: "Arvo", serif;
+  font-size: 3rem;
+  margin: 5rem 0;
+}
+
+/* SUMARIO */
+.sumario{
+  margin-bottom: 10rem;
+}
+
+.sumario summary{
+  text-align: center;
+  color: var( --green-theme);
+   font-family: "Arvo", serif;
+   font-size: 2.6rem;
+   font-weight: 500;
+
+
+}
+
+.sumario details{
+   border: 0.1rem solid black;
+   padding: 1rem;
+}
+
+.sumario ol li{
+   list-style: disc;
+}
+
+
+
+.sumario a{
+   text-decoration: none;
+   color: var(--green-theme);
+   font-family: "Arvo", serif;
+   font-size: 1.5rem;
+   margin-top: 2rem;
+   line-height: 2.4rem;
+   text-align: justify;
+
+}
+
+
+.resume-section{
+  width: 80%;
+  margin: 2rem auto;
+  display: flex;
+  flex-wrap: wrap;
+
+  
+}
+.resume-title{
+  width: 100%;
+  padding: 2rem;
+  text-align: center;
+  
+}
+
+.resume-title h2{
+  font-weight: bolder;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: var(--green-theme);
+}
+.resume-card{
+  margin: 3rem;
+  width: 40%;
+  height: auto;
+  border: 0.1rem solid black;
+  border-radius: 1rem;
+  padding: 3rem;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+
+}
+.resume-card p{
+  font-family: "Arvo", serif;
+  font-size: 1.5rem;
+  text-align: justify;
+}
+
+
+.resume-card h3{
+  font-family: "Arvo", serif;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.resume-card li{
+  list-style-type: disc;
+  margin: 1rem 0;
+
+}
+
+/* DOR E DOD */
+
+.dor-dod-intro{
+  background: cornflowerblue;
+  width: 100%;
+  height: 20vh;
+  margin-top: 10rem;
+  text-align: center;
+
+}
+
+.dor-dod-intro h1{
+  font-family: "Arvo", serif;
+  font-size: 3rem;
+  font-weight: 700;
+  color: white
+}
+
+.section-content{
+  width: 80%;
+  padding:5rem;
+  margin: 0 auto;
+  font-family: "Arvo", serif;
+}
+
+.section-content h2{
+  font-size: 2.4rem;
+  margin: 4rem 0;
+}
+
+.section-content p{
+  font-size: 1.5rem;
+  margin:2rem 0;
+}
+
+.section-content li{
+  font-size: 1.5rem;
+  margin:2rem 0 0 0;
+  list-style: circle;
+}
+
+
+
+
+
+
+
+
 
 @import url('/static/css/index.css');
 @import url('/static/css/eventos.css');
 @import url('/static/css/product.css');
 @import url('/static/css/questionario.css');
+@import url('/static/css/estimativa.css');
 
 
