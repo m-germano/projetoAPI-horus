@@ -45,14 +45,18 @@ Desenvolver um site informativo simples e funcional sobre a Metodologia Ágil qu
 <br><br>
 
 ## Product Backlog 
+
 [Backlog-Github.pdf](https://github.com/m-germano/projetoAPI-horus/files/15214824/Backlog-Github.pdf)
 
 <br><br>
 
 ## 📽️ Vídeo do protótipo - Sprint 1
 
-
 https://github.com/m-germano/projetoAPI-horus/assets/107308515/5e84e16a-0893-48e1-8057-933bebb8b9e8
+
+## 📽️ Vídeo do protótipo - Sprint 2
+
+https://github.com/m-germano/projetoAPI-horus/assets/107308515/1f97bafe-1a7f-46fb-8afd-d33b52c9a5bd
 
 
 
