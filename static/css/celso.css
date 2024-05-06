@@ -20,15 +20,17 @@ p {
     font-family: "Arvo", serif;
     font-size: 1.2rem;
     margin: 2rem 0;
+    color: black;
 
 }
 
 
 /* ================================================================= */
 
+
 .div_principal {
     width: 100%;
-
+    
 }
 
 .div_conteudo {
@@ -38,10 +40,18 @@ p {
     margin-bottom: 10vh;
     display: flex;
     flex-direction: column;
+    
 }
+
+.div_conteudo h1,h2,h3,p{
+    color: black;
+}
+
+
 
 .img {
     text-align: center;
+    margin-block: 5rem;
 }
 
 .div_conteudo h1 {
