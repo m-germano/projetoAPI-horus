@@ -131,6 +131,66 @@
                     </div>
         </div>
     </div> 
+
+    <div class="card-grid">
+        <div id="card-left" class="card">
+          <div class="card-face card-face__front-content">
+            <h4>Qual é uma das principais diferenças entre Scrum e Kanban?</h4>
+            <button class="btn" parent-id="card-left" toggle-class='card__rotate-left' >Resposta</button>
+          </div>
+          <div class="card-face card-face__back-content card-face__rotate-left">
+            <div>
+              <p>Uma das principais diferenças entre Scrum e Kanban é o modo como o trabalho é planejado e gerenciado. No Scrum, o trabalho é dividido em iterações chamadas de "sprints", enquanto no Kanban, o trabalho é visualizado em um quadro Kanban e as tarefas são movidas por colunas, sem a necessidade de iterações definidas.</p>
+            </div>
+            
+            <button class="btn" parent-id="card-left" toggle-class='card__rotate-left' >Pergunta</button>
+          </div>
+        </div>
+        
+        <div id="card-right" class="card">
+          <div class="card-face card-face__front-content">
+            <h4>Como o Scrum e o Kanban diferem em relação ao foco no tempo e nas iterações?</h4>
+            <button class="btn" parent-id="card-right" toggle-class='card__rotate-right' >Resposta</button>
+          </div>
+          <div class="card-face card-face__right card-face__back-content card-face__rotate-right">
+              <p>Enquanto o Scrum tem um foco forte no tempo e no conceito de sprints com duração fixa, o Kanban não tem iterações predefinidas e se concentra mais na capacidade de resposta às demandas do trabalho em andamento, permitindo um fluxo contínuo de trabalho.</p>
+     
+            <button class="btn" parent-id="card-right" toggle-class='card__rotate-right' >Pergunta</button>
+          </div>
+        </div>
+      </div>
+    
+      <script>
+        /*********************************************
+    * tested against chrome, safari, and firefox *
+    **********************************************/
+    
+    var btnList = document.getElementsByClassName('btn');
+    
+    for(var i = 0; i < btnList.length; i++) {
+      btnList[i].addEventListener("click", function() { 
+        flipCard(this); 
+      });
+    }
+    
+    function flipCard(_this) {
+      const parentNodeId = 'parent-id';
+      const toggleClassId = 'toggle-class';
+      const parentId = _this.getAttribute(parentNodeId);
+      const toggleId = _this.getAttribute(toggleClassId);
+      
+      if (parentId && toggleId) {
+        let card = document.getElementById(parentId);
+        if (card) {
+          card.classList.toggle(toggleId);
+        } else {
+          console.log('card not found')
+        }
+      } else {
+        console.log('parentId and/or toggleId not found')
+      }
+    }
+      </script>
     
 </main>
 
