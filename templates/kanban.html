@@ -39,7 +39,7 @@
 
         <!--Conceitos-->
         <div class='fundo'>
-            <h3 class='titulo'><br><br>Conceitos</h3>
+            <h3 class='titulo'>Conceitos</h3>
                 <div class="space">
                     <div class="textos">
                         <h4 class='subt3'>Visualização do Trabalho:</h4>
@@ -71,7 +71,7 @@
 
         <!--Aplicação-->
         <div class='fundo-ap'>
-            <h3 class='titulo-ap'><br><br>Aplicação</h3>
+            <h3 class='titulo-ap'>Aplicação</h3>
                 <div class="space">
                     <div class="textos-ap">
                         <h4 class='subt-ap'>Projeto do Quadro Kanban</h4>
@@ -94,19 +94,19 @@
 
          <!--Kanban vs Scrum-->
          <div class='fundo-sc'>
-            <h3 class='titulo-sc'><br><br>Kanban vs Scrum</h3>
+            <h3 class='titulo-sc'>Kanban vs Scrum</h3>
               
                     <div class="textos-sc">
                         <div class='display-flex'>
                             <div class="display-flex-card">
-                                <h4 class='subt-sc'>Kanban</h4>
+                                <h4 class='titulo-sc'>Kanban</h4>
                                 <p class="texto-sc">
                                     Uma abordagem mais flexível, focada na melhoria contínua do fluxo de trabalho. Não tem iterações fixas e não possui papéis ou cerimônias prescritas. Além disso, o Kanban enfatiza a visualização do trabalho, limitação do trabalho em progresso e gestão do fluxo.
                                 </p>
                                 <div class="display-flex-card-img"><img src='../static/imagens/quadro kanban.jpg' alt='QuadroKanban' class='quadro-kanban'></div>
                             </div>
                             <div class="display-flex-card" >
-                                <h4 class='subt-sc'>Scrum</h4>
+                                <h4>Scrum</h4>
                                 <p class='texto-sc'>
                                     Estrutura mais prescritiva, com papéis definidos (Product Owner, Scrum Master, Team) e cerimônias como Sprint Planning, Daily Standups, Sprint Review e Sprint Retrospective. O Scrum é conhecido por suas iterações de tempo fixo chamadas de sprints e enfatiza a colaboração e a comunicação entre os membros da equipe.
                                 </p>
@@ -131,6 +131,66 @@
                     </div>
         </div>
     </div> 
+
+    <div class="card-grid">
+        <div id="card-left" class="card">
+          <div class="card-face card-face__front-content">
+            <h4>Qual é uma das principais diferenças entre Scrum e Kanban?</h4>
+            <button class="btn" parent-id="card-left" toggle-class='card__rotate-left' >Resposta</button>
+          </div>
+          <div class="card-face card-face__back-content card-face__rotate-left">
+            <div>
+              <p>Uma das principais diferenças entre Scrum e Kanban é o modo como o trabalho é planejado e gerenciado. No Scrum, o trabalho é dividido em iterações chamadas de "sprints", enquanto no Kanban, o trabalho é visualizado em um quadro Kanban e as tarefas são movidas por colunas, sem a necessidade de iterações definidas.</p>
+            </div>
+            
+            <button class="btn" parent-id="card-left" toggle-class='card__rotate-left' >Pergunta</button>
+          </div>
+        </div>
+        
+        <div id="card-right" class="card">
+          <div class="card-face card-face__front-content">
+            <h4>Como o Scrum e o Kanban diferem em relação ao foco no tempo e nas iterações?</h4>
+            <button class="btn" parent-id="card-right" toggle-class='card__rotate-right' >Resposta</button>
+          </div>
+          <div class="card-face card-face__right card-face__back-content card-face__rotate-right">
+              <p>Enquanto o Scrum tem um foco forte no tempo e no conceito de sprints com duração fixa, o Kanban não tem iterações predefinidas e se concentra mais na capacidade de resposta às demandas do trabalho em andamento, permitindo um fluxo contínuo de trabalho.</p>
+     
+            <button class="btn" parent-id="card-right" toggle-class='card__rotate-right' >Pergunta</button>
+          </div>
+        </div>
+      </div>
+    
+      <script>
+        /*********************************************
+    * tested against chrome, safari, and firefox *
+    **********************************************/
+    
+    var btnList = document.getElementsByClassName('btn');
+    
+    for(var i = 0; i < btnList.length; i++) {
+      btnList[i].addEventListener("click", function() { 
+        flipCard(this); 
+      });
+    }
+    
+    function flipCard(_this) {
+      const parentNodeId = 'parent-id';
+      const toggleClassId = 'toggle-class';
+      const parentId = _this.getAttribute(parentNodeId);
+      const toggleId = _this.getAttribute(toggleClassId);
+      
+      if (parentId && toggleId) {
+        let card = document.getElementById(parentId);
+        if (card) {
+          card.classList.toggle(toggleId);
+        } else {
+          console.log('card not found')
+        }
+      } else {
+        console.log('parentId and/or toggleId not found')
+      }
+    }
+      </script>
     
 </main>
 

@@ -1,10 +1,10 @@
 
 body {
-    font-family: 'Arvo', serif;
+    font-family: 'poppins', serif;
 }
 
 header {
-    font-family: "Montserrat", sans-serif;
+    font-family: "poppins", serif;
 }
 /* subtitulo */
 .subt {
@@ -42,6 +42,7 @@ header {
 .fundo {
     background-color:rgb(35, 34, 34);
     color: aliceblue;
+    padding-left: 150px ;
 }
 
 .space {
@@ -52,17 +53,12 @@ header {
 
 .titulo {
     margin-left: 200px;
-    margin-bottom: 30px;
+    padding-top: 30px;
 }
 
 .subt3 {
-    margin-left: 150px;
-    margin-top: 50px;
-}
-
-.texto {
-    margin-left: 100px ;
-    padding-right:px;
+    font-size: 20px;
+    margin: 25px 0px 10px
 }
 
 .imagem {
@@ -71,8 +67,11 @@ header {
     width: 500px;
     height: 500px;
     border-radius: 20%;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    transition: transform 0.3s ease; 
+}
+.imagem:hover {
+    transform: translateY(-10px); 
+
 }
 
 
@@ -80,23 +79,11 @@ header {
 
 
 .fundo-ap {
-    background-image: var(--index-body-color);
-    /* width: 100%;
-    height: 100%;
-    font-size: 1.2em; */ 
-    background-size: cover;
-    background-position: center;
-    position: relative; /* Certifique-se de definir uma posição relativa */
-    z-index: 0;
-    }
-
-    .fundo-ap {
         color: #222;
     }
 
 .titulo-ap {
-    margin-left: 200px;
-    margin-bottom: 50px;
+    margin: 30px 200px 50px 200px;
     font-weight: bold;
 }
 
@@ -108,7 +95,7 @@ header {
 .textos-ap {
     margin-left: 100px;
     margin-right: 200px;
-    margin-bottom: 100px;
+    margin-bottom: 20px;
 }
 
 /* Scrum */
@@ -123,6 +110,8 @@ header {
 .titulo-sc {
     display: flex;
     justify-content: center;
+    font-size: 30px;
+    padding-top: 50px;
 }
 
 .display-flex {
@@ -170,22 +159,18 @@ header {
     font-size: 1.5rem;
 }
 
-.texto-sc{
-    display: flex;
-}
-
 .imgfim {
     display: flex;
     width: 50rem;
     height: 30rem;
     margin: 0 auto;
+    border-radius: 5% ;
  
 }
 
 .kanban-content{
     width:70%;
     padding: 5rem 0;
-    
     margin: 0 auto;
 }
 
@@ -212,9 +197,9 @@ header {
 }
 
 .display-flex-card h4{
-font-size: 2.5rem;
-margin:2rem;
-text-align: center;
+    font-size: 2.5rem;
+    margin:2rem;
+    text-align: center;
 }
 
 .display-flex-card p{
@@ -225,3 +210,4 @@ text-align: center;
 .display-flex-card img{
     margin:0 auto;
 }
+

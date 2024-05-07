@@ -66,8 +66,11 @@ def estimativas():
 def download_file(filename):
     return send_from_directory('static', filename, as_attachment=True)
 
+@app.route('/flashcards')
+def flashcards():
+    return render_template('flashcards.html')
 
 
 
 if __name__ == "__main__":
-    app.run(debug=True, port=8000)
+    app.run(debug=True)

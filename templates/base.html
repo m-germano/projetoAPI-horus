@@ -30,7 +30,7 @@
           </div>
           <div class="header-right">
               <ul class="main-menu">
-                  <li class="menu-item"><a href="#" class="active">Pagina Inicial</a></li>
+                  <li class="menu-item"><a href="{{url_for('home')}}" class="active">Pagina Inicial</a></li>
 
                   <li class="menu-item mega-menu">
                       <a href="#">Conceitos +</a>
@@ -38,10 +38,10 @@
                           <div class="mega-menu-col">
                               <h5>Conceitos</h5>
                               <ul class="mega-sub-menu">
-                                  <li><a href="#">Introdução ao Scrum</a></li>
-                                  <li><a href="#">Scrum vs Kanban</a></li>
-                                  <li><a href="#">Definition of Done</a></li>
-                                  <li><a href="#">Definition of Ready</a></li>
+                                  <li><a href="{{url_for('conceitos', id='introducao')}}">Introdução ao Scrum</a></li>
+                                  <li><a href="{{url_for('conceitos', id='kanban')}}">Scrum vs Kanban</a></li>
+                                  <li><a href="{{url_for('conceitos', id='definitionReadyDone')}}#dod">Definition of Done</a></li>
+                                  <li><a href="{{url_for('conceitos', id='definitionReadyDone')}}#dor">Definition of Ready</a></li>
 
                         
                               </ul>
@@ -49,31 +49,33 @@
                           <div class="mega-menu-col">
                               <h5>Papéis</h5>
                               <ul class="mega-sub-menu">
-                                  <li><a href="#">Scrum Master</a></li>
-                                  <li><a href="#">Product Owner</a></li>
-                                  <li><a href="#">DEVs</a></li>
+                                  <li><a href="{{url_for('responsabilidades', id='scrum')}}">Scrum Master</a></li>
+                                  <li><a href="{{url_for('responsabilidades', id='po')}}">Product Owner</a></li>
+                                  <li><a href="{{url_for('responsabilidades', id='dev')}}">DEVs</a></li>
                                 
                               </ul>
                           </div>
                           <div class="mega-menu-col">
                               <h5>Eventos de Scrum</h5>
                               <ul class="mega-sub-menu">
-                                  <li><a href="#">Sprint </a></li>
-                                  <li><a href="#">Sprint Planning </a></li>
-                                  <li><a href="#">Daily Scrum</a></li>
-                                  <li><a href="#">Sprint Review </a></li>
-                                  <li><a href="#">Sprint Retrospective </a></li>
+                                <li><a href="{{url_for('eventos_scrum')}}#introducao">Definição</a></li>
+                                <li><a href="{{url_for('eventos_scrum')}}#sprint">Sprint</a></li>
+                                <li><a href="{{url_for('eventos_scrum')}}#sprint-planning">Sprint Planning</a></li>
+                                <li><a href="{{url_for('eventos_scrum')}}#daily-scrum">Daily Scrum</a></li>
+                                <li><a href="{{url_for('eventos_scrum')}}#sprint-review">Sprint Review</a></li>
+                                <li><a href="{{url_for('eventos_scrum')}}#sprint-retrospective">Sprint Retrospective</a></li>
                               
                               </ul>
                           </div>
                           <div class="mega-menu-col">
                               <h5>Artefatos de Scrum</h5>
                               <ul class="mega-sub-menu">
-                                  <li><a href="#">Sprint Backlog</a></li>
-                                  <li><a href="#">MVP</a></li>
-                                  <li><a href="#">Product Increment</a></li>
-                                  <li><a href="#">Product Backlog</a></li>
-                                  <li><a href="#">Estimativas</a></li>
+                                <li><a href="{{url_for('artefatos_scrum', id='sprint-backlog')}}">Sprint Backlog</a></li>
+                                <li><a href="{{url_for('artefatos_scrum', id='mvp')}}">MVP</a></li>
+                                <li><a href="{{url_for('artefatos_scrum', id='productincrement')}}">Product Increment</a></li>
+                                <li><a href="{{url_for('artefatos_scrum', id='productbacklog')}}">Product Backlog</a></li>
+                                <li><a href="{{url_for('estimativas')}}">Estimativas</a></li>
+                                 
                                  
                               </ul>
                           </div>
@@ -84,8 +86,8 @@
                       <a href="#">Ferramentas +</a>
                       <div class="sub-menu-wrapper slideInUp">
                           <ul class="sub-menu">
-                              <li class="menu-item"><a href="#">Questionários</a></li>
-                              <li class="menu-item"><a href="#">Flashcards</a></li>
+                              <li class="menu-item"><a href="{{url_for('questionarios_home')}}">Questionários</a></li>
+                              <li class="menu-item"><a href="{{url_for('flashcards')}}">Flashcards</a></li>
                        
                           </ul>
                       </div>
@@ -98,7 +100,7 @@
           <!-- Mobile menu -->
           <div id="mobile-menu" class="mobile-menu hidden slideInDown">
               <ul>
-                  <li class="menu-item"><a href="#" class="active">Página Inicial</a></li>
+                  <li class="menu-item"><a href="{{url_for('home')}}" class="active">Página Inicial</a></li>
 
                   <li class="menu-item mega-menu">
                       <a href="#">Conceitos +</a>
@@ -106,39 +108,42 @@
                           <div class="mega-menu-col">
                               <h5>Conceitos</h5>
                               <ul class="mega-sub-menu">
-                                  <li><a href="#">Introdução ao Scrum</a></li>
-                                  <li><a href="#">Scrum vs Kanban</a></li>
-                                  <li><a href="#">Definition of Done (DOD)</a></li>
-                                  <li><a href="#">Definition of Ready (DOR)</a></li>
+                                  <li><a href="{{url_for('conceitos', id='introducao')}}">Introdução ao Scrum</a></li>
+                                  <li><a href="{{url_for('conceitos', id='kanban')}}">Scrum vs Kanban</a></li>
+                                  <li><a href="{{url_for('conceitos', id='definitionReadyDone')}}#dod">Definition of Done (DOD)</a></li>
+                                  <li><a href="{{url_for('conceitos', id='definitionReadyDone')}}#dor">Definition of Ready (DOR)</a></li>
                              
                               </ul>
                           </div>
                           <div class="mega-menu-col">
                               <h5>Papéis</h5>
                               <ul class="mega-sub-menu">
-                                  <li><a href="#">Scrum Master</a></li>
-                                  <li><a href="#">Product Owner </a></li>
-                                  <li><a href="#">DEVs</a></li>
+                                  <li><a href="{{url_for('responsabilidades', id='scrum')}}">Scrum Master</a></li>
+                                  <li><a href="{{url_for('responsabilidades', id='po')}}">Product Owner </a></li>
+                                  <li><a href="{{url_for('responsabilidades', id='dev')}}">DEVs</a></li>
                            
                               </ul>
                           </div>
                           <div class="mega-menu-col">
                               <h5>Eventos de Scrum</h5>
                               <ul class="mega-sub-menu">
-                                  <li><a href="#">Menu block item 1</a></li>
-                                  <li><a href="#">Menu block item 2</a></li>
-                                  <li><a href="#">Menu block item 3</a></li>
+                                    <li><a href="{{url_for('eventos_scrum')}}#introducao">Definição</a></li>
+                                    <li><a href="{{url_for('eventos_scrum')}}#sprint">Sprint</a></li>
+                                    <li><a href="{{url_for('eventos_scrum')}}#sprint-planning">Sprint Planning</a></li>
+                                    <li><a href="{{url_for('eventos_scrum')}}#daily-scrum">Daily Scrum</a></li>
+                                    <li><a href="{{url_for('eventos_scrum')}}#sprint-review">Sprint Review</a></li>
+                                    <li><a href="{{url_for('eventos_scrum')}}#sprint-retrospective">Sprint Retrospective</a></li>
                               
                               </ul>
                           </div>
                           <div class="mega-menu-col">
                               <h5>Artefatos de Scrum</h5>
                               <ul class="mega-sub-menu">
-                                  <li><a href="#">Sprint Backlog</a></li>
-                                  <li><a href="#">MVP</a></li>
-                                  <li><a href="#">Product Increment</a></li>
-                                  <li><a href="#">Product Backlog</a></li>
-                                  <li><a href="#">Estimativas</a></li>
+                                  <li><a href="{{url_for('artefatos_scrum', id='sprint-backlog')}}">Sprint Backlog</a></li>
+                                  <li><a href="{{url_for('artefatos_scrum', id='mvp')}}">MVP</a></li>
+                                  <li><a href="{{url_for('artefatos_scrum', id='productincrement')}}">Product Increment</a></li>
+                                  <li><a href="{{url_for('artefatos_scrum', id='productbacklog')}}">Product Backlog</a></li>
+                                  <li><a href="{{url_for('estimativas')}}">Estimativas</a></li>
                                  
                               </ul>
                           </div>
@@ -149,8 +154,8 @@
                       <a href="#">Ferramentas +</a>
                       <div class="sub-menu-wrapper">
                           <ul class="sub-menu">
-                              <li class="menu-item"><a href="#">Questionários</a></li>
-                              <li class="menu-item"><a href="#">Flashcards</a></li>
+                              <li class="menu-item"><a href="{{url_for('questionarios_home')}}">Questionários</a></li>
+                              <li class="menu-item"><a href="{{url_for('flashcards')}}">Flashcards</a></li>
                              
                           </ul>
                       </div>

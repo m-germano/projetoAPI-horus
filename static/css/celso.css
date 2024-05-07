@@ -1,4 +1,4 @@
-h1 {
+.content-main h1 {
     color: var(--green-theme);
     font-weight: 700;
     font-family: "Arvo", serif;
@@ -7,7 +7,7 @@ h1 {
 
 }
 
-h2 {
+.content-main h2 {
     color: var(--green-theme);
     font-weight: 400;
     font-family: "Arvo", serif;
@@ -15,20 +15,22 @@ h2 {
 
 }
 
-p {
+.content-main p {
     line-height: 2.5rem;
     font-family: "Arvo", serif;
     font-size: 1.2rem;
     margin: 2rem 0;
+    color: black;
 
 }
 
 
 /* ================================================================= */
 
+
 .div_principal {
     width: 100%;
-
+    
 }
 
 .div_conteudo {
@@ -38,10 +40,18 @@ p {
     margin-bottom: 10vh;
     display: flex;
     flex-direction: column;
+    
 }
+
+.div_conteudo h1,h2,h3,p{
+    color: black;
+}
+
+
 
 .img {
     text-align: center;
+    margin-block: 5rem;
 }
 
 .div_conteudo h1 {
@@ -122,3 +132,4 @@ h4 {
 .quiz-link a:hover {
     transform: scale(1.1);
 }
+
