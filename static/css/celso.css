@@ -1,3 +1,13 @@
+.content-main{
+        /* width: 60%;
+        margin: 0 auto;
+        margin-top: 10vh;
+        margin-bottom: 10vh;
+        display: flex;
+        flex-direction: column;
+        background-color: white; */
+}
+
 .content-main h1 {
     color: var(--green-theme);
     font-weight: 700;
@@ -21,6 +31,7 @@
     font-size: 1.2rem;
     margin: 2rem 0;
     color: black;
+   
 
 }
 
@@ -34,12 +45,12 @@
 }
 
 .div_conteudo {
-    width: 60%;
-    margin: 0 auto;
-    margin-top: 10vh;
-    margin-bottom: 10vh;
-    display: flex;
-    flex-direction: column;
+        width: 60%;
+        margin: 0 auto;
+        margin-top: 10vh;
+        margin-bottom: 10vh;
+        display: flex;
+        flex-direction: column;
     
 }
 
@@ -52,6 +63,7 @@
 .img {
     text-align: center;
     margin-block: 5rem;
+    max-width: 100%;
 }
 
 .div_conteudo h1 {
