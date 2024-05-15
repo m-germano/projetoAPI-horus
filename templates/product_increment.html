@@ -1,27 +1,40 @@
 {% extends 'base.html' %}
 
-{%block css%} <link rel="stylesheet" href="../static/css/product.css"> {%endblock css%}
+{%block css%} <link rel="stylesheet" href="../static/css/eventos.css"> {%endblock css%}
     
 {% block title %} Product Increment {% endblock title %}
 
 {%block conteudo%}
 
-<main class="principal">
+<main class="container-eventos">
+
+    <div class="sumario">
+        <details>
+            <summary>Sumário</summary>
+            <ol>
+                <li><a href="#introducao" >Introdução</a></li>
+                <li><a href="#OqueEh" >O que é o Product Increment?</a></li>
+                <li><a href="#implementacao" >Como implementar o Product Increment </a></li>
+                <li><a href="#beneficios" >Benefícios do Product Increment</a></li>
+                <li><a href="#Praticas" >Práticas para otimizar o uso do Product Increment</a></li>
+            </ol>
+        </details>
+    </div>
 
     <!-- Sobre o que é a pagina -->
-    <div class="principal-content">
+    <div class="section-content">
         <p> Nesta página, encontra-se uma explicação abrangente sobre o conceito de Product Increment. Contudo, para uma compreensão completa, é de suma importância que as páginas anteriores já tenham sido estudadas e compreendidas. </p>
     </div>
 
     <!-- Introdução -->
-    <div class="principal-content">
-        <h1> Introdução </h1>
+    <div class="section-content">
+        <h1 id="introducao"> Introdução </h1>
         <p> O Product Increment é uma abordagem eficaz para aumentar a produtividade e entregar valor de forma contínua aos clientes. </p>
     </div>
 
     <!-- O que é -->
-    <div class="principal-content">  
-        <h1> O que é o Product Increment </h1>
+    <div class="section-content">  
+        <h1 id="OqueEh"> O que é o Product Increment </h1>
         <p> O Product Increment é um conceito fundamental dentro do framework Scrum. Ele representa o resultado tangível e funcional de um Sprint, que é a unidade básica de trabalho no Scrum. O Product Increment é uma versão do produto que está em constante evolução e que agrega valor ao cliente. </p>
     </div>
 
@@ -30,8 +43,8 @@
     </div>
 
     <!-- Como implementar o no seu projeto -->
-    <div class="principal-content" >
-        <h1> Como implementar o Product Increment no seu projeto </h1>
+    <div class="section-content" >
+        <h1 id="implementacao"> Como implementar o Product Increment </h1>
         <p> A implementação do Product Increment requer uma série de passos e práticas específicas. Aqui estão algumas orientações para ajudá-lo a implementar o Product Increment no seu projeto. </p>
         <h2> Estabeleça uma visão clara </h2>
         <p> Estabeleça uma visão clara para o produto em desenvolvimento. Isso fornecerá direção para o trabalho da equipe e assegurará que todos estejam alinhados com os objetivos do projeto. </p>
@@ -43,14 +56,14 @@
         <p> Durante o Sprint, a equipe se dedicará ao desenvolvimento das funcionalidades prioritárias. É essencial manter uma comunicação contínua e colaborativa entre os membros da equipe para assegurar um progresso eficaz. </p>
         <h2> Realize revisões e retrospectivas </h2>
         <p> Ao término de cada Sprint, conduza uma revisão do incremento desenvolvido e uma retrospectiva do trabalho realizado. Isso possibilitará que a equipe avalie seu desempenho, aprenda com os erros e efetue ajustes para aprimorar o processo no próximo Sprint. </p>
-    </div class="principal-content">
+    </div>
 
     <div class="img">
         <img src="/static/imagens/product-increment-progress.png" alt="">
     </div>
 
-    <div class="principal-content" >
-        <h1> Benefícios do Product Increment </h1>
+    <div class="section-content" >
+        <h1 id="beneficios"> Benefícios do Product Increment </h1>
         <p> A adoção do Product Increment pode trazer uma série de benefícios significativos para as equipes de desenvolvimento de software. Aqui estão alguns dos principais benefícios. </p>
         <h2> Entrega de valor contínua </h2>
         <p> O Product Increment permite que a equipe entregue valor de forma contínua ao cliente. A cada Sprint, novas funcionalidades são adicionadas ao produto, garantindo que o cliente possa aproveitar os benefícios o mais rápido possível. </p>
@@ -62,19 +75,19 @@
         <p> Com as retrospectivas realizadas ao final de cada Sprint, a equipe tem a oportunidade de identificar áreas de melhoria e fazer ajustes no processo. Isso leva a um aprimoramento contínuo do trabalho e da produtividade da equipe. </p>
     </div>
 
-    <div class="principal-content" >
-        <h1> Práticas para otimizar o uso do Product Increment </h1>
+    <div class="section-content" >
+        <h1 id="praticas"> Práticas para otimizar o uso do Product Increment </h1>
         <p> Para otimizar o uso do Product Increment e obter melhores resultados, aqui estão algumas práticas recomendadas: </p>
-        <ol>
-            <li class="li"><a class="a"> Comunicação eficaz </a></li>
-            <li class="li"><a class="a"> Feedback contínuo </a></li>
-            <li class="li"><a class="a"> Priorização adequada </a></li>
-            <li class="li"><a class="a"> Autonomia da equipe </a></li>
-            <li class="li"><a class="a"> Aprendizado contínuo </a></li>
-        </ol>
-    </div class="principal-content" >
+        <ul>
+            <li> Comunicação eficaz </li>
+            <li> Feedback contínuo </li>
+            <li> Priorização adequada </li>
+            <li> Autonomia da equipe </li>
+            <li> Aprendizado contínuo </li>
+        </ul>
+    </div>
     <br>
-    <div class="principal-content">
+    <div class="section-content">
         <p> O Product Increment é uma abordagem eficaz para o desenvolvimento de produtos de software. Ao implementar esse conceito no seu projeto, você poderá aumentar a produtividade da equipe, entregar valor contínuo ao cliente e obter resultados de alta qualidade. Lembre-se de seguir as melhores práticas e adaptar o Product Increment às necessidades específicas do seu projeto. Aumente a produtividade com o  Product Increment e alcance o sucesso em seus projetos de desenvolvimento de software. </p>
     </div>
 
