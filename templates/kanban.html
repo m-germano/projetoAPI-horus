@@ -8,190 +8,134 @@
 
 {% block conteudo %}
 
-<main> 
-    <div class='background'>
-        <div>
-            <div class="container-fluid p-5  text-white text-center">
-                <h1 class="display-2">Kanban</h1>
-                <p class="subt">Metodologia de Gestão de Projetos</p> 
-            </div>
-            
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <h3 class="subt2">Conceitos</h3>
-                            <p class="topic">- Visualização do trabalho;<br>- Limitação do trabalho;<br>
-                                - Gestão de Fluxo;<br>- Melhoria continua.
-                            </p>
-                        </div>
-                        <div class="col-md-4">
-                            <h3 class="subt2">Aplicação</h3>
-                            <p class="topic">- Projeto do Quadro; <br>- Gestão do Fluxo;<br>- Análise e Melhoria.</p>
-                        </div>
-                        <div class="col-md-4">
-                            <h3 class="subt2">Vantagens</h3>
-                            <p class="topic">- Visualização Clara do Trabalho; <br>- Flexibilidade;<br>
-                                - Gestão de Fluxo Eficiente.</p></p>
-                        </div>
-                    </div>
-                </div>
-        </div>
 
-        <!--Conceitos-->
-        <div class='fundo'>
-            <h3 class='titulo'>Conceitos</h3>
-                <div class="space">
-                    <div class="textos">
-                        <h4 class='subt3'>Visualização do Trabalho:</h4>
-                        <p class="texto">
-                            O Kanban utiliza um quadro visual (geralmente dividido em colunas) para representar o fluxo de trabalho. Cada item de trabalho é representado por um cartão ou post-it, e o movimento desses itens pelas colunas do quadro reflete o progresso do trabalho.
-                        </p>
-                
-                        <h4 class='subt3'>Limitação do Trabalho em Progresso (WIP):</h4>
-                        <p class='texto'>
-                            O Kanban enfatiza a importância de limitar o trabalho em progresso em cada etapa do processo. Isso ajuda a evitar gargalos e sobrecarga, mantendo um fluxo de trabalho mais suave.
-                        </p>
-                
-                        <h4 class='subt3'>Gestão do Fluxo:</h4>
-                        <p class='texto'>
-                            O objetivo do Kanban é maximizar a eficiência do fluxo de trabalho, garantindo que o trabalho flua de forma contínua e rápida pelas etapas do processo.
-                        </p>
-                
-                        <h4 class='subt3'>Feedback contínuo e melhoria:</h4>
-                        <p class='texto'>
-                            O Kanban encoraja a busca contínua por melhorias no processo. Isso é feito através da análise do desempenho do quadro Kanban e da identificação de oportunidades para otimizar o fluxo de trabalho.<br><br>
-                        </p>
-                    </div>
-
-                    <div>
-                        <img src="../static/imagens/kanban1.png" alt="KanbanVerde" class='imagem'>
-                    </div>
-                </div>
-        </div>
-
-        <!--Aplicação-->
-        <div class='fundo-ap'>
-            <h3 class='titulo-ap'>Aplicação</h3>
-                <div class="space">
-                    <div class="textos-ap">
-                        <h4 class='subt-ap'>Projeto do Quadro Kanban</h4>
-                        <p class="texto-ap">
-                            Desenhar e configurar o quadro Kanban é fundamental para refletir as etapas do processo de trabalho da equipe. Isso envolve planejar cada coluna do quadro com cuidado para acompanhar o progresso das tarefas e permitir ajustes conforme necessário ao longo do tempo.
-                        </p>
-                
-                        <h4 class='subt-ap'>Gestão do Fluxo de Trabalho</h4>
-                        <p class='texto-ap'>
-                            Movimentar os cartões pelo quadro e garantir um fluxo de trabalho contínuo são aspectos essenciais do Kanban. A equipe deve monitorar o progresso das tarefas e resolver bloqueios prontamente para garantir uma entrega eficiente e no prazo.
-                        </p>
-                
-                        <h4 class='subt-ap'>Análise e Melhoria Contínua</h4>
-                        <p class='texto-ap'>
-                            Rever regularmente o desempenho do quadro Kanban, identificar áreas de oportunidade para melhorias e implementar ajustes são práticas cruciais para garantir a eficácia contínua do método Kanban. Isso permite que a equipe otimize o fluxo de trabalho e aumente a eficiência ao longo do tempo.
-                        </p>
-                    </div>
-                </div>
-        </div>
-
-         <!--Kanban vs Scrum-->
-         <div class='fundo-sc'>
-            <h3 class='titulo-sc'>Kanban vs Scrum</h3>
-              
-                    <div class="textos-sc">
-                        <div class='display-flex'>
-                            <div class="display-flex-card">
-                                <h4 class='titulo-sc'>Kanban</h4>
-                                <p class="texto-sc">
-                                    Uma abordagem mais flexível, focada na melhoria contínua do fluxo de trabalho. Não tem iterações fixas e não possui papéis ou cerimônias prescritas. Além disso, o Kanban enfatiza a visualização do trabalho, limitação do trabalho em progresso e gestão do fluxo.
-                                </p>
-                                <div class="display-flex-card-img"><img src='../static/imagens/quadro kanban.jpg' alt='QuadroKanban' class='quadro-kanban'></div>
-                            </div>
-                            <div class="display-flex-card" >
-                                <h4>Scrum</h4>
-                                <p class='texto-sc'>
-                                    Estrutura mais prescritiva, com papéis definidos (Product Owner, Scrum Master, Team) e cerimônias como Sprint Planning, Daily Standups, Sprint Review e Sprint Retrospective. O Scrum é conhecido por suas iterações de tempo fixo chamadas de sprints e enfatiza a colaboração e a comunicação entre os membros da equipe.
-                                </p>
-                                <div class="display-flex-card-img"><img src='../static/imagens/tabela-scrum.png' alt='QuadroScrum' class='quadro-scrum'></div>
-                            </div>
-                        </div>
-                        
-                
-                        <div class="kanban-content">     
-                            <h4>Diferenças</h4>
-                            <div  class='display-flex2'>
-                                <div class="display-flex2-card"><p>Kanban: Uma abordagem mais flexível, focada na melhoria contínua do fluxo de trabalho. Não tem iterações fixas e não possui papéis ou cerimônias prescritas. Além disso, o Kanban enfatiza a visualização do trabalho, limitação do trabalho em progresso e gestão do fluxo.</p></div>
-                                <div class="display-flex2-card"><p>Scrum: Estrutura mais prescritiva, com papéis definidos (Product Owner, Scrum Master, Team) e cerimônias como Sprint Planning, Daily Standups, Sprint Review e Sprint Retrospective. O Scrum é conhecido por suas iterações de tempo fixo chamadas de sprints e enfatiza a colaboração e a comunicação entre os membros da equipe.</p></div>
-                            </div>
-                        </div>
-
-                        <div class="kanban-content">
-                        <h4>Qual a melhor estratégia?</h4>
-                        <p>A escolha entre Kanban e Scrum depende das necessidades específicas da equipe ou organização, bem como do contexto do projeto. Alguns pontos a considerar ao tomar essa decisão incluem o grau de flexibilidade desejado, a natureza do trabalho a ser realizado, a maturidade da equipe em relação às práticas ágeis e a capacidade de adaptação a mudanças. Em geral, o Kanban pode ser mais adequado para equipes que lidam com fluxos de trabalho variáveis e que valorizam a flexibilidade, enquanto o Scrum pode ser preferível para projetos que exigem iterações fixas e uma estrutura mais prescritiva.</p>
-                        <div><img src='../static/imagens/versus.png' rel='versus' class='imgfim'></div>
-                        </div>
-                    </div>
-        </div>
-    </div> 
-
-    <div class="card-grid">
-        <div id="card-left" class="card">
-          <div class="card-face card-face__front-content">
-            <h4>Qual é uma das principais diferenças entre Scrum e Kanban?</h4>
-            <button class="btn" parent-id="card-left" toggle-class='card__rotate-left' >Resposta</button>
-          </div>
-          <div class="card-face card-face__back-content card-face__rotate-left">
-            <div>
-              <p>Uma das principais diferenças entre Scrum e Kanban é o modo como o trabalho é planejado e gerenciado. No Scrum, o trabalho é dividido em iterações chamadas de "sprints", enquanto no Kanban, o trabalho é visualizado em um quadro Kanban e as tarefas são movidas por colunas, sem a necessidade de iterações definidas.</p>
-            </div>
-            
-            <button class="btn" parent-id="card-left" toggle-class='card__rotate-left' >Pergunta</button>
-          </div>
-        </div>
+<div class='no-padding'> 
+    <section class='kanban-principal'>
+        <h1>Kanban</h1>
+        <p>Metodologia de Gestão de Projetos</p>
         
-        <div id="card-right" class="card">
-          <div class="card-face card-face__front-content">
-            <h4>Como o Scrum e o Kanban diferem em relação ao foco no tempo e nas iterações?</h4>
-            <button class="btn" parent-id="card-right" toggle-class='card__rotate-right' >Resposta</button>
-          </div>
-          <div class="card-face card-face__right card-face__back-content card-face__rotate-right">
-              <p>Enquanto o Scrum tem um foco forte no tempo e no conceito de sprints com duração fixa, o Kanban não tem iterações predefinidas e se concentra mais na capacidade de resposta às demandas do trabalho em andamento, permitindo um fluxo contínuo de trabalho.</p>
-     
-            <button class="btn" parent-id="card-right" toggle-class='card__rotate-right' >Pergunta</button>
-          </div>
+        <div class='subtitulos'>
+            <div>
+                <a href='#conceitos'>
+                    <h2 class=''>Conceitos</h2>
+                </a>
+                <ul>
+                    <li>- Visualização do trabalho;</li>
+                    <li>- Limitação do trabalho;</li>
+                    <li>- Gestão de Fluxo;</li>
+                    <li>- Melhoria continua.</li>
+                </ul>
+            </div>
+
+            <div>
+                <a href='#Aplicação'>
+                    <h2>Aplicação</h2>
+                </a>
+
+                <ul>
+                    <li>- Projeto do Quadro;</li>
+                    <li>- Gestão do Fluxo;</li>
+                    <li>- Análise e Melhoria.</li>
+                </ul>
+            </div>
+
+            <div>
+                <a href='#vantagens'>
+                    <h2>Vantagens</h2>
+                </a>
+
+                <ul>
+                    <li>- Visualização Clara do Trabalho;</li>
+                    <li>- Flexibilidade;</li>
+                    <li>- Gestão de Fluxo Eficiente.</li>
+                </ul>
+            </div>
         </div>
-      </div>
+    </section>
+
+    <section class='conceitos'id='conceitos'>
+
+        <h1>Conceitos</h1>
+
+        <div class='display-flex'>    
+            <div class="content-flex">             
+                <h3>Visualização do Trabalho:</h3>
+                <p>
+                    O Kanban utiliza um quadro visual (geralmente dividido em colunas) para representar o fluxo de trabalho. Cada item de trabalho é representado por um cartão ou post-it, e o movimento desses itens pelas colunas do quadro reflete o progresso do trabalho.
+                </p>
+        
+                <h3>Limitação do Trabalho em Progresso (WIP):</h3>
+                <p>
+                    O Kanban enfatiza a importância de limitar o trabalho em progresso em cada etapa do processo. Isso ajuda a evitar gargalos e sobrecarga, mantendo um fluxo de trabalho mais suave.
+                </p>
+        
+                <h3>Gestão do Fluxo:</h3>
+                <p>
+                    O objetivo do Kanban é maximizar a eficiência do fluxo de trabalho, garantindo que o trabalho flua de forma contínua e rápida pelas etapas do processo.
+                </p>
+            
+                <h3>Feedback contínuo e melhoria:</h3>
+                <p>
+                    O Kanban encoraja a busca contínua por melhorias no processo. Isso é feito através da análise do desempenho do quadro Kanban e da identificação de oportunidades para otimizar o fluxo de trabalho.<br><br>
+                </p>
+            </div>
+
+            <div class="content-flex">
+                <img src="/static/imagens/kanban1.png" class='img' alt="QuadroKanban">
+            </div>    
+        </div>
+    </section>
+
+    <section class='aplicação' id='Aplicação'>
+        <h1>Aplicação</h1>
+        <div>
+                <h3>Projeto do Quadro Kanban</h3>
+                <p>
+                    Desenhar e configurar o quadro Kanban é fundamental para refletir as etapas do processo de trabalho da equipe. Isso envolve planejar cada coluna do quadro com cuidado para acompanhar o progresso das tarefas e permitir ajustes conforme necessário ao longo do tempo.
+                </p>
+        
+                <h3 >Gestão do Fluxo de Trabalho</h3>
+                <p>
+                    Movimentar os cartões pelo quadro e garantir um fluxo de trabalho contínuo são aspectos essenciais do Kanban. A equipe deve monitorar o progresso das tarefas e resolver bloqueios prontamente para garantir uma entrega eficiente e no prazo.
+                </p>
+        
+                <h3>Análise e Melhoria Contínua</h3>
+                <p>
+                    Rever regularmente o desempenho do quadro Kanban, identificar áreas de oportunidade para melhorias e implementar ajustes são práticas cruciais para garantir a eficácia contínua do método Kanban. Isso permite que a equipe otimize o fluxo de trabalho e aumente a eficiência ao longo do tempo.
+               </p>
+            </div>
+        </div>
+    </section>
+
+    <section class='vantagens' id='vantagens'>
+
+        <h1>Kanban vs Scrum</h1>
+          
+            <div class='display-flex'>
+                <div class='card'>
+                    <h3>Kanban</h3>
+                    <p>
+                        Uma abordagem mais flexível, focada na melhoria contínua do fluxo de trabalho. Não tem iterações fixas e não possui papéis ou cerimônias prescritas. Além disso, o Kanban enfatiza a visualização do trabalho, limitação do trabalho em progresso e gestão do fluxo.
+                    </p>
+                    <div><img src='/static/imagens/kanbanquadro.png' alt='QuadroKanban' class='quadro-kanban'></div>
+                </div>
+
+                <div class='card'>
+                    <h3>Scrum</h3>
+                    <p>
+                        Estrutura mais prescritiva, com papéis definidos (Product Owner, Scrum Master, Team) e cerimônias como Sprint Planning, Daily Standups, Sprint Review e Sprint Retrospective. O Scrum é conhecido por suas iterações de tempo fixo chamadas de sprints e enfatiza a colaboração e a comunicação entre os membros da equipe.
+                    </p>
+                    <div><img src='/static/imagens/quadro-scrum.png' alt='QuadroScrum' class='quadro-kanban'></div>
+                </div>
+            </div>
+
+
+    </section>
+</div>
+
+
+
     
-      <script>
-        /*********************************************
-    * tested against chrome, safari, and firefox *
-    **********************************************/
-    
-    var btnList = document.getElementsByClassName('btn');
-    
-    for(var i = 0; i < btnList.length; i++) {
-      btnList[i].addEventListener("click", function() { 
-        flipCard(this); 
-      });
-    }
-    
-    function flipCard(_this) {
-      const parentNodeId = 'parent-id';
-      const toggleClassId = 'toggle-class';
-      const parentId = _this.getAttribute(parentNodeId);
-      const toggleId = _this.getAttribute(toggleClassId);
-      
-      if (parentId && toggleId) {
-        let card = document.getElementById(parentId);
-        if (card) {
-          card.classList.toggle(toggleId);
-        } else {
-          console.log('card not found')
-        }
-      } else {
-        console.log('parentId and/or toggleId not found')
-      }
-    }
-      </script>
-    
-</main>
+
 
 {% endblock conteudo %}
