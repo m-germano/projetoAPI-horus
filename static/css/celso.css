@@ -246,3 +246,9 @@ h4 {
         margin-top: 4rem
     }
 }
+
+.img {
+    text-align: center;
+    margin-block: 5rem;
+    max-width: 100%;
+}
