@@ -38,6 +38,7 @@ Desenvolver um site informativo simples e funcional sobre a Metodologia Ágil qu
 |**Matheus Germano da Silva**|Scrum Master|[@GitHub](https://github.com/m-germano)|
 |**Eduardo Fonseca Ribeiro**|Product Owner|[@GitHub](https://github.com/haisper)|
 |**Celso Moreira Freitas**|Desenvolvedor|[@GitHub](https://github.com/yCels)|
+|**Guilherme Henrique Cassula**|Desenvolvedor|[@GitHub](https://github.com/guih0412)|
 |**Josue da Cunha Olopes**|Desenvolvedor|[@GitHub](https://github.com/jo-olopes)|
 |**Vanessa da Costa Rodrigues**|Desenvolvedor|[@GitHub](https://github.com/Doryumi)|
 |**Victor Hugo Barbosa Souza**|Desenvolvedor|[@GitHub](https://github.com/victor4486)|

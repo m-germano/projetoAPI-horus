@@ -2,8 +2,6 @@
     width: 100%;
     margin: 0;
     padding:10rem 10%
-
-
 }
 
 .container-eventos h2{
@@ -54,4 +52,45 @@
     list-style: circle;
     margin-top: 3rem;
     margin-left: 6rem;
+}
+
+/* responsividade para resoluções até 768px, tablets e celulares*/
+/* pode alterar se quiser, só adicionei como eu tinha feito na minha pagina aqui */
+@media screen and (max-width: 768px) {
+    .container-eventos{
+        min-width: 320px;
+    }
+    
+    .container-eventos p{
+        font-size: 0.75rem;
+        margin-bottom: 0.5rem;
+        line-height: 1.5rem;
+    }
+    
+    .container-eventos h1{
+        font-size: 1.5rem;
+        margin: 0.5rem 0 0.5rem 0;
+    }
+    
+    .container-eventos h2{
+        font-size: 1rem;
+        margin: 1rem 0 1rem;
+    }
+    
+    .container-eventos img{
+        width: 95%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .section-content ul li{
+        font-size: 1rem;
+        margin-top: 2rem;
+        margin-top: 2rem;
+        margin-left: 0rem;
+    }
+
+    .section-content{
+        margin-top: 4rem
+    }
 }

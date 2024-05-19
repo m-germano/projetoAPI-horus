@@ -1,21 +1,34 @@
 {% extends 'base.html' %}
 
-{%block css%} <link rel="stylesheet" href="../static/css/product.css"> {%endblock css%}
+{%block css%} <link rel="stylesheet" href="../static/css/eventos.css"> {%endblock css%}
     
 {% block title %} Product Backlog {% endblock title %}
 
 {%block conteudo%}
 
-<main class="principal">
+<main class="container-eventos">
+
+    <div class="sumario">
+        <details>
+            <summary>Sumário</summary>
+            <ol>
+                <li><a href="#introducao">Introdução</a></li>
+                <li><a href="#OqueEh">O que é Product Backlog?</a></li>
+                <li><a href="#comoFunciona">Como funciona o Product Backlog? </a></li>
+                <li><a href="#refinamento">Como refinar o backlog</a></li>
+                <li><a href="#Download">Baixar Exemplo de Product Backlog</a></li>
+            </ol>
+        </details>
+    </div>
 
     <!-- Sobre o que é a pagina -->
-    <div class="principal-content">
+    <div class="section-content">
         <p> Nesta página, encontra-se uma explicação abrangente sobre o conceito de Product Backlog. Contudo, para uma compreensão completa, é de suma importância que as páginas anteriores já tenham sido estudadas e compreendidas. </p>
     </div>
     
     <!-- Introdução -->
-    <div class="principal-content">
-        <h1> Introdução </h1>
+    <div class="section-content">
+        <h1 id = "introducao"> Introdução </h1>
         <p> O backlog é uma forma de lista de tarefas comumente vinculada ao setor de TI, especialmente no contexto do desenvolvimento de produtos ou sistemas. Integrado a uma abordagem ágil de gestão, ele proporciona uma compreensão mais clara do escopo de um projeto, das prioridades e do progresso das sprints. </p>
     </div>
 
@@ -24,8 +37,8 @@
     </div>
 
     <!-- O que é -->
-    <div class="principal-content">
-        <h1> O que é Product Backlog </h1>
+    <div class="section-content">
+        <h1 id = "OqueEh" > O que é Product Backlog </h1>
         <p> Conforme mencionado anteriormente, o backlog, também conhecido como backlog de produto ou "product backlog", é uma relação de tarefas que engloba breves descrições de todas as funcionalidades desejadas para um produto específico, as quais ainda não foram atribuídas a um responsável. Este registro apresenta os requisitos essenciais para um projeto, ordenados de acordo com o valor que proporcionam ao cliente.</p>
         <p> Essas descrições podem se converter em tarefas que serão executadas futuramente pela sua equipe de desenvolvimento. Por conseguinte, ao seguir o seu fluxo de trabalho, torna-se mais simples priorizar as ações a serem realizadas em cada sprint.</p>
         <p> Idealmente, o gerenciamento do backlog deve ser conduzido pelo product owner, o qual é o gestor de produto encarregado de todos os aspectos de um software, desde os objetivos estratégicos até os detalhes da experiência do usuário. Discutimos sobre o papel do product owner em nosso artigo sobre gerenciamento de conflitos em equipes de TI. </p>
@@ -34,8 +47,8 @@
 
 
     <!-- Como funciona o Product Backlog -->
-    <div class="principal-content">
-        <h1> Como funciona o Product Backlog </h1>
+    <div class="section-content">
+        <h1 id="comoFunciona"> Como funciona o Product Backlog </h1>
         <p> Normalmente, a equipe e o "Product Owner", responsáveis pelo projeto, elaboram e priorizam os itens iniciais do backlog de produto. A ideia é que esses itens sejam suficientes para iniciar a primeira iteração (sprint) - o ato de repetir ou fazer novamente. Durante este estágio, surge o sprint backlog, composto pelas histórias que serão abordadas na iteração atual. </p>
 
         <p> É importante distinguir entre dois tipos de backlog: o de produto e o de sprint. O backlog de produto é criado uma vez e atualizado ao longo do projeto, enquanto o sprint backlog é criado no início de cada iteração. Além disso, enquanto o backlog de produto é geralmente atualizado semanalmente, o sprint backlog é revisado e atualizado diariamente.</p>
@@ -47,8 +60,8 @@
         <img src="/static/imagens/product-backlog-example.png" alt="">
     </div>
 
-    <div class="principal-content">
-        <h1> Como refinar o backlog </h1>
+    <div class="section-content">
+        <h1 id="refinamento" > Como refinar o backlog </h1>
 
         <p> Às vezes, obter um processo de backlog refinado pode ser um tremendo desafio. Dificuldades durante o planejamento das iterações (sprint backlogs), um backlog de produto enorme ou muito pequeno, a falta de atendimento durante um sprint… São vários os obstáculos que se impõem para o product owner, ou o gestor. </p>
 
@@ -62,8 +75,8 @@
         <p> Se você estiver refinando itens do backlog de produto com muitos meses de antecedência, destinados ao trabalho pela sua equipe de desenvolvimento, é aconselhável parar. Tal ação representaria uma perda de tempo, uma vez que os requisitos frequentemente figuram entre os elementos mais mutáveis do desenvolvimento de software. </p>
     </div>
     
-    <div class="principal-content">
-        <h1>Baixar Exemplo de Product Backlog</h1>
+    <div class="section-content">
+        <h1 id="Download" >Baixar Exemplo de Product Backlog</h1>
         <p>Para uma compreensão mais aprofundada do nosso processo de desenvolvimento, disponibilizamos um Product Backlog de exemplo. Este documento contém detalhes sobre as histórias de usuário, suas prioridades e os objetivos de cada sprint. Clique abaixo para iniciar o download e comece a explorar!</p>
          <a href="{{ url_for('static', filename='files/product-backlog-ex.pdf') }}" download onclick="confirmarAcao()">
         <button class="btn btn-outline-primary btn-lg">Download Product Backlog</button>
