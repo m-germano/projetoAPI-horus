@@ -1,11 +1,13 @@
-{% extends 'base.html' %}
+{% extends 'main/base.html' %}
 
 {%block css%}
-<link rel="stylesheet" href="../static/css/celso.css"> {%endblock css%}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/celso.css') }}"> 
+{%endblock css%}
 
 {% block title %}DEVs{% endblock title %}
 
 {%block conteudo%}
+{% include 'include_files/navbar-dropdown.html' %} 
 
 <div class="content-main">
     <div class="div_principal">
@@ -132,8 +134,8 @@
 
     <div class="quiz-link">
         <h2>Para reforçar o conhecimento adquirido nesse topico: </h2>
-        <a href="{{url_for('redirects.questionarios', id='dev')}}">Ir para questionário</a>
+        <a href="{{url_for('questionarios', id='dev')}}">Ir para questionário</a>
     </div>
     <div>
-
+        {% include 'include_files/footer.html' %}
         {%endblock conteudo%}

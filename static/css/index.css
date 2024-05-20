@@ -325,18 +325,20 @@ nav{
     align-items: flex-start;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+   justify-content: center;
   
     padding: 50px 0;
   }
   .ag-courses_item {
     -ms-flex-preferred-size: calc(33.33333% - 30px);
-    flex-basis: calc(33.33333% - 30px);
+    flex-basis: calc(70% - 30px);
   
-    margin: 0 15px 30px;
+    margin: 2rem 0;
   
     overflow: hidden;
   
     border-radius: 28px;
+    
   }
   .ag-courses-item_link {
     display: block;
@@ -369,6 +371,7 @@ nav{
   
     z-index: 2;
     position: relative;
+  
   }
   .ag-courses-item_date-box {
     font-size: 18px;
@@ -423,8 +426,8 @@ nav{
   
   @media only screen and (max-width: 979px) {
     .ag-courses_item {
-      -ms-flex-preferred-size: calc(50% - 30px);
-      flex-basis: calc(50% - 30px);
+      -ms-flex-preferred-size: calc(60% - 30px);
+      flex-basis: calc(70% - 30px);
     }
     .ag-courses-item_title {
       font-size: 24px;
@@ -626,4 +629,74 @@ nav{
         font-size: 1.2rem;
       
       }
+}
+
+
+.avaliacao-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  background-color: #f9f9f9;
+}
+
+.avaliacao-form h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.avaliacao-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.avaliacao-form input[type="text"],
+.avaliacao-form input[type="number"] {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+}
+
+.avaliacao-form-flex {
+  margin-bottom: 1.5rem;
+}
+
+.avaliacao-form-flex label {
+  display: inline-block;
+  margin-left: 0.5rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.avaliacao-form-flex input[type="checkbox"],
+.avaliacao-form-flex input[type="radio"] {
+  margin-left: 0;
+}
+
+.avaliacao-form-flex input[type="radio"] {
+  margin-right: 0.5rem;
+}
+
+.avaliacao-form-flex input[type="checkbox"] {
+  margin-bottom: 0.5rem;
+}
+
+.avaliacao-form input[type="submit"] {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.avaliacao-form input[type="submit"]:hover {
+  background-color: #0056b3;
 }

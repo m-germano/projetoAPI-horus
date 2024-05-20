@@ -1,9 +1,10 @@
-{% extends 'base2.html' %}
+{% extends 'main/base.html' %}
 
-{%block css%}<link rel="stylesheet" href="../static/css/index.css">{%endblock css%}
+{%block css%}<link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">{%endblock css%}
 {%block title%} SCRUM {%endblock title%}
 {%block conteudo%}
 
+{% include 'include_files/navbar-home.html' %} 
 
 <div class="container-video">
 
@@ -136,44 +137,35 @@
     <div class="ag-format-container">
         <div class="ag-courses_box">
           <div class="ag-courses_item">
-            <a href="{{url_for('redirects.conceitos', id='introducao')}}" class="ag-courses-item_link animated">
+            <a href="{{url_for('conceitos', id='introducao')}}" class="ag-courses-item_link animated">
               <div class="ag-courses-item_bg"></div>
       
               <div class="ag-courses-item_title">
-                Introdução ao SCRUM
+                Módulo 01: Introdução ao SCRUM
               </div>
       
           
             </a>
           </div>
 
+      
           <div class="ag-courses_item">
-            <a href="{{url_for('redirects.conceitos', id='kanban')}}" class="ag-courses-item_link animated">
+            <a href="{{url_for('responsabilidades', id='scrum')}}" class="ag-courses-item_link animated">
               <div class="ag-courses-item_bg"></div>
       
               <div class="ag-courses-item_title">
-                Scrum x Kanban
-              </div>
-            </a>
-          </div>
-      
-          <div class="ag-courses_item">
-            <a href="{{url_for('redirects.responsabilidades', id='scrum')}}" class="ag-courses-item_link animated">
-              <div class="ag-courses-item_bg"></div>
-      
-              <div class="ag-courses-item_title">
-                Responsabilidades
+                Módulo 02: Responsabilidades
               </div>
       
             </a>
           </div>
       
           <div class="ag-courses_item">
-            <a href="{{url_for('redirects.eventos_scrum')}}" class="ag-courses-item_link animated">
+            <a href="{{url_for('eventos_scrum')}}" class="ag-courses-item_link animated">
               <div class="ag-courses-item_bg"></div>
       
               <div class="ag-courses-item_title">
-                Eventos de Scrum
+                Módulo 03: Eventos de Scrum
               </div>
       
           
@@ -181,11 +173,11 @@
           </div>
       
           <div class="ag-courses_item">
-            <a href="{{url_for('redirects.artefatos_scrum', id='sprint-backlog')}}" class="ag-courses-item_link animated">
+            <a href="{{url_for('artefatos_scrum', id='sprint-backlog')}}" class="ag-courses-item_link animated">
               <div class="ag-courses-item_bg"></div>
       
               <div class="ag-courses-item_title">
-                Artefatos de Scrum
+                Módulo 04: Artefatos de Scrum
               </div>
       
              
@@ -193,16 +185,27 @@
           </div>
       
           <div class="ag-courses_item">
-            <a href="{{url_for('redirects.estimativas')}}" class="ag-courses-item_link animated">
+            <a href="{{url_for('estimativas')}}" class="ag-courses-item_link animated">
               <div class="ag-courses-item_bg"></div>
       
               <div class="ag-courses-item_title">
-                Estimativas
+                Módulo 05: Estimativas
               </div>
       
              
             </a>
           </div>
+
+          <div class="ag-courses_item">
+            <a href="{{url_for('avaliar')}}" class="ag-courses-item_link animated">
+              <div class="ag-courses-item_bg"></div>
+      
+              <div class="ag-courses-item_title">
+                Avalie nosso curso
+              </div>
+            </a>
+          </div>
+      
 
         </div>
       </div>
@@ -213,7 +216,7 @@
 
 <div class="container-quiz animated" id="quiz-container" >
     <h2 >Teste seus conhecimentos!</h2>
-    <a href="{{url_for('redirects.questionarios_home')}}" class="btn-flip animated-y" data-back="Acessar" data-front="Questionários"></a>
+    <a href="{{url_for('questionarios_home')}}" class="btn-flip animated-y" data-back="Acessar" data-front="Questionários"></a>
   
   </div>
    
@@ -257,5 +260,5 @@
     </div>
   </div>
 
-
+  {% include 'include_files/footer.html' %}
 {%endblock conteudo%}

@@ -14,6 +14,7 @@
 @import url('/static/css/product.css');
 @import url('/static/css/questionario.css');
 @import url('/static/css/estimativa.css');
+@import url('/static/css/avaliacao.css');
 
 
 :root {
@@ -656,5 +657,119 @@ font-size: 40px;
     flex-direction: column;
   }
 }
+
+
+.container-avaliacao{
+  margin-top: 5rem;
+
+}
+
+
+/* ########################TELA DE LOGIN E REGISTRO######################################## */
+.container-login{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.login-form{
+  background: #222;
+  padding: 6rem 6rem;
+  width: 60%;
+  margin: 0 auto;
+  border-radius: 3rem;
+  height: 65vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  
+ 
+}
+
+.login-form form{
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+
+  
+}
+
+.login-form h1{
+  font-size: 4rem;
+  margin:1rem auto;
+  color: #fff;
+  text-align: center;
+  font-weight: 700;
+}
+
+.login-form a{
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  
+}
+
+.input-login{
+  width: 70%;
+  margin: 0 auto;
+  border-radius: 0.5rem;
+  height: 4rem;
+  padding: 1rem;
+  transition: box-shadow 0.3s ease;
+  border: 1px solid #ced4da;
+
+}
+
+.input-login:focus {
+  box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.3); /* Adiciona uma sombra quando o campo está em foco */
+}
+
+.input-button{
+  width: 30%;
+  margin: 0 auto;
+  height: 4rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  transition: all 0.3s ease-in;
+  font-size: 1.3rem;
+}
+
+.input-button:hover{
+  transform: scale(1.02);
+
+}
+
+
+.btn-remover{
+  text-align: center;
+  text-decoration: none;
+ color: #fff;
+ font-weight: 400;
+
+ 
+
+ 
+}
+
+.table tbody{
+ 
+  vertical-align: middle;
+  text-align: center;
+
+
+}
+
+.table tbody td:last-child{
+  background-color: rgb(255, 110, 110);
+ 
+
+
+}
+
+
+
+
 
 

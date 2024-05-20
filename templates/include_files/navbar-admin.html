@@ -1,0 +1,87 @@
+
+<style>
+     .nav-admin {
+            width: 100%;
+            padding: 2rem;
+        }
+
+        .ul-admin {
+            display: flex;
+            flex-wrap: wrap; /* Permite que os itens quebrem para a linha abaixo quando não houver espaço suficiente */
+            justify-content: center;
+            gap: 1rem; /* Adiciona espaçamento entre os itens */
+            list-style: none; /* Remove os marcadores de lista */
+            padding: 0;
+            margin: 0;
+        }
+
+        .button-admin {
+            padding: 1rem 2rem;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            color: #fff;
+            background-color: #222;
+            transition: all 0.3s ease;
+            text-align: center; /* Centraliza o texto */
+            width: 100%; /* Define a largura como 100% para ocupar todo o espaço do item da lista */
+            max-width: 300px; /* Define uma largura máxima para os botões */
+        }
+
+        .button-admin a{
+            color: #fff;
+        }
+
+        .button-admin:hover {
+            background-color: #3d3d3d;
+        }
+
+        @media screen and (max-width: 1160px) {
+            .ul-admin {
+                flex-direction: column; /* Coloca os itens em coluna em telas menores */
+                align-items: center; /* Centraliza os itens */
+            }
+
+            .ul-admin li {
+                width: 100%; /* Define a largura dos itens como 100% */
+                margin-bottom: 1rem; /* Adiciona espaçamento entre os itens */
+            }
+
+         
+
+            .button-admin {
+                width: 100%; /* Garante que os botões ocupem toda a largura do item da lista */
+            }
+        }
+</style>
+
+<div class="nav-admin">
+        <ul class="ul-admin">
+            <li class="button-admin" ><a href="/" >Home</a></li>
+            <li class="button-admin" ><a href="/register">Novo Usuario</a></li>
+            <li class="button-admin"><a href="/avaliacoes" >Historico de Avaliacoes</a></li>
+            <li class="button-admin" ><a href="#" >Trocar minha senha</a></li>
+            <li class="button-admin"><a href="/logout">Logout</a></li>
+        </ul>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+         
+
+
+ 

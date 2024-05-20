@@ -1,13 +1,13 @@
 {% extends 'base.html' %}
 
-{%block css%}<link rel="stylesheet" href="../static/css/questionario.css">{%endblock css%}
+{%block css%}<link rel="stylesheet" href="{{ url_for('static', filename='css/questionario.css') }}">{%endblock css%}
 
     
-{% block title %}Quiz - Team DEVs{% endblock title %}
+{% block title %}Quiz - Product Owner{% endblock title %}
 
 {%block conteudo%}
 <div class="app-container">
-    <h1>Quiz - Team DEVs</h1>
+    <h1>Quiz - Product Owner</h1>
     <div class="quiz">
         <h2 id="questao-local">Local da Questao</h2>
         <div id="answer-buttons">
@@ -22,7 +22,7 @@
 
 </div>
 
-<img class="img-return" src="/static/imagens/return-58.svg" alt="" onclick="window.location.href='/responsabilidades/dev'">
+<img class="img-return" src="/static/imagens/return-58.svg" alt="" onclick="window.location.href='/responsabilidades/po'">
 
 {%endblock conteudo%}
-{%block script%}<script src="../static/js/questionario_dev.js"></script>{%endblock script%}
+{%block script%}<script src="../static/js/questionario_po.js"></script>{%endblock script%}

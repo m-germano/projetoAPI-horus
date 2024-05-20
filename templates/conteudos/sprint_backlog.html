@@ -1,11 +1,11 @@
-{% extends 'base.html' %}
+{% extends 'main/base.html' %}
 
 {%block css%}<link rel="stylesheet" href="../static/css/vanessa.css">{%endblock css%}
     
 {% block title %}Sprint Backlog{% endblock title %}
 
 {%block conteudo%}
-
+{% include 'include_files/navbar-dropdown.html' %} 
 <div class="introducao_conteudo">
 
     <div class="sumario">
@@ -86,5 +86,5 @@
 </div>
 
 <!-- https://awari.com.br/o-que-e-sprint-backlog-tudo-o-que-voce-precisa-saber-sobre-essa-ferramenta-de-gestao-agil/?utm_source=blog&utm_campaign=projeto+blog&utm_medium=O%20Que%20É%20Sprint%20Backlog:%20Tudo%20O%20Que%20Você%20Precisa%20Saber%20Sobre%20Essa%20Ferramenta%20De%20Gestão%20Ágil -->
-
+{% include 'include_files/footer.html' %}
 {%endblock conteudo%}
