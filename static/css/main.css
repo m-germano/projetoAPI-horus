@@ -200,8 +200,11 @@ a {
   background: cornflowerblue;
   width: 100%;
   height: 20vh;
-  margin-top: 10rem;
+  margin-top: 2rem;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
 }
 
