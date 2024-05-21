@@ -667,19 +667,20 @@ font-size: 40px;
 
 /* ########################TELA DE LOGIN E REGISTRO######################################## */
 .container-login{
-  min-height: 100vh;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 5rem;
 }
 .login-form{
   background: #222;
   padding: 6rem 6rem;
-  width: 60%;
-  margin: 0 auto;
+  width: 80%;
+  margin: 10rem;
   border-radius: 3rem;
-  height: 65vh;
+  
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -697,7 +698,7 @@ font-size: 40px;
 }
 
 .login-form h1{
-  font-size: 4rem;
+  font-size: 3rem;
   margin:1rem auto;
   color: #fff;
   text-align: center;
@@ -712,11 +713,11 @@ font-size: 40px;
 }
 
 .input-login{
-  width: 70%;
+  width: 90%;
   margin: 0 auto;
   border-radius: 0.5rem;
   height: 4rem;
-  padding: 1rem;
+  padding: 0.5rem;
   transition: box-shadow 0.3s ease;
   border: 1px solid #ced4da;
 
@@ -727,7 +728,8 @@ font-size: 40px;
 }
 
 .input-button{
-  width: 30%;
+  width: 60%;
+  max-width: 350px;
   margin: 0 auto;
   height: 4rem;
   padding: 1rem;
@@ -752,17 +754,39 @@ font-size: 40px;
 
  
 }
+@media screen and (max-width:768px){
+
+  .container-login{
+    background: #222;
+    height: 100vh;
+  }
+  .login-form {
+    padding: 5rem 0.1rem;
+    width: 100%;
+    margin-inline: 0;
+  
+  }
+  .login-form h1{
+    font-size: 2rem;
+  }
+
+  .login-form a:first-child{
+   overflow: hidden;
+  }
+}
+
 
 .table tbody{
  
   vertical-align: middle;
-  text-align: center;
+ 
 
 
 }
 
 .table tbody td:last-child{
   background-color: rgb(255, 110, 110);
+  text-align: center;
  
 
 

@@ -5,6 +5,8 @@ from flask_wtf import FlaskForm
 from wtforms import StringField, PasswordField, SubmitField
 from wtforms.validators import InputRequired, Length, ValidationError
 from flask_bcrypt import Bcrypt
+from wtforms.validators import EqualTo
+
 
 db = SQLAlchemy()
 app = Flask(__name__)
@@ -69,6 +71,15 @@ class databaseProjeto(db.Model):
         self.classificacao = classificacao
 
 
+class ChangePasswordForm(FlaskForm):
+    current_password = PasswordField(validators=[InputRequired(), Length(min=4, max=20)], render_kw={"placeholder": "Current Password"})
+    new_password = PasswordField(validators=[InputRequired(), Length(min=4, max=20)], render_kw={"placeholder": "New Password"})
+    confirm_new_password = PasswordField(validators=[InputRequired(), Length(min=4, max=20), EqualTo('new_password', message='Passwords must match')], render_kw={"placeholder": "Confirm New Password"})
+    submit = SubmitField("Change Password")
+
+
+
+
 ##########################################     APP ROUTE          ###################################################
 @app.route('/')
 def home():
@@ -107,6 +118,21 @@ def register():
         return redirect(url_for('login'))
     return render_template('login/register.html', form=form)
 
+
+@app.route('/change_password', methods=['GET', 'POST'])
+@login_required
+def change_password():
+    form = ChangePasswordForm()
+    if form.validate_on_submit():
+        if bcrypt.check_password_hash(current_user.password, form.current_password.data):
+            hashed_password = bcrypt.generate_password_hash(form.new_password.data).decode('utf-8')
+            current_user.password = hashed_password
+            db.session.commit()
+            flash("Password changed successfully", "success")
+            return redirect(url_for('dashboard'))
+        else:
+            flash("Current password is incorrect", "danger")
+    return render_template('login/change_password.html', form=form)
 
 @app.route('/conceitos/<id>')
 def conceitos(id):
