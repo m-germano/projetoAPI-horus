@@ -182,7 +182,9 @@ def questionarios(id):
     if id=="po":
         return render_template('questionarios/questionario_po.html')
     if id=="intro":
-        return render_template('questionarios/questionário_introdução.html')
+        return render_template('questionarios/questionario_introducao.html')
+    if id=="kanban":
+        return render_template('questionarios/questionario_kanban.html')
     
 @app.route('/estimativa')
 def estimativas():
