@@ -1,0 +1,53 @@
+{% extends 'main/base.html' %}
+
+{%block css%}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/avaliacao.css') }}"> 
+{%endblock css%}
+    
+{% block title %}Feedback{% endblock title %}
+
+{%block conteudo%}
+
+<div class="container-login">
+        
+    <div class="avaliacao-form">
+
+    
+        <h1>Avalie nosso curso</h1>
+
+        <form method="POST">
+
+            Nome Completo: <input type="text" name="nome" required><br>
+            Registro: <input type="text" name="registro" required><br>
+            Idade: <input type="number" name="idade" required><br>
+            
+            <div class="avaliacao-form-flex">
+                <label for="modulos_feitos">Modulos Feitos</label><br>
+                <input type="checkbox" name="modulos_feitos" value="1"> Modulo 1<br>
+                <input type="checkbox" name="modulos_feitos" value="2"> Modulo 2<br>
+                <input type="checkbox" name="modulos_feitos" value="3"> Modulo 3<br>
+                <input type="checkbox" name="modulos_feitos" value="4"> Modulo 4<br>
+                <input type="checkbox" name="modulos_feitos" value="5"> Modulo 5<br>
+            </div>
+
+            <div class="avaliacao-form-flex">
+                <label for="classificacao">Classificação:</label><br>
+                <input type="radio" id="1" name="classificacao" value="1" required>
+                <label for="1">1 Estrela</label><br>
+                <input type="radio" id="2" name="classificacao" value="2" required>
+                <label for="2">2 Estrelas</label><br>
+                <input type="radio" id="3" name="classificacao" value="3" required>
+                <label for="3">3 Estrelas</label><br>
+                <input type="radio" id="4" name="classificacao" value="4" required>
+                <label for="4">4 Estrelas</label><br>
+                <input type="radio" id="5" name="classificacao" value="5" required>
+                <label for="5">5 Estrelas</label><br><br>
+            </div>
+        
+
+            <input type="submit" value="Avaliar">
+        </form>
+    </div>
+</div>
+{%endblock conteudo%}
+

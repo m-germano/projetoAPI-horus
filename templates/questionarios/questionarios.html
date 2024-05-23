@@ -1,6 +1,6 @@
-{% extends 'base.html' %}
+{% extends 'main/base.html' %}
 
-{%block css%}<link rel="stylesheet" href="../static/css/questionario.css">{%endblock css%}
+{%block css%}<link rel="stylesheet" href="{{ url_for('static', filename='css/questionario.css') }}">{%endblock css%}
     
 {% block title %}Questionários{% endblock title %}
 
@@ -14,6 +14,7 @@
         <a href="{{url_for('questionarios', id='scrum-master')}}">Scrum Master</a>
         <a href="{{url_for('questionarios', id='po')}}">Product Owner</a>
         <a href="{{url_for('questionarios', id='dev')}}">Time de Desenvolvimento</a>
+        <a href="{{url_for('questionarios', id='intro')}}">Introdução</a>
     </div>
 </div>
 

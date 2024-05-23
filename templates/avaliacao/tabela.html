@@ -1,0 +1,41 @@
+{% extends 'main/base.html' %}
+{% block conteudo %}
+
+{% include 'include_files/navbar-admin.html' %} 
+
+<div class="section-content">
+<table class="table">
+    <thead class="table-dark">
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Nome Completo</th>
+            <th scope="col">Registro</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Módulos Feitos</th>
+            <th scope="col">Classificação</th>
+            <th scope="col">Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+    {% for item in lista %}
+        <tr>
+            <th scope="row">{{ item.id }}</th>
+            <td>{{ item.nome }}</td>
+            <td>{{ item.registro }}</td>
+            <td>{{ item.idade }}</td>
+            <td>
+                {% set modulos = item.modulos_feitos.split(',') %}
+                {% for modulo in modulos %}
+                    Módulo {{ modulo }}<br>
+                {% endfor %}
+            </td>
+            <td>{{ item.classificacao }} Estrelas</td>
+            <td>
+                <a href="{{ url_for('remover', id=item.id) }}" class="btn-remover" onclick="return confirm('Deseja excluir esse registro?')">Remover</a>
+            </td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+</div>
+{% endblock conteudo %}

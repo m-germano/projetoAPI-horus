@@ -1,213 +1,185 @@
 
-body {
-    font-family: 'poppins', serif;
-}
-
-header {
-    font-family: "poppins", serif;
-}
-/* subtitulo */
-.subt {
-    font-size: 25px
-}
-
-/* background*/
-.background {
-    background-color: #86aeff45;
-}
-
-.container-fluid{
-    background: cornflowerblue;
-}
-
-/* 3 blocos  */
-.subt2{
-    font-size: 30px;
-    margin-top: 50px;
-    margin-left: 70px;
-    margin-right: 100px;
-}
-
-.topic {
-    font-size: 20px;
-    word-wrap: break-word;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 100px;
+body{
+    /* background-color: rgb(230, 230, 230); */
+    background-color: #f5f5f5;
+    font-family: "Arvo", serif;
+    
+    
 }
 
 
-/* Tópicos expandidos */
-
-.fundo {
-    background-color:rgb(35, 34, 34);
-    color: aliceblue;
-    padding-left: 150px ;
+h1,h2,h3{
+    margin:3rem 0 3rem 0;
 }
 
-.space {
-    display: flex;
-    justify-content: space-between;
-    gap: 50px;
+p{
+    text-indent: 2rem;
 }
 
-.titulo {
-    margin-left: 200px;
-    padding-top: 30px;
+/* ############# PRINCIPAL ################ */
+
+.kanban-principal{
+    font-family: "Arvo", serif;
 }
 
-.subt3 {
-    font-size: 20px;
-    margin: 25px 0px 10px
-}
-
-.imagem {
-    margin-right: 50px;
-    float: right;
-    width: 500px;
-    height: 500px;
-    border-radius: 20%;
-    transition: transform 0.3s ease; 
-}
-.imagem:hover {
-    transform: translateY(-10px); 
-
-}
-
-
-/* Aplicação */
-
-
-.fundo-ap {
-        color: #222;
-    }
-
-.titulo-ap {
-    margin: 30px 200px 50px 200px;
-    font-weight: bold;
-}
-
-.subt-ap{
-    margin-left: 50px;
-    font-weight: bold;
-}
-
-.textos-ap {
-    margin-left: 100px;
-    margin-right: 200px;
-    margin-bottom: 20px;
-}
-
-/* Scrum */
-
-.fundo-sc {
-    width: 100%;
-    background-color:rgb(35, 34, 34);
-    color: aliceblue;
-
-}
-
-.titulo-sc {
+.kanban-principal h1{
     display: flex;
     justify-content: center;
-    font-size: 30px;
-    padding-top: 50px;
+    font-size: 350%;
 }
 
-.display-flex {
+.kanban-principal p{
+    font-size: 150%;
     display: flex;
-    justify-content: space-between;
-    gap: 200px;
-    margin-left: 200px;
-    margin-right: 200px;
+    justify-content: center;
 }
 
-
-.display-flex-img {
+.kanban-principal h2{
     display: flex;
-    justify-content: space-between;
-    margin-top: 50px;
+    justify-content: center;
+    font-size: 200%;
+    color: #0075dc; 
+
 }
 
-.quadro-kanban {
-   max-width: 400px;
-   height: 250px;
-   margin-left: 200px;
-   border-radius: 5%;
+.subtitulos{
+    display: flex;
+    justify-content: space-around;
+    
 }
 
-.quadro-scrum {
-    max-width: 400px;
-    height: 250px;
-    margin-right: 250px;
+/* ############# Conceitos ################ */
+
+.display-flex{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.content-flex:last-child{
+    width: 60rem;
+
+    
+}
+
+.conceitos{
+    padding: 1rem 4rem;
+}
+.conceitos h1{
+    color: #0075dc;
+}
+
+
+.conceitos img{
+    width: 50%;
+    height: auto;
     border-radius: 5%;
-}
-
-.display-flex2 {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
-    justify-content: space-between;
-    margin-right: 150px;
-    gap: 200px;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    
 }
 
-.display-flex2 .display-flex2-card{
-    border: 0.1rem solid white;
-    border-radius: 2rem;
-    padding: 3rem;
-}
-.display-flex2 p{
-    font-size: 1.5rem;
+.img:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
-.imgfim {
+
+/* ############# Aplicação ################ */
+
+
+.aplicação{
+    padding: 5% 10%;
+}
+
+.aplicação h1{
     display: flex;
-    width: 50rem;
-    height: 30rem;
-    margin: 0 auto;
-    border-radius: 5% ;
- 
+    color: #0075dc;
 }
 
-.kanban-content{
-    width:70%;
-    padding: 5rem 0;
-    margin: 0 auto;
+.aplicação h3{
+    display: flex;
 }
 
-.kanban-content h4{
-    text-align: left;
-    font-size: 2.5rem;
-    margin: 4rem 0;
+.aplicação p{
+    padding: 1% 15%;
 }
 
-.kanban-content p{
-    font-size: 1.5rem;
+/* ############# Kanban vs Scrum ################ */
+
+.vantagens h1{
+    display: flex;
+    justify-content: center;
+    color: #0075dc; 
+
 }
 
-.display-flex-card{
-    border: 0.1rem solid white;
-    border-radius: 2rem;
-    padding: 3rem;
-    margin:5rem auto;
+.vantagens p{
+    display: flex;
+    justify-content: center;
+    font-size: medium;
+}
+
+.card-flex{
+    border: 2px solid #0075dc;
+    padding: 2rem;
+    background-color:aliceblue;
+    border-radius: 3rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 40%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.display-flex-card h4{
-    font-size: 2.5rem;
-    margin:2rem;
+    justify-content: space-evenly;
     text-align: center;
+    margin-bottom: 3rem;
+    
+    
 }
 
-.display-flex-card p{
-  font-size: 1.4rem;
-  margin:2rem;
+.card-flex p{
+    text-align: justify;
 }
 
-.display-flex-card img{
-    margin:0 auto;
+.card-flex:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
+.quadro-kanban{
+    width: 70%;
+}
+
+/* teste */
+
+@media screen and (max-width:768px){
+    .subtitulos{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .subtitulos-div{
+        text-align: center;
+    }
+
+    .display-flex{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        
+
+    }
+
+    .card-flex{
+        margin: 2rem auto;
+        width: 85%;
+
+    }
+
+    .vantagens{
+        text-align: center;
+    }
+}

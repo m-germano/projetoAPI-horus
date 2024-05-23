@@ -1,14 +1,20 @@
-{% extends 'base.html' %}
+{% extends 'main/base.html' %}
 
 
     
 {% block title %}MVP{% endblock title %}
 
 {%block conteudo%}
+<<<<<<< HEAD:templates/mvp.html
 <div class="container-eventos">
     <!--MVP: Minimum Viable Product-->
     <div class="section-content">
      <h1>MVP: Minimum Viable Product</h1>
+=======
+{% include 'include_files/navbar-dropdown.html' %} 
+<div class="introducao_conteudo">
+    <h1>MVP: Minimum Viable Product</h1>
+>>>>>>> c975c5eefb5969b80714075c1a56e9dd2a649c35:templates/conteudos/mvp.html
 
      <img src="/static/imagens/mvp-exemplo.jpg" alt="MVP">
      <br>
@@ -73,5 +79,5 @@
     </div>
 
 <!-- https://awari.com.br/mvp/?utm_source=blog&utm_campaign=projeto+blog&utm_medium=MVP:%20Conheça%20o%20conceito%20e%20saiba%20como%20aplicá-lo%20no%20seu%20negócio -->
-
+{% include 'include_files/footer.html' %}
 {%endblock conteudo%}
