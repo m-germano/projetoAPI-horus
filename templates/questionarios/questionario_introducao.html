@@ -1,13 +1,13 @@
 {% extends 'main/base.html' %}
 
-{%block css%}<link rel="stylesheet" href="{{ url_for('static', filename='css/questionario.css') }}">{%endblock css%}
+{%block css%}<link rel="stylesheet" href="../static/css/questionario.css">{%endblock css%}
 
     
-{% block title %}Quiz - Product Owner{% endblock title %}
+{% block title %}Quiz - Introdução ao Scrum{% endblock title %}
 
 {%block conteudo%}
 <div class="app-container">
-    <h1>Quiz - Product Owner</h1>
+    <h1>Quiz - Introdução ao Scrum</h1>
     <div class="quiz">
         <h2 id="questao-local">Local da Questao</h2>
         <div id="answer-buttons">
@@ -24,5 +24,5 @@
 
 
 
+<script src="../static/js/questionario_introducao.js"></script>
 {%endblock conteudo%}
-{%block script%}<script src="../static/js/questionario_po.js"></script>{%endblock script%}
