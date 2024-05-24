@@ -136,6 +136,43 @@
 
 
     
-{% include 'include_files/footer.html' %}
+<<<<<<< HEAD:templates/kanban.html
 
-{% endblock conteudo %}
+>>>>>>> 2fa386ffe20c649453d4c9829fef5f7623f67098
+=======
+{% include 'include_files/footer.html' %}
+>>>>>>> 32bc513ef4e3325270dd8e248907fa8f4023047c:templates/conteudos/kanban.html
+
+        var btnList = document.getElementsByClassName('btn');
+
+        for (var i = 0; i < btnList.length; i++) {
+            btnList[i].addEventListener("click", function () {
+                flipCard(this);
+            });
+        }
+
+        function flipCard(_this) {
+            const parentNodeId = 'parent-id';
+            const toggleClassId = 'toggle-class';
+            const parentId = _this.getAttribute(parentNodeId);
+            const toggleId = _this.getAttribute(toggleClassId);
+
+            if (parentId && toggleId) {
+                let card = document.getElementById(parentId);
+                if (card) {
+                    card.classList.toggle(toggleId);
+                } else {
+                    console.log('card not found')
+                }
+            } else {
+                console.log('parentId and/or toggleId not found')
+            }
+        }
+    </script> -->
+
+</div>
+
+
+
+
+    {% endblock conteudo %}

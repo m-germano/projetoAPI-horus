@@ -1,95 +1,103 @@
 {% extends 'main/base.html' %}
 
 {%block css%}
-<link rel="stylesheet" href="{{ url_for('static', filename='css/celso.css') }}"> 
+<link rel="stylesheet" href="{{ url_for('static', filename='css/celso.css') }}">
 {%endblock css%}
 
 {% block title %}DEVs{% endblock title %}
 
 {%block conteudo%}
-{% include 'include_files/navbar-dropdown.html' %} 
+{% include 'include_files/navbar-dropdown.html' %}
 
-<div class="content-main">
-    <div class="div_principal">
-        <div class="div_conteudo">
-            <h1 class="titulo_dev">Time de Desenvolvimento</h1>
-            
-            <div class="img">
-            <img src="https://www.scnsoft.com/blog-pictures/mobile-apps/mobile_app_development_team-01_1.png">
-            </div>
-            
-            
-            <p>O time de desenvolvimento é um componente essencial em projetos de desenvolvimento de software,
-                responsável por transformar os requisitos do cliente em produtos funcionais e de alta qualidade.
-                Composto por uma equipe multidisciplinar de profissionais de diferentes áreas, o time de desenvolvimento
-                trabalha em colaboração para criar soluções inovadoras e eficientes que atendam às necessidades e
-                expectativas dos usuários finais.</p>
+<div class="container-eventos">
 
-            <br><br>
+    <div class="section-content">
+        <h2>Time de Desenvolvimento</h2>
 
-
-
-
-
-            <h2>Características dos DEVs</h2>
-            <br>
-
-
-
-            <h3>Implementação de Funcionalidades</h3>
-
-            <p>Desenvolver códigos e scripts que implementem as funcionalidades especificadas nos requisitos do produto.
-                Utilizar as melhores práticas de programação e padrões de design para garantir a qualidade, eficiência e
-                manutenibilidade do código.</p>
-
-            <h3>Colaboração Ativa</h3>
-            <p>Participar de reuniões diárias de scrum e outras atividades de planejamento e revisão, compartilhando
-                atualizações de progresso e discutindo desafios e soluções. Colaborar de forma eficaz com outros membros
-                do time de desenvolvimento e com o Product Owner para garantir o alinhamento e entendimento dos
-                requisitos e prioridades do produto.</p>
-
-            <h3>Testes e Qualidade de Software</h3>
-
-            <p>Realizar testes unitários, de integração e de sistema para garantir a qualidade e a estabilidade do
-                software desenvolvido.
-                Identificar e corrigir bugs e problemas de desempenho em tempo hábil, garantindo uma experiência de
-                usuário satisfatória.</p>
-
-            <h3>Iteração e Melhoria Contínua</h3>
-
-            <p>Participar ativamente de processos de retrospectiva e feedback para identificar oportunidades de melhoria
-                no processo de desenvolvimento e na colaboração da equipe. Buscar constantemente aprender e aplicar
-                novas tecnologias, ferramentas e metodologias que possam otimizar o trabalho do time e aumentar a
-                eficiência do desenvolvimento.</p>
-
-            <h3>Comunicação Transparente</h3>
-
-            <p>Manter uma comunicação clara e transparente com os membros da equipe e stakeholders, compartilhando
-                informações relevantes, progresso e desafios. Estabelecer uma cultura de comunicação aberta e
-                colaborativa, onde os membros da equipe se sintam à vontade para expressar ideias, preocupações e
-                sugestões.</p>
-
-
-            <h3>Compromisso com os Objetivos do Produto</h3>
-
-            <p>Demonstrar compromisso e dedicação para alcançar os objetivos e metas estabelecidos para o produto,
-                trabalhando de forma diligente e focada para entregar valor aos clientes e stakeholders. Adaptar-se a
-                mudanças nos requisitos e prioridades do produto, priorizando tarefas e funcionalidades de acordo com as
-                necessidades do negócio.</p>
-
-
-
-
+        <div class="img">
+            <img src="../static/imagens/dev.png">
         </div>
+
+
+        <p>O time de desenvolvimento é um componente essencial em projetos de desenvolvimento de software,
+            responsável por transformar os requisitos do cliente em produtos funcionais e de alta qualidade.
+            Composto por uma equipe multidisciplinar de profissionais de diferentes áreas, o time de desenvolvimento
+            trabalha em colaboração para criar soluções inovadoras e eficientes que atendam às necessidades e
+            expectativas dos usuários finais.</p>
+
     </div>
 
-    <div class="resume-section">
-        <div class="resume-title">
-            <h2>Resumo - Time de Desenvolvimento</h2>
-        </div>
-        <div class="resume-card">
-            <h3>Papel do Time Dev</h3>
-            <ul class="resume-list">
+
+
+
+    <div class="section-content">
+        <h2>Características dos DEVs</h2>
+    </div>
+
+
+    <div class="section-content">
+        <h3>Implementação de Funcionalidades</h3>
+
+        <p>Desenvolver códigos e scripts que implementem as funcionalidades especificadas nos requisitos do produto.
+            Utilizar as melhores práticas de programação e padrões de design para garantir a qualidade, eficiência e
+            manutenibilidade do código.</p>
+    </div>
+    <div class="section-content">
+        <h3>Colaboração Ativa</h3>
+        <p>Participar de reuniões diárias de scrum e outras atividades de planejamento e revisão, compartilhando
+            atualizações de progresso e discutindo desafios e soluções. Colaborar de forma eficaz com outros membros
+            do time de desenvolvimento e com o Product Owner para garantir o alinhamento e entendimento dos
+            requisitos e prioridades do produto.</p>
+    </div>
+    <div class="section-content">
+        <h3>Testes e Qualidade de Software</h3>
+
+        <p>Realizar testes unitários, de integração e de sistema para garantir a qualidade e a estabilidade do
+            software desenvolvido.
+            Identificar e corrigir bugs e problemas de desempenho em tempo hábil, garantindo uma experiência de
+            usuário satisfatória.</p>
+    </div>
+    <div class="section-content">
+        <h3>Iteração e Melhoria Contínua</h3>
+
+        <p>Participar ativamente de processos de retrospectiva e feedback para identificar oportunidades de melhoria
+            no processo de desenvolvimento e na colaboração da equipe. Buscar constantemente aprender e aplicar
+            novas tecnologias, ferramentas e metodologias que possam otimizar o trabalho do time e aumentar a
+            eficiência do desenvolvimento.</p>
+    </div>
+    <div class="section-content">
+        <h3>Comunicação Transparente</h3>
+
+        <p>Manter uma comunicação clara e transparente com os membros da equipe e stakeholders, compartilhando
+            informações relevantes, progresso e desafios. Estabelecer uma cultura de comunicação aberta e
+            colaborativa, onde os membros da equipe se sintam à vontade para expressar ideias, preocupações e
+            sugestões.</p>
+
+    </div>
+    <div class="section-content">
+        <h3>Compromisso com os Objetivos do Produto</h3>
+
+        <p>Demonstrar compromisso e dedicação para alcançar os objetivos e metas estabelecidos para o produto,
+            trabalhando de forma diligente e focada para entregar valor aos clientes e stakeholders. Adaptar-se a
+            mudanças nos requisitos e prioridades do produto, priorizando tarefas e funcionalidades de acordo com as
+            necessidades do negócio.</p>
+    </div>
+
+
+
+</div>
+
+<div class="t">
+    <h2>Resumo -Time Dev</h2>
+</div>
+
+<div class="card-container">
+
+    <div class="card">
+        <div class="card-content">
+            <h2>Papel do Time Dev</h2>
+            <ul class="topico-resumo">
+
                 <li>Desenvolvimento de código para as funcionalidades do produto, com qualidade e eficiência.</li>
                 <li>Participação em reuniões e interação eficaz com a equipe e o Product Owner.</li>
                 <li>Realização de testes para garantir a qualidade do software e correção de problemas.</li>
@@ -97,45 +105,58 @@
                 <li>Compartilhamento claro de informações com a equipe e stakeholders.</li>
                 <li>Dedicação para alcançar metas do produto, adaptando-se a mudanças e priorizando tarefas conforme
                     necessário.</li>
+
             </ul>
         </div>
-        <div class="resume-card">
-            <h3>Responsabilidades</h3>
-            <ul class="resume-list">
+    </div>
+
+    <div class="card">
+        <div class="card-content">
+            <h2>Responsabilidades</h2>
+            <ul class="topico-resumo">
                 <li>Compreender e traduzir os requisitos do cliente em soluções de software.</li>
                 <li>Contribuir para a arquitetura e escrever código eficiente e sustentável.</li>
                 <li>Identificar e resolver problemas durante o desenvolvimento de forma eficaz.</li>
                 <li>Garantir a qualidade do código por meio de práticas de codificação limpa e revisões.</li>
                 <li> Capacidade de gerenciar eficientemente o tempo e priorizar tarefas para cumprir prazos e metas do
                     projeto.</li>
+
+
             </ul>
         </div>
-        <div class="resume-card">
-            <h3>Habilidades e Qualidades</h3>
-            <ul class="resume-list">
+    </div>
+    <div class="card">
+        <div class="card-content">
+            <h2>Habilidades e Qualidades</h2>
+            <ul class="topico-resumo">
                 <li>Habilidade para resolver desafios de forma eficiente e criativa.</li>
                 <li> Capacidade de trabalhar bem em equipe e comunicar-se de forma clara.</li>
                 <li>Disposição para aprender e se manter atualizado.</li>
                 <li>Cuidado e precisão na execução do trabalho.</li>
                 <li>Capacidade de lidar com mudanças e desafios de forma flexível e positiva.</li>
+
             </ul>
         </div>
-        <div class="resume-card">
-            <h3>Melhoría continua</h3>
-            <ul class="resume-list">
+    </div>
+    <div class="card">
+        <div class="card-content">
+            <h2>Melhoría continua</h2>
+            <ul class="topico-resumo">
                 <li>Buscar e oferecer feedback constantemente para identificar áreas de melhoria.</li>
                 <li>Procurar maneiras de automatizar processos repetitivos para aumentar a eficiência.</li>
                 <li>Participar ativamente de comunidades de desenvolvedores para aprendizado contínuo.</li>
                 <li>Aperfeiçoar habilidades interpessoais, como comunicação e trabalho em equipe.</li>
                 <li>Manter-se atualizado sobre as últimas tendências e tecnologias no desenvolvimento de software.</li>
+
             </ul>
         </div>
     </div>
+</div>
 
-    <div class="quiz-link">
-        <h2>Para reforçar o conhecimento adquirido nesse topico: </h2>
-        <a href="{{url_for('questionarios', id='dev')}}">Ir para questionário</a>
-    </div>
-    <div>
-        {% include 'include_files/footer.html' %}
-        {%endblock conteudo%}
+<div class="quiz-link">
+    <h2>Para reforçar o conhecimento adquirido nesse topico: </h2>
+    <a href="{{url_for('questionarios', id='dev')}}">Ir para questionário</a>
+</div>
+
+{% include 'include_files/footer.html' %}
+{%endblock conteudo%}
