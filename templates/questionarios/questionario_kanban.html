@@ -1,13 +1,13 @@
-{% extends 'base.html' %}
+{% extends 'main/base.html' %}
 
 {%block css%}<link rel="stylesheet" href="../static/css/questionario.css">{%endblock css%}
 
     
-{% block title %}Quiz - Team DEVs{% endblock title %}
+{% block title %}Quiz - Introdução ao Scrum{% endblock title %}
 
 {%block conteudo%}
 <div class="app-container">
-    <h1>Quiz - Team DEVs</h1>
+    <h1>Quiz - Introdução ao Scrum</h1>
     <div class="quiz">
         <h2 id="questao-local">Local da Questao</h2>
         <div id="answer-buttons">
@@ -22,7 +22,7 @@
 
 </div>
 
-<img class="img-return" src="/static/imagens/return-58.svg" alt="" onclick="window.location.href='/responsabilidades/dev'">
 
+
+<script src="../static/js/questionario_introducao.js"></script>
 {%endblock conteudo%}
-{%block script%}<script src="../static/js/questionario_dev.js"></script>{%endblock script%}

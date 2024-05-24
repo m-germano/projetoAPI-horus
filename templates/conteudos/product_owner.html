@@ -1,11 +1,11 @@
-{% extends 'base.html' %}
+{% extends 'main/base.html' %}
 
-{%block css%}
-<link rel="stylesheet" href="../static/css/celso.css"> {%endblock css%}
+{%block css%}<link rel="stylesheet" href="{{ url_for('static', filename='css/celso.css') }}">{%endblock css%}
 
 {% block title %}Product Owner{% endblock title %}
 
 {%block conteudo%}
+{% include 'include_files/navbar-dropdown.html' %} 
 <div class="container-eventos">
 
     <div class="section-content">
@@ -159,4 +159,5 @@
     <a href="{{url_for('questionarios', id='po')}}">Ir para questionário</a>
 </div>
 </div>
+{% include 'include_files/footer.html' %}
 {%endblock conteudo%}

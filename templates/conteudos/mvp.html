@@ -1,17 +1,20 @@
-{% extends 'base.html' %}
+{% extends 'main/base.html' %}
 
-{%block css%}<link rel="stylesheet" href="../static/css/vanessa.css">{%endblock css%}
+
     
 {% block title %}MVP{% endblock title %}
 
 {%block conteudo%}
-<div class="introducao_conteudo">
+{% include 'include_files/navbar-dropdown.html' %} 
+<div class="container-eventos">
+
+    <div class="section-content">
     <h1>MVP: Minimum Viable Product</h1>
 
-    <img src="/static/imagens/mvp-exemplo.jpg" alt="MVP">
-    <br>
+     <img src="/static/imagens/mvp-exemplo.jpg" alt="MVP">
+     <br>
 
-    <p><b>MVP</b> é a sigla para Minimum Viable Product, que em português significa Produto Viável Mínimo. Trata-se 
+     <p><b>MVP</b> é a sigla para Minimum Viable Product, que em português significa Produto Viável Mínimo. Trata-se 
         de uma técnica de desenvolvimento de produtos, muito utilizada por startups e empresas de tecnologia, 
         que consiste em criar uma versão básica de um produto com apenas as funcionalidades essenciais para 
         atender às necessidades dos usuários. O objetivo é validar a ideia de negócio, verificar se o produto 
@@ -25,12 +28,14 @@
         O conceito de MVP foi popularizado por Eric Ries em seu livro “The Lean Startup” e tem sido amplamente 
         adotado por empresas de tecnologia em todo o mundo. É uma estratégia muito útil para empreendedores que 
         querem lançar um produto no mercado com pouco investimento inicial e testar sua viabilidade antes de 
-        investir em uma versão completa.
-    </p>
+        investir em uma versão completa.</p>
+    </div>
 
-    <h2>Como criar um produto mínimo viável de sucesso</h2>
+    <!--Produto viável de sucesso-->
+    <div class="section-content">
+     <h2>Como criar um produto mínimo viável de sucesso</h2>
 
-    <p>Criar um produto mínimo viável (MVP) é uma estratégia muito utilizada por startups e empresas de tecnologia 
+     <p>Criar um produto mínimo viável (MVP) é uma estratégia muito utilizada por startups e empresas de tecnologia 
         para validar ideias e testar a aceitação do mercado. É uma forma de lançar um produto com o mínimo de 
         recursos e funcionalidades, mas ainda assim oferecendo valor ao usuário. O objetivo é obter feedbacks dos 
         clientes e aprender com eles para aprimorar o produto antes de investir tempo e recursos em uma solução completa.
@@ -47,24 +52,28 @@
         Em resumo, criar um MVP de sucesso requer uma compreensão clara do problema a ser resolvido, um público-alvo 
         definido, funcionalidades essenciais, uma estratégia de lançamento e divulgação, além de estar aberto ao 
         feedback dos clientes. Seguindo essas diretrizes, é possível lançar uma solução mínima, mas viável, que possa 
-        ser aprimorada e escalada no futuro.
-    </p>
+        ser aprimorada e escalada no futuro.</p>
+    </div>
 
-    <h1>Exemplos de MVP nas empresas</h1>
 
-    <h2>Facebook</h2>
-    <p>A rede social de Mark Zuckerberg foi testada, inicialmente, para dentro dos muros da Universidade de Harvard. O período em que a rede atingia apenas os alunos da comunidade universitária foi importante para que o jovem Mark promovesse alterações fundamentais, em linha com o que foi se revelando necessário ao longo do processo de validação.</p>
+<!--Exemplos de MVP nas empresas-->
+    <div class="section-content">
+     <h1>Exemplos de MVP nas empresas</h1>
 
-    <h2>Groupon</h2>
-    <p>A primeira versão do Groupon era um site extremamente simples, feito em wordpress e que gerava cupons em pdf, os quais eram enviados de forma manual a cada interessado. Bem diferente da estrutura que vemos hoje, não?</p>
+     <h2>Facebook</h2>
+     <p>A rede social de Mark Zuckerberg foi testada, inicialmente, para dentro dos muros da Universidade de Harvard. O período em que a rede atingia apenas os alunos da comunidade universitária foi importante para que o jovem Mark promovesse alterações fundamentais, em linha com o que foi se revelando necessário ao longo do processo de validação.</p>
 
-    <h2>Apple </h2>
-    <p>Por mais incrível que pareça, o iPhone 1 era o típico exemplo de Minimum Viable Product (Produto Minimamente Viável). O aparelho não possuía algumas funções básicas, como copiar e colar, além de exigir download obrigatório do iTunes para ativação. O objetivo aqui era claramente segurar algumas funcionalidades para que fossem lançadas nas versões seguintes do equipamento, gerando ansiedade e euforia entre os clientes.</p>
+     <h2>Groupon</h2>
+     <p>A primeira versão do Groupon era um site extremamente simples, feito em wordpress e que gerava cupons em pdf, os quais eram enviados de forma manual a cada interessado. Bem diferente da estrutura que vemos hoje, não?</p>
 
-    <h2>Foursquare</h2>
-    <p>Antes de ir a campo, o serviço de localização (que permite que as pessoas deem “check-in” em locais visitados, bem como suas opiniões sobre eles) coletou um universo de depoimentos e sugestões de possíveis usuários, por meio do Google Docs, além de disponibilizar uma versão mais restrita do produto a um grupo seleto de “futuro clientes”.</p>
+     <h2>Apple </h2>
+     <p>Por mais incrível que pareça, o iPhone 1 era o típico exemplo de Minimum Viable Product (Produto Minimamente Viável). O aparelho não possuía algumas funções básicas, como copiar e colar, além de exigir download obrigatório do iTunes para ativação. O objetivo aqui era claramente segurar algumas funcionalidades para que fossem lançadas nas versões seguintes do equipamento, gerando ansiedade e euforia entre os clientes.</p>
+
+     <h2>Foursquare</h2>
+     <p>Antes de ir a campo, o serviço de localização (que permite que as pessoas deem “check-in” em locais visitados, bem como suas opiniões sobre eles) coletou um universo de depoimentos e sugestões de possíveis usuários, por meio do Google Docs, além de disponibilizar uma versão mais restrita do produto a um grupo seleto de “futuro clientes”.</p>
+    </div>
 </div>
-
+</div>
 <!-- https://awari.com.br/mvp/?utm_source=blog&utm_campaign=projeto+blog&utm_medium=MVP:%20Conheça%20o%20conceito%20e%20saiba%20como%20aplicá-lo%20no%20seu%20negócio -->
-
+{% include 'include_files/footer.html' %}
 {%endblock conteudo%}

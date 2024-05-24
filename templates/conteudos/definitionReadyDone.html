@@ -1,10 +1,11 @@
-{% extends 'base.html' %}
+{% extends 'main/base.html' %}
 
-{%block css%} <link rel="stylesheet" href="../static/css/celso.css"> {%endblock css%}
+{%block css%} <link rel="stylesheet" href="../static/css/main.css"> {%endblock css%}
     
 {% block title %}DoR e DoD{% endblock title %}
 
 {%block conteudo%}
+{% include 'include_files/navbar-dropdown.html' %} 
 
 <div class="dor-dod-intro">
     <h1>DoD e DoR, você sabe a diferença?</h1>
@@ -60,7 +61,7 @@
 
 
 
-
+{% include 'include_files/footer.html' %}
 
 
 

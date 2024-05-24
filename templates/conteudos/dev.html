@@ -1,11 +1,13 @@
-{% extends 'base.html' %}
+{% extends 'main/base.html' %}
 
 {%block css%}
-<link rel="stylesheet" href="../static/css/celso.css"> {%endblock css%}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/celso.css') }}">
+{%endblock css%}
 
 {% block title %}DEVs{% endblock title %}
 
 {%block conteudo%}
+{% include 'include_files/navbar-dropdown.html' %}
 
 <div class="container-eventos">
 
@@ -90,7 +92,7 @@
 </div>
 
 <div class="card-container">
-    
+
     <div class="card">
         <div class="card-content">
             <h2>Papel do Time Dev</h2>
@@ -149,9 +151,6 @@
             </ul>
         </div>
     </div>
-
-
-   
 </div>
 
 <div class="quiz-link">
@@ -159,5 +158,5 @@
     <a href="{{url_for('questionarios', id='dev')}}">Ir para questionário</a>
 </div>
 
-</div>
+{% include 'include_files/footer.html' %}
 {%endblock conteudo%}

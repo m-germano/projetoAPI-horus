@@ -91,3 +91,22 @@ https://github.com/m-germano/projetoAPI-horus/assets/107308515/1f97bafe-1a7f-46f
 2- Pressione 'S' e 'Enter' para confirmar.
 ```
 
+Executando em Ambiente Linux(AWS)
+```
+sudo apt update
+sudo apt install python3-pip
+
+Criar e ativar um ambiente virtual
+python3 -m venv myenv
+source myenv/bin/activate
+
+# Instalar as bibliotecas necessárias
+pip install Flask Flask-SQLAlchemy flask-login flask-wtf wtforms Flask-Bcrypt
+
+# Verificar as instalações
+pip list
+
+flask run --host=0.0.0.0
+
+
+```

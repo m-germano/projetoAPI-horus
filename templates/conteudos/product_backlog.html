@@ -1,11 +1,11 @@
-{% extends 'base.html' %}
+{% extends 'main/base.html' %}
 
-{%block css%} <link rel="stylesheet" href="../static/css/eventos.css"> {%endblock css%}
+{%block css%}<link rel="stylesheet" href="{{ url_for('static', filename='css/eventos.css') }}">{%endblock css%}
     
 {% block title %} Product Backlog {% endblock title %}
 
 {%block conteudo%}
-
+{% include 'include_files/navbar-dropdown.html' %} 
 <main class="container-eventos">
 
     <div class="sumario">
@@ -85,5 +85,5 @@
     </div>
 
 </main>
-
+{% include 'include_files/footer.html' %}
 {%endblock conteudo%}

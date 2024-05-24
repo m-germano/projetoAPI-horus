@@ -14,6 +14,7 @@
 @import url('/static/css/product.css');
 @import url('/static/css/questionario.css');
 @import url('/static/css/estimativa.css');
+@import url('/static/css/avaliacao.css');
 
 
 :root {
@@ -200,8 +201,11 @@ a {
   background: cornflowerblue;
   width: 100%;
   height: 20vh;
-  margin-top: 10rem;
+  margin-top: 2rem;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
 }
 
@@ -653,5 +657,143 @@ font-size: 40px;
     flex-direction: column;
   }
 }
+
+
+.container-avaliacao{
+  margin-top: 5rem;
+
+}
+
+
+/* ########################TELA DE LOGIN E REGISTRO######################################## */
+.container-login{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+.login-form{
+  background: #222;
+  padding: 6rem 6rem;
+  width: 80%;
+  margin: 10rem;
+  border-radius: 3rem;
+  
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  
+ 
+}
+
+.login-form form{
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+
+  
+}
+
+.login-form h1{
+  font-size: 3rem;
+  margin:1rem auto;
+  color: #fff;
+  text-align: center;
+  font-weight: 700;
+}
+
+.login-form a{
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  
+}
+
+.input-login{
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 0.5rem;
+  height: 4rem;
+  padding: 0.5rem;
+  transition: box-shadow 0.3s ease;
+  border: 1px solid #ced4da;
+
+}
+
+.input-login:focus {
+  box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.3); /* Adiciona uma sombra quando o campo está em foco */
+}
+
+.input-button{
+  width: 60%;
+  max-width: 350px;
+  margin: 0 auto;
+  height: 4rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  transition: all 0.3s ease-in;
+  font-size: 1.3rem;
+}
+
+.input-button:hover{
+  transform: scale(1.02);
+
+}
+
+
+.btn-remover{
+  text-align: center;
+  text-decoration: none;
+ color: #fff;
+ font-weight: 400;
+
+ 
+
+ 
+}
+@media screen and (max-width:768px){
+
+  .container-login{
+    background: #222;
+    height: 100vh;
+  }
+  .login-form {
+    padding: 5rem 0.1rem;
+    width: 100%;
+    margin-inline: 0;
+  
+  }
+  .login-form h1{
+    font-size: 2rem;
+  }
+
+  .login-form a:first-child{
+   overflow: hidden;
+  }
+}
+
+
+.table tbody{
+ 
+  vertical-align: middle;
+ 
+
+
+}
+
+.table tbody td:last-child{
+  background-color: rgb(255, 110, 110);
+  text-align: center;
+ 
+
+
+}
+
+
+
+
 
 

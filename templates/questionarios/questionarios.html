@@ -1,0 +1,20 @@
+{% extends 'main/base.html' %}
+
+{%block css%}<link rel="stylesheet" href="{{ url_for('static', filename='css/questionario.css') }}">{%endblock css%}
+    
+{% block title %}Questionários{% endblock title %}
+
+{%block conteudo%}
+<div class="questionarios-design">
+    <h1>Questionários</h1>
+</div>
+
+<div class="container-questionarios">
+    <div class="container-links-questionarios">     
+        <a href="{{url_for('questionarios', id='intro')}}">Módulo 01: Introdução</a>
+        <a href="{{url_for('questionarios', id='kanban')}}">Módulo 02: Kanban</a>
+    </div>
+</div>
+
+
+{%endblock conteudo%}
