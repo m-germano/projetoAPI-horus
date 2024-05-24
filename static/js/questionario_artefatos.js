@@ -10,52 +10,52 @@ const questoes = [
     // },
 
     {
-        questao:"O que é o Kanban?",
+        questao:"Qual é o propósito do Product Backlog no Scrum?",
         respostas:[
-            {texto:"Um método de gestão visual de tarefas que utiliza cartões e quadros para otimizar fluxos de trabalho.", valor: true},
-            {texto:"Um software de controle de versões utilizado no desenvolvimento de software.", valor: false},
-            {texto:" Um tipo de metodologia ágil focada exclusivamente em reuniões diárias.", valor: false},
-            {texto:"Uma ferramenta de design gráfico utilizada para criação de diagramas.", valor: false},
+            {texto:"Monitorar o desempenho dos membros da equipe", valor: false},
+            {texto:"Listar e priorizar todos os itens de trabalho necessários para o produto", valor: true},
+            {texto:"Registrar os problemas encontrados durante o desenvolvimento", valor: false},
+            {texto:"Documentar as reuniões de revisão do Sprint", valor: false},
         ]
     },
 
     {
-        questao:"Qual é o principal objetivo do Kanban?",
+        questao:"O que é o Sprint Backlog?",
         respostas:[
-            {texto:"Aumentar a quantidade de trabalho em andamento.", valor: false},
-            {texto:"Melhorar a comunicação entre os membros da equipe através de e-mails constantes.", valor: false},
-            {texto:"Otimizar o fluxo de trabalho, reduzindo desperdícios e melhorando a eficiência.", valor: true},
-            {texto:"Substituir completamente todas as metodologias de gestão de projetos tradicionais.", valor: false},
+            {texto:"Uma lista dos itens selecionados do Product Backlog para a Sprint, juntamente com um plano para entregá-los", valor: true},
+            {texto:"Um registro de todos os impedimentos encontrados durante a Sprint", valor: false},
+            {texto:"A documentação das reuniões diárias", valor: false},
+            {texto:"Uma lista de sugestões para melhorar o processo Scrum", valor: false},
         ]
     },
 
     {
-        questao:"Qual dos seguintes é um dos princípios básicos do Kanban?",
+        questao:"O que é o Incremento no Scrum?",
         respostas:[
-            {texto:" Priorizar o trabalho em equipe sobre o trabalho individual.", valor: false},
-            {texto:"Fazer reuniões diárias obrigatórias.", valor: false},
-            {texto:"Limitar o trabalho em progresso (WIP) para evitar sobrecarga.", valor: true},
-            {texto:"Ter uma estrutura fixa e rígida para todas as equipes.", valor: false},
+            {texto:"Um relatório de progresso semanal", valor: false},
+            {texto:"Um conjunto de histórias de usuário não concluídas", valor: false},
+            {texto:"A soma de todos os itens do Product Backlog completados durante a Sprint e todas as Sprints anteriores", valor: true},
+            {texto:"Um documento que descreve as lições aprendidas na Retrospective", valor: false},
         ]
     },
 
     {
-        questao:"Como é geralmente representado um quadro Kanban?",
+        questao:"Como o Product Backlog é mantido atualizado?",
         respostas:[
-            {texto:"Por meio de uma lista de tarefas em um documento de texto.", valor: false},
-            {texto:"Por um conjunto de cartões organizados em colunas que representam diferentes etapas do fluxo de trabalho.", valor: true},
-            {texto:" Por uma série de gráficos de Gantt detalhados.", valor: false},
-            {texto:"Por uma coleção de diagramas de rede complexos.", valor: false},
+            {texto:"Pelo Scrum Master durante a Sprint Retrospective", valor: false},
+            {texto:"Pelo Product Owner, que adiciona, remove e prioriza os itens conforme necessário", valor: true },
+            {texto:"Pelo time de desenvolvimento durante as reuniões diárias", valor: false},
+            {texto:"Pelos stakeholders durante a Sprint Review", valor: false},
         ]
     },
 
     {
-        questao:"Qual é uma prática comum ao usar Kanban para gerenciar um projeto?",
+        questao:"O que o gráfico Burn Down no Scrum representa?",
         respostas:[
-            {texto:"Estabelecer prazos fixos e imutáveis para todas as tarefas.", valor: false},
-            {texto:"Realizar sessões de brainstorming diárias.", valor: false},
-            {texto:"Revisar e ajustar continuamente o processo de trabalho com base no feedback e nas métricas de desempenho.", valor: true},
-            {texto:"Manter a quantidade de tarefas em andamento ilimitada para maximizar a produtividade.", valor: false},
+            {texto:"A quantidade de trabalho completado ao longo de todas as Sprints", valor: false},
+            {texto:"A velocidade média do time de desenvolvimento", valor: false},
+            {texto:"A quantidade de trabalho restante ao longo do tempo em uma Sprint", valor: true},
+            {texto:"A lista priorizada de requisitos do Product Backlog", valor: false},
         ]
     }
 

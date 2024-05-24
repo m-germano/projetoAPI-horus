@@ -10,55 +10,54 @@ const questoes = [
     // },
 
     {
-        questao:"Qual é a principal responsabilidade do Time de Desenvolvimento em um projeto Scrum?",
-    respostas:[
-        {texto:"Desenvolver e entregar as funcionalidades do produto", valor: true},
-        {texto:"Realizar o planejamento financeiro do projeto", valor: false},
-        {texto:"Coordenar as reuniões diárias", valor: false},
-        {texto:"Garantir a satisfação do cliente", valor: false},
-    ]
-},
+        questao:"Qual é a principal responsabilidade do Product Owner em um time Scrum?",
+        respostas:[
+            {texto:"Facilitar as reuniões diárias do Scrum.", valor: false},
+            {texto:"Garantir a transparência do processo Scrum.", valor: false},
+            {texto:"Definir e priorizar o Product Backlog", valor: true},
+            {texto:"Desenvolver incrementos funcionais de software", valor: false},
+        ]
+    },
 
-{
-    questao:"O que significa a auto-organização do Time de Desenvolvimento?",
-    respostas:[
-        {texto:"Cada membro do time decide suas próprias férias", valor: false},
-        {texto:"Os membros do time escolhem suas próprias tarefas e como executá-las", valor: true},
-        {texto:"O time é supervisionado diretamente pelo Product Owner", valor: false},
-        {texto:"Os membros do time trabalham sem interação com outras equipes", valor: false},
-    ]
-},
+    {
+        questao:"Quem é responsável por remover impedimentos que atrapalham o progresso do time Scrum?",
+        respostas:[
+            {texto:"Product Owner", valor: false},
+            {texto:"Desenvolvedor", valor: false},
+            {texto:"Scrum Master", valor: true},
+            {texto:"Gerente de Projeto.", valor: false},
+        ]
+    },
 
-{
-    questao:"Quem é responsável por determinar quanto trabalho o Time de Desenvolvimento pode realizar em um sprint?",
-    respostas:[
-        {texto:"Scrum Master", valor: false},
-        {texto:"Product Owner", valor: false},
-        {texto:"O próprio Time de Desenvolvimento", valor: true},
-        {texto:"Gerente de Projeto", valor: false},
-    ]
-},
+    {
+        questao:"Qual é a função do Scrum Master em relação ao time de desenvolvimento?",
+        respostas:[
+            {texto:"Atribuir tarefas diárias aos desenvolvedores", valor: false},
+            {texto:"Ajudar o time a entender e aplicar as práticas Scrum", valor: true},
+            {texto:"Determinar a ordem das histórias de usuário no backlog", valor: false},
+            {texto:" Aprovar o trabalho completado durante a Sprint", valor: false},
+        ]
+    },
 
-{
-    questao:"Qual é uma das práticas recomendadas para garantir a qualidade do trabalho realizado pelo Time de Desenvolvimento?",
-    respostas:[
-        {texto:"Terceirização de parte do desenvolvimento", valor: false},
-        {texto:"Revisões trimestrais por uma equipe externa", valor: false},
-        {texto:"Testes automatizados e revisões de código", valor: true},
-        {texto:"Depender exclusivamente do Product Owner para validação", valor: false},
-    ]
-},
+    {
+        questao:"Quem é responsável por criar o Incremento que pode ser entregue ao final de cada Sprint?",
+        respostas:[
+            {texto:"Product Owner", valor: false},
+            {texto:"Scrum Master", valor: false},
+            {texto:"Time de Desenvolvimento", valor: true},
+            {texto:"Gerente de Produto", valor: false},
+        ]
+    },
 
-{
-    questao:"Como o Time de Desenvolvimento pode garantir uma comunicação eficaz durante o sprint?",
-    respostas:[
-        {texto:"Realizando reuniões longas diárias para revisar o progresso", valor: false},
-        {texto:"Usando uma ferramenta de gestão de projetos online", valor: true},
-        {texto:"Dependendo de e-mails para todas as comunicações", valor: false},
-        {texto:"Esperando pela reunião de revisão do sprint para compartilhar atualizações", valor: false},
-    ]
-}
-    
+    {
+        questao:"Qual das seguintes atividades é responsabilidade do Time de Desenvolvimento durante a Sprint?",
+        respostas:[
+            {texto:"Revisar e priorizar o Product Backlog", valor: false},
+            {texto:"Facilitar as reuniões diárias do Scrum", valor: false},
+            {texto:"Implementar, testar e entregar incrementos funcionais", valor: true},
+            {texto:"Definir a visão do produto", valor: false},
+        ]
+    }
 
 ];
 

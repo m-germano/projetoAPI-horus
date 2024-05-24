@@ -10,52 +10,54 @@ const questoes = [
     // },
 
     {
-        questao:"Qual é o papel do Product Owner em um projeto ágil?",
+        questao:"Qual técnica de estimativa é comumente utilizada no Scrum para avaliar o tamanho relativo das histórias de usuário?",
         respostas:[
-            {texto:"Gerenciar o orçamento do projeto", valor: false},
-            {texto:"Priorizar o backlog do produto", valor: true},
-            {texto:"Desenvolver o código fonte", valor: false},
-            {texto:"Conduzir as reuniões diárias", valor: false},
-        ]
-    },
-    {
-        questao:"Qual é a principal responsabilidade do Product Owner durante o Sprint Planning?",
-        respostas:[
-            {texto:"Definir metas de vendas", valor: false},
-            {texto:"Estimar o tempo necessário para cada tarefa", valor: false},
-            {texto:"Priorizar as histórias do usuário", valor: true},
-            {texto:" Configurar o ambiente de desenvolvimento", valor: false},
-        ]
-    },
-    {
-        questao:"Quem é responsável por garantir que as histórias do usuário estão bem definidas e prontas para serem implementadas pela equipe de desenvolvimento?",
-        respostas:[
-            {texto:"Scrum Master", valor: false},
-            {texto:"Product Owner", valor: true},
-            {texto:"Equipe de Desenvolvimento", valor: false},
-            {texto:"Gerente de Projeto", valor: false},
-        ]
-    },
-    {
-        questao:"Qual é o objetivo da revisão de sprint conduzida pelo Product Owner?",
-        respostas:[
-            {texto:"Avaliar o desempenho individual dos membros da equipe", valor: false},
-            {texto:"Revisar e adaptar o processo de desenvolvimento", valor: false},
-            {texto:"Definir novas histórias do usuário para o próximo sprint", valor: false},
-            {texto:"Demonstrar o trabalho concluído à equipe de stakeholders", valor: true},
-        ]
-    },
-    {
-        questao:"Qual é a melhor prática para um Product Owner lidar com mudanças nos requisitos do produto durante um sprint?",
-        respostas:[
-            {texto:"Comunicar imediatamente as mudanças à equipe de desenvolvimento", valor: true},
-            {texto:"Ignorar as mudanças e continuar com o plano original", valor: false},
-            {texto:"Adicionar as mudanças ao backlog do produto para o próximo sprint", valor: false},
-            {texto:"Decidir sozinho como lidar com as mudanças", valor: false},
+            {texto:"Análise de Pontos de Função", valor: false},
+            {texto:"Planning Poker", valor: true},
+            {texto:"Método Delphi", valor: false},
+            {texto:"Análise PERT", valor: false},
         ]
     },
 
-   
+    {
+        questao:"O que os pontos de história (story points) representam em Scrum?",
+        respostas:[
+            {texto:"O esforço relativo necessário para completar uma história de usuário", valor: true},
+            {texto:"O número de horas necessárias para completar uma tarefa", valor: false},
+            {texto:"A complexidade técnica de uma tarefa", valor: false},
+            {texto:" A quantidade de linhas de código a serem escritas", valor: false},
+        ]
+    },
+
+    {
+        questao:"Qual é o papel do time de desenvolvimento durante a estimativa das histórias de usuário?",
+        respostas:[
+            {texto:"Atribuir tarefas específicas aos membros do time", valor: false},
+            {texto:"Determinar a prioridade das histórias de usuário no Product Backlog", valor: false},
+            {texto:"Estimar coletivamente o esforço necessário para completar cada história de usuário", valor: true},
+            {texto:"Aprovar as estimativas fornecidas pelo Product Owner", valor: false},
+        ]
+    },
+
+    {
+        questao:"Por que é importante revisar e ajustar as estimativas durante a Sprint Planning?",
+        respostas:[
+            {texto:"Para garantir que todas as histórias de usuário sejam concluídas na Sprint", valor: false},
+            {texto:"Para refletir um melhor entendimento do trabalho a ser feito e ajustar o planejamento da Sprint", valor: true },
+            {texto:"Para alterar a visão do produto conforme necessário", valor: false},
+            {texto:"Para aprovar as estimativas finais fornecidas pelos stakeholders", valor: false},
+        ]
+    },
+
+    {
+        questao:"Qual é o benefício principal do uso de técnicas como Planning Poker para estimativas no Scrum?",
+        respostas:[
+            {texto:"Atribuir pontos de história de forma mais rápida e eficiente", valor: false},
+            {texto:"Aumentar a precisão das estimativas baseadas em cálculos matemáticos", valor: false},
+            {texto:"Promover a colaboração e obter uma visão compartilhada do esforço necessário", valor: true},
+            {texto:"Garantir que o Product Owner defina todas as estimativas de esforço", valor: false},
+        ]
+    }
 
 ];
 

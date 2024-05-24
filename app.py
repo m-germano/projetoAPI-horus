@@ -175,16 +175,17 @@ def questionarios_home():
 
 @app.route('/questionarios/<id>')
 def questionarios(id):
-    if id=="dev":
-        return render_template('questionarios/questionario_dev.html')
-    if id=="scrum-master":
-        return render_template('questionarios/questionario_sm.html')
-    if id=="po":
-        return render_template('questionarios/questionario_po.html')
-    if id=="intro":
+    if id=="introdução":
         return render_template('questionarios/questionario_introducao.html')
-    if id=="kanban":
-        return render_template('questionarios/questionario_kanban.html')
+    if id=="responsabilidades":
+        return render_template('questionarios/questionario_responsabilidades.html')
+    if id=="eventos":
+        return render_template('questionarios/questionario_eventos.html')
+    if id=="artefatos":
+        return render_template('questionarios/questionario_artefatos.html')
+    if id=="estimativas":
+        return render_template('questionarios/questionario_estimativas.html')
+    
     
 @app.route('/estimativa')
 def estimativas():
