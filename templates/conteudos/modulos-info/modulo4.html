@@ -1,0 +1,13 @@
+{% extends 'main/base.html' %}
+
+{%block css%}<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">{%endblock css%}
+    
+{% block title %}Módulo 04{% endblock title %}
+
+
+
+{%block conteudo%}
+<a href="{{url_for('home')}}">Cancelar</a>
+<a href="{{url_for('sprint_backlog')}}">Iniciar Modulo 04</a>
+
+{%endblock conteudo%}

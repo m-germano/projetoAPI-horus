@@ -134,61 +134,109 @@ def change_password():
             flash("Current password is incorrect", "danger")
     return render_template('login/change_password.html', form=form)
 
-@app.route('/conceitos/<id>')
-def conceitos(id):
-    if id == 'introducao':
-        return render_template('conteudos/introducao.html')
-    elif id == 'kanban':
-        return render_template('conteudos/kanban.html')
-    elif id == 'definitionReadyDone':
-        return render_template('conteudos/definitionReadyDone.html')
 
-@app.route('/responsabilidades/<id>')
-def responsabilidades(id):
-    if id == 'scrum':
-        return render_template('conteudos/scrum_master.html')
-    elif id == 'po':
-        return render_template('conteudos/product_owner.html')
-    elif id == 'dev':
-        return render_template('conteudos/dev.html')
-    else:
-        return 'Página não encontrada'
+#MODULOS INTRODUCAO
 
-@app.route('/eventos-scrum')
+@app.route('/modulo1')
+def modulo01():
+    return render_template('conteudos/modulos-info/modulo1.html')
+
+@app.route('/modulo2')
+def modulo02():
+    return render_template('conteudos/modulos-info/modulo2.html')
+
+@app.route('/modulo3')
+def modulo03():
+    return render_template('conteudos/modulos-info/modulo3.html')
+
+@app.route('/modulo4')
+def modulo04():
+    return render_template('conteudos/modulos-info/modulo4.html')
+
+@app.route('/modulo5')
+def modulo05():
+    return render_template('conteudos/modulos-info/modulo5.html')
+
+
+
+# Módulo 01
+
+
+@app.route('/introducao')
+def introducao():
+    return render_template('conteudos/modulo1/introducao.html', first_page=True, next_url=url_for('kanban'), next_label='Next')
+
+@app.route('/kanban')
+def kanban():
+    return render_template('conteudos/modulo1/kanban.html', previous_url=url_for('introducao'), next_url=url_for('definition_ready_done'), previous_label='Anterior', next_label='Next')
+
+@app.route('/definition_ready_done')
+def definition_ready_done():
+    return render_template('conteudos/modulo1/definitionReadyDone.html', previous_url=url_for('kanban'), next_url=url_for('questionario_modulo1'), previous_label='Previous', next_label='Quiz')
+
+@app.route('/questionario_01')
+def questionario_modulo1():
+    return render_template('questionarios/questionario_introducao.html')
+
+# Módulo 02
+@app.route('/scrum')
+def scrum():
+    return render_template('conteudos/modulo2/scrum_master.html', first_page=True, next_url=url_for('product_owner'), next_label='Next')
+
+@app.route('/product_owner')
+def product_owner():
+    return render_template('conteudos/modulo2/product_owner.html', previous_url=url_for('scrum'), next_url=url_for('dev'), previous_label='Previous', next_label='Next')
+
+@app.route('/dev')
+def dev():
+    return render_template('conteudos/modulo2/dev.html', previous_url=url_for('product_owner'), next_url=url_for('questionario_modulo2'), previous_label='Previous', next_label='Next')
+
+@app.route('/questionario_02')
+def questionario_modulo2():
+    return render_template('questionarios/questionario_kanban.html')
+
+# Módulo 03
+@app.route('/eventos_scrum')
 def eventos_scrum():
-    return render_template('conteudos/eventos_scrum.html')
-   
-@app.route('/artefatos-scrum/<id>')
-def artefatos_scrum(id):
-    if id == 'sprint-backlog':
-        return render_template('conteudos/sprint_backlog.html')
-    elif id == 'mvp':
-        return render_template('conteudos/mvp.html')
-    elif id == 'productbacklog':
-        return render_template('conteudos/product_backlog.html')
-    elif id == 'productincrement':
-        return render_template('conteudos/product_increment.html')
-    
-@app.route('/questionarios')
-def questionarios_home():
-    return render_template('questionarios/questionarios.html') 
+    return render_template('conteudos/modulo3/eventos_scrum.html', first_page=True, next_url=url_for('questionario_modulo2'), next_label='Next')
 
-@app.route('/questionarios/<id>')
-def questionarios(id):
-    if id=="dev":
-        return render_template('questionarios/questionario_dev.html')
-    if id=="scrum-master":
-        return render_template('questionarios/questionario_sm.html')
-    if id=="po":
-        return render_template('questionarios/questionario_po.html')
-    if id=="intro":
-        return render_template('questionarios/questionario_introducao.html')
-    if id=="kanban":
-        return render_template('questionarios/questionario_kanban.html')
-    
-@app.route('/estimativa')
+@app.route('/questionario_03')
+def questionario_modulo3():
+    return render_template('questionarios/questionario_modulo3.html')
+
+# Módulo 04
+@app.route('/sprint_backlog')
+def sprint_backlog():
+    return render_template('conteudos/modulo4/sprint_backlog.html', first_page=True, next_url=url_for('mvp'), next_label='Next')
+
+@app.route('/mvp')
+def mvp():
+    return render_template('conteudos/modulo4/mvp.html', previous_url=url_for('sprint_backlog'), next_url=url_for('product_increment'), previous_label='Previous', next_label='Next')
+
+@app.route('/product_increment')
+def product_increment():
+    return render_template('conteudos/modulo4/product_increment.html', previous_url=url_for('mvp'), next_url=url_for('product_backlog'), previous_label='Previous', next_label='Next')
+
+@app.route('/product_backlog')
+def product_backlog():
+    return render_template('conteudos/modulo4/product_backlog.html', previous_url=url_for('product_increment'), next_url=url_for('questionario_modulo4'), previous_label='Previous', next_label='Next')
+
+@app.route('/questionario_04')
+def questionario_modulo4():
+    return render_template('questionarios/questionario_modulo4.html')
+
+# Módulo 05
+@app.route('/estimativas')
 def estimativas():
-    return render_template('conteudos/estimativa.html')
+    return render_template('conteudos/modulo5/estimativa.html', first_page=True, next_url=url_for('questionario_modulo5'), next_label='Next')
+
+@app.route('/questionario')
+def questionario_modulo5():
+    return render_template('questionarios/questionario_modulo5.html')
+
+@app.route('/questionarios')
+def questionarios():
+    return render_template('questionarios/questionarios.html')
 
 @app.route('/download/<path:filename>')
 def download_file(filename):

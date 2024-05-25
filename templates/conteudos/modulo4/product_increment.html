@@ -8,19 +8,6 @@
 {% include 'include_files/navbar-dropdown.html' %} 
 <main class="container-eventos">
 
-    <div class="sumario">
-        <details>
-            <summary>Sumário</summary>
-            <ol>
-                <li><a href="#introducao" >Introdução</a></li>
-                <li><a href="#OqueEh" >O que é o Product Increment?</a></li>
-                <li><a href="#implementacao" >Como implementar o Product Increment </a></li>
-                <li><a href="#beneficios" >Benefícios do Product Increment</a></li>
-                <li><a href="#Praticas" >Práticas para otimizar o uso do Product Increment</a></li>
-            </ol>
-        </details>
-    </div>
-
     <!-- Sobre o que é a pagina -->
     <div class="section-content">
         <p> Nesta página, encontra-se uma explicação abrangente sobre o conceito de Product Increment. Contudo, para uma compreensão completa, é de suma importância que as páginas anteriores já tenham sido estudadas e compreendidas. </p>
@@ -92,5 +79,6 @@
     </div>
 
 </main>
+{% include 'include_files/pagination.html' %}
 {% include 'include_files/footer.html' %}
 {%endblock conteudo%}

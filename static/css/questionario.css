@@ -1,13 +1,16 @@
 body{
     background-color: hsl(220, 100%, 97%);
+    margin: 0; /* Certifique-se de que não há margem padrão */
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .app-container{
-    font-family: "Arvo", serif;
+    font-family: "Poppins", serif;
     background-color: #fff;
-    width: 90%;
+    border: 0.1rem solid black;
     height: auto;
-    max-width: 800px;
+    max-width: 1024px;
     margin: 10rem auto;
     border-radius: 10px;
     padding: 3rem;
@@ -15,8 +18,8 @@ body{
 
 .app-container h1{
     font-weight: bolder;
-    color: var(--green-theme);
-    font-size: 3rem;
+    color: #222;
+    font-size: 2rem;
     border-bottom: 0.1rem solid #333;
     padding-bottom: 1rem;
 }
@@ -27,7 +30,7 @@ body{
 
 .quiz h2{
     font-size: 1.5rem;
-    color: var(--green-theme);
+    color: #222;
     font-weight: 700;
 }
 
@@ -55,7 +58,7 @@ body{
 }
 
 #next-btn{
-    background: var(--green-theme);
+    background: #222;
     color: var(--white-color);
     font-weight: 500;
     border: 0;
@@ -87,7 +90,7 @@ body{
 .questionarios-design h1{
     font-size: 3rem;
     font-weight: bolder;
-    font-family: "Arvo", serif;
+    font-family: "Poppins", serif;
     color: #fff;
     text-shadow: #222;
     
@@ -116,7 +119,7 @@ body{
 .container-links-questionarios a{
     color: #222;
     font-size: 1.2rem;
-    font-family: "Arvo", serif;
+    font-family: "Poppins", serif;
     text-align: center;
     width: 50%;
     margin: 0 auto;
@@ -140,11 +143,16 @@ body{
 
 
 
-.img-return{
-    width: 4rem;
-    height: 4rem;
-    cursor: pointer;
-    top: 10rem;
-    right: 5rem;
-    position: fixed;
+
+
+@media screen and (max-width:1024px) {
+.app-container{
+    max-width: 1024px;
+    margin-inline: 0;
+    border-radius: 10px;
+    border: 0.1rem solid black;
+
+}
+
+    
 }
