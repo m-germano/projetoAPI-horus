@@ -18,12 +18,11 @@
 }
 
 .contp{
-    font-family: "Arvo",serif;
+    font-family: "Arvo", serif;
 }
 
 .contp p{
     font-size: 1.5rem;
-
 }
 .contp h3{
     margin:3rem 0;
@@ -35,6 +34,7 @@
 }
 
 .sub1 {
+    font-family: "Arvo", serif;
     animation: fadein 5s;
     display: flex;
     flex-direction: column;
@@ -44,7 +44,16 @@
     text-align: center;
     background-color: rgb(225, 255, 248);
 } 
+.subtitle1{
+    font-family: "Arvo", serif;
+    color: var( --green-theme);
+}
+.resume-title{
+    font-family: "Arvo", serif;
+    color: var( --green-theme);
+}
 .sub2{
+    font-family: "Arvo", serif;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -55,6 +64,8 @@
     background-color: rgb(234, 241, 248);
 }  
 .subtitle2{
+    font-family: "Arvo", serif;
+    color: var( --green-theme);
     text-align: center;
     padding-bottom: 0.5rem;
 }
@@ -64,6 +75,7 @@
     font-family: "Arvo", serif;
 }
 .sub3{
+    font-family: "Arvo", serif;
     display: flex;
     flex-direction: raw;
     justify-content: space-evenly;
@@ -73,10 +85,22 @@
     gap: 1rem;
     background-color: #fbf3e3;
 }  
+.lista{
+    font-family: "Arvo", serif;
+    max-width: 80%;
+    font-size: 18px;
+}
 .subtitle3{
+    font-family: "Arvo", serif;
+    color: var( --green-theme);
     padding-bottom: 1.5rem;
 }
+.subtitle5{
+    font-family: "Arvo", serif;
+    color: var( --green-theme);
+}
 .sub5{
+    font-family: "Arvo", serif;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -86,10 +110,17 @@
 
 }
 .sub5cont{
+    font-family: "Arvo", serif;
     text-align: center;
+}
+.subtitle1, .subtitle2, .subtitle3, .subtitle5{
+    font-size: 40px;
 }
 
 @media screen and (max-width: 1055px){
+    .subtitle1, .subtitle2, .subtitle3, .subtitle5{
+        font-size: 35px;
+    }
     .sub2 {
         display: flex;
         flex-direction: column;
@@ -118,6 +149,7 @@
     .sub3 {
         display: flex;
         flex-direction: column-reverse;
+        align-items: center;
     }
     .imgsub3{
         width: 50%;
@@ -144,6 +176,9 @@
     }
 }
 @media screen and (max-width: 750px) {
+    .subtitle1, .subtitle2, .subtitle3, .subtitle5{
+        font-size: 30px;
+    }
     .imgsub3{
         width: 60%;
         height: 60%;

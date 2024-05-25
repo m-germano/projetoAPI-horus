@@ -9,21 +9,6 @@
 {%block conteudo%}
 {% include 'include_files/navbar-dropdown.html' %} 
 <div class="container-eventos">
-    <div class="sumario">
-    <details>
-        <summary>Sumário</summary>
-        <ol>
-            <li><a href="#introducao">Introdução</a></li>
-            <li><a href="#sprint">O que é uma sprint?</a></li>
-            <li><a href="#sprint-planning">Sprint Planning </a></li>
-            <li><a href="#daily-scrum">Daily Scrum</a></li>
-            <li><a href="#sprint-review">Sprint Review</a></li>
-            <li><a href="#sprint-retrospective">Sprint Retrospective </a></li>
-            <li><a href="#burndown-chart">Burndown-Chart e seu papel dentro das sprints</a></li>
-
-        </ol>
-    </details>
-    </div>
 
 
     <div class="section-content" >
@@ -57,7 +42,7 @@
     <p>O Product Owner começa a reunião apresentando os itens do Backlog do Produto que precisam ser entregues na próxima Sprint, e o Time de Desenvolvimento avalia o que será possível entregar no período.</p>
     <p>Estabelece-se a meta da Sprint, que corresponde ao(s) item(s) do Backlog do Produto, e o Time de Desenvolvimento então decide como irá construir as funcionalidades necessárias.</p>
     <p>Para isso, o Time começa a desenhar o sistema e separar o trabalho em unidades de um dia de duração ou menos, podendo inclusive convidar outras pessoas para participar da Reunião e contribuir com opinião técnica.</p>
-    <p>Como resultado, é produzido o <strong><a href="{{ url_for('artefatos_scrum', id='sprint-backlog')}}">Backlog da Sprint (ou Sprint Backlog)</a></strong>, que é a junção dos itens selecionados do Backlog do Produto e seus respectivos planos de entrega.</p>
+    <p>Como resultado, é produzido o <strong><a href="{{ url_for('sprint_backlog')}}">Backlog da Sprint (ou Sprint Backlog)</a></strong>, que é a junção dos itens selecionados do Backlog do Produto e seus respectivos planos de entrega.</p>
 
     </div>
 
@@ -131,7 +116,7 @@
 </div>
 
 
-
+{% include 'include_files/pagination.html' %}
 {% include 'include_files/footer.html' %}
 
 {%endblock conteudo%}
