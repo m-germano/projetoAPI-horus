@@ -1,11 +1,10 @@
-{% extends 'main/base.html' %}
+{% extends 'base.html' %}
 
-{%block css%}<link rel="stylesheet" href="{{ url_for('static', filename='css/estimativa.css') }}">{%endblock css%}
+{%block css%}<link rel="stylesheet" href="../static/css/estimativa.css">{%endblock css%}
     
 {% block title %}Estimativas{% endblock title %}
 
 {%block conteudo%}
-{% include 'include_files/navbar-dropdown.html' %} 
 
     <div class="contt">
         <h2 class="title">Estimativas</h2>
@@ -115,7 +114,7 @@
 
 
 
-    {% include 'include_files/pagination.html' %}
-    {% include 'include_files/footer.html' %}
+
+
 
 {%endblock conteudo%}
