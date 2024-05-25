@@ -72,10 +72,10 @@ class databaseProjeto(db.Model):
 
 
 class ChangePasswordForm(FlaskForm):
-    current_password = PasswordField(validators=[InputRequired(), Length(min=4, max=20)], render_kw={"placeholder": "Current Password"})
-    new_password = PasswordField(validators=[InputRequired(), Length(min=4, max=20)], render_kw={"placeholder": "New Password"})
-    confirm_new_password = PasswordField(validators=[InputRequired(), Length(min=4, max=20), EqualTo('new_password', message='Passwords must match')], render_kw={"placeholder": "Confirm New Password"})
-    submit = SubmitField("Change Password")
+    current_password = PasswordField(validators=[InputRequired(), Length(min=4, max=20)], render_kw={"placeholder": "Senha atual"})
+    new_password = PasswordField(validators=[InputRequired(), Length(min=4, max=20)], render_kw={"placeholder": "Nova Senha"})
+    confirm_new_password = PasswordField(validators=[InputRequired(), Length(min=4, max=20), EqualTo('new_password', message='Passwords must match')], render_kw={"placeholder": "Confirme a nova senha"})
+    submit = SubmitField("Mudar senha")
 
 
 
@@ -87,6 +87,9 @@ def home():
 
 @app.route('/login', methods=['GET','POST'])
 def login():
+    if current_user.is_authenticated:
+        return redirect(url_for('dashboard'))
+    
     form=LoginForm()
     if form.validate_on_submit():
         user=User.query.filter_by(username=form.username.data).first()
@@ -176,7 +179,7 @@ def definition_ready_done():
 
 @app.route('/questionario_01')
 def questionario_modulo1():
-    return render_template('questionarios/questionario_introducao.html')
+    return render_template('questionarios/questionario_modulo1.html')
 
 # Módulo 02
 @app.route('/scrum')
@@ -193,12 +196,12 @@ def dev():
 
 @app.route('/questionario_02')
 def questionario_modulo2():
-    return render_template('questionarios/questionario_kanban.html')
+    return render_template('questionarios/questionario_modulo2.html')
 
 # Módulo 03
 @app.route('/eventos_scrum')
 def eventos_scrum():
-    return render_template('conteudos/modulo3/eventos_scrum.html', first_page=True, next_url=url_for('questionario_modulo2'), next_label='Next')
+    return render_template('conteudos/modulo3/eventos_scrum.html', first_page=True, next_url=url_for('questionario_modulo3'), next_label='Next')
 
 @app.route('/questionario_03')
 def questionario_modulo3():

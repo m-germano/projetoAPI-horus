@@ -11,13 +11,16 @@
     <!-- ================REMIXICONS======================== -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.min.css" rel="stylesheet">
     
+    {%block title%} {%endblock title%}
 
      <!-- ================== CSS=============================== -->
      <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+     <link rel="icon" type="image/x-icon" href="https://example.com/path/to/favicon.ico">
+
+     
 
     {%block css%}{%endblock css%}
   
-    <title>{% block title %}Base do Projeto{% endblock title %}</title>
 </head>
 
 <body>
