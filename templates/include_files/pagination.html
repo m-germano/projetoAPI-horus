@@ -1,0 +1,18 @@
+{% extends 'main/base.html' %}
+
+{% block conteudo %}
+
+<div class="container-fluid">
+    <div class="pagination p7">
+        <ul>
+            {% if not first_page %}
+                <li><a class="is-active" href="{{ previous_url }}">{{ previous_label }}</a></li>
+            {% endif %}
+            <li><a href="{{ next_url }}">{{ next_label }}</a></li>
+        </ul>
+    </div>
+</div>
+
+
+
+{% endblock conteudo %}

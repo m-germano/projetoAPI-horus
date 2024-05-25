@@ -9,9 +9,8 @@
 <div class="container-eventos">
 
     <div class="section-content">
-
         <h2>Product Owner</h2>
-
+        
         <div class="img">
             <img src="../static/imagens/product-owner.png">
         </div>
@@ -154,10 +153,8 @@
  
 </div>
 
-<div class="quiz-link">
-    <h2>Para reforçar o conhecimento adquirido nesse topico: </h2>
-    <a href="{{url_for('questionarios', id='po')}}">Ir para questionário</a>
+
 </div>
-</div>
+{% include 'include_files/pagination.html' %}
 {% include 'include_files/footer.html' %}
 {%endblock conteudo%}

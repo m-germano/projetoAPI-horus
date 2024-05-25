@@ -153,10 +153,7 @@
     </div>
 </div>
 
-<div class="quiz-link">
-    <h2>Para reforçar o conhecimento adquirido nesse topico: </h2>
-    <a href="{{url_for('questionarios', id='dev')}}">Ir para questionário</a>
-</div>
 
+{% include 'include_files/pagination.html' %}
 {% include 'include_files/footer.html' %}
 {%endblock conteudo%}
