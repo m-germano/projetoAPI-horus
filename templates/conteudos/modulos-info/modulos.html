@@ -1,0 +1,123 @@
+{% extends 'main/base.html' %}
+
+{% block css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+{% endblock css %}
+
+{% block conteudo %}
+
+<style>
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+</style>
+
+<div class="navtabs">
+  <div class="navtab active" data-target="modulo1">Módulo 01</div>
+  <div class="navtab" data-target="modulo2">Módulo 02</div>
+  <div class="navtab" data-target="modulo3">Módulo 03</div>
+  <div class="navtab" data-target="modulo4">Módulo 04</div>
+  <div class="navtab" data-target="modulo5">Módulo 05</div>
+  <div class="navtab home" >Página Inicial</div>
+  <div class="underline"></div>
+</div>
+
+<div id="modulo1" class="content active">
+        <h1>Introdução</h1>
+        <p>Neste módulo, você será apresentado aos fundamentos da metodologia ágil Scrum. Vamos explorar a origem e os princípios do Scrum, e como essa abordagem pode transformar a maneira como equipes de desenvolvimento trabalham, promovendo eficiência, colaboração e entrega contínua de valor. Prepare-se para entender os conceitos básicos que sustentam o Scrum e como ele se diferencia de outras metodologias tradicionais.</p>
+        <img src="{{url_for('static', filename='imagens/intro.svg')}}" alt="">
+        <a href="{{url_for('introducao')}}">Iniciar Modulo 01</a>
+</div>
+<div id="modulo2" class="content">
+        <h1>Responsabilidades</h1>
+        <p>Neste módulo, você conhecerá os três principais papéis no Scrum: Scrum Master, Product Owner e Time de Desenvolvimento. Vamos detalhar as responsabilidades de cada papel e como eles colaboram para garantir o sucesso do projeto. Entender as funções e expectativas de cada membro da equipe é crucial para a implementação eficaz do Scrum.</p>
+        <img src="{{url_for('static', filename='imagens/responsabilidades.svg')}}" alt="">
+
+        <a href="{{url_for('scrum')}}">Iniciar Modulo 02</a>
+</div>
+<div id="modulo3" class="content">
+        <h1>Eventos de Scrum</h1>
+        <p>Neste módulo, exploraremos os principais eventos do Scrum, também conhecidos como cerimônias. Você aprenderá sobre o planejamento da Sprint, as reuniões diárias (Daily Scrum), a revisão da Sprint (Sprint Review) e a retrospectiva (Sprint Retrospective). Cada evento tem um propósito específico e contribui para a transparência, inspeção e adaptação contínua do processo de desenvolvimento.</p>
+        <img src="{{url_for('static', filename='imagens/eventos.svg')}}" alt="">
+        <a href="{{url_for('eventos_scrum')}}">Iniciar Modulo 03</a>
+</div>
+<div id="modulo4" class="content">
+        <h1>Artefatos de Scrum</h1>
+        <p>Neste módulo, você será introduzido aos artefatos essenciais do Scrum: o Product Backlog, o Sprint Backlog e o Increment. Vamos discutir a importância de cada artefato e como eles ajudam a organizar e priorizar o trabalho da equipe. Além disso, veremos como a Definition of Done (Definição de Pronto) assegura que o trabalho entregue atende aos critérios de qualidade estabelecidos.</p>
+        <img src="{{url_for('static', filename='imagens/artefatos.svg')}}" alt="">
+        <a href="{{url_for('sprint_backlog')}}">Iniciar Modulo 04</a>
+</div>
+<div id="modulo5" class="content">
+        <h1>Estimativas</h1>
+        <p>Neste módulo, você aprenderá sobre as técnicas de estimativa utilizadas no Scrum para planejar e prever o trabalho da equipe. Vamos explorar métodos como Planning Poker e Story Points, e entender a importância da medição da Velocity da equipe. Compreender e aplicar essas técnicas ajudará a melhorar a precisão das suas previsões e o planejamento das Sprints.</p>
+        <img src="{{url_for('static', filename='imagens/estimativa.svg')}}" alt="">
+        <a href="{{url_for('estimativas')}}">Iniciar Modulo 05</a>
+</div>
+
+
+
+
+<script>
+document.addEventListener('DOMContentLoaded', (event) => {
+    const homeTab = document.querySelector('.navtab.home'); // Adicione a classe 'home' ao elemento "Home"
+
+    homeTab.addEventListener('click', () => {
+        window.location.href = '/'; // Redireciona para a página inicial
+    });
+});
+
+const tabs = document.querySelectorAll('.navtab');
+const contents = document.querySelectorAll('.content');
+const underline = document.querySelector('.underline');
+
+function updateUnderline() {
+  const activeTab = document.querySelector('.navtab.active');
+  underline.style.width = `${activeTab.offsetWidth}px`;
+  underline.style.left = `${activeTab.offsetLeft}px`;
+}
+
+function setActiveTab(targetId) {
+  tabs.forEach(tab => {
+    tab.classList.toggle('active', tab.getAttribute('data-target') === targetId);
+  });
+  contents.forEach(content => {
+    content.classList.toggle('active', content.id === targetId);
+  });
+  updateUnderline();
+}
+
+tabs.forEach(tab => {
+  tab.addEventListener('click', () => {
+    const target = tab.getAttribute('data-target');
+    setActiveTab(target);
+    history.pushState(null, null, `#${target}`);
+  });
+});
+
+window.addEventListener('hashchange', () => {
+  const hash = window.location.hash.replace('#', '');
+  if (hash) {
+    setActiveTab(hash);
+  }
+});
+
+window.addEventListener('resize', updateUnderline);
+
+document.addEventListener('DOMContentLoaded', () => {
+  const hash = window.location.hash.replace('#', '');
+  if (hash) {
+    setActiveTab(hash);
+  } else {
+    updateUnderline();
+  }
+});
+</script>
+
+{% endblock conteudo %}

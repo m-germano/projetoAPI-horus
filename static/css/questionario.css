@@ -80,7 +80,7 @@ body{
 .questionarios-design{
     margin-top: calc(var(--header-height) + 2rem);
     height: calc(var(--header-height)*2);
-    background-color: var(--tomato);
+    background-color: #222;
     border:0;
     padding: 0;
     display: flex;

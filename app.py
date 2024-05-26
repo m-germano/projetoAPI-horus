@@ -167,15 +167,12 @@ def modulo05():
 
 @app.route('/introducao')
 def introducao():
-    return render_template('conteudos/modulo1/introducao.html', first_page=True, next_url=url_for('kanban'), next_label='Next')
+    return render_template('conteudos/modulo1/introducao.html', first_page=True, next_url=url_for('kanban'), next_label='Próximo')
 
 @app.route('/kanban')
 def kanban():
-    return render_template('conteudos/modulo1/kanban.html', previous_url=url_for('introducao'), next_url=url_for('definition_ready_done'), previous_label='Anterior', next_label='Next')
+    return render_template('conteudos/modulo1/kanban.html', previous_url=url_for('introducao'), next_url=url_for('questionario_modulo1'), previous_label='Anterior', next_label='Próximo')
 
-@app.route('/definition_ready_done')
-def definition_ready_done():
-    return render_template('conteudos/modulo1/definitionReadyDone.html', previous_url=url_for('kanban'), next_url=url_for('questionario_modulo1'), previous_label='Previous', next_label='Quiz')
 
 @app.route('/questionario_01')
 def questionario_modulo1():
@@ -184,15 +181,15 @@ def questionario_modulo1():
 # Módulo 02
 @app.route('/scrum')
 def scrum():
-    return render_template('conteudos/modulo2/scrum_master.html', first_page=True, next_url=url_for('product_owner'), next_label='Next')
+    return render_template('conteudos/modulo2/scrum_master.html', first_page=True, next_url=url_for('product_owner'), next_label='Próximo')
 
 @app.route('/product_owner')
 def product_owner():
-    return render_template('conteudos/modulo2/product_owner.html', previous_url=url_for('scrum'), next_url=url_for('dev'), previous_label='Previous', next_label='Next')
+    return render_template('conteudos/modulo2/product_owner.html', previous_url=url_for('scrum'), next_url=url_for('dev'), previous_label='Anterior', next_label='Próximo')
 
 @app.route('/dev')
 def dev():
-    return render_template('conteudos/modulo2/dev.html', previous_url=url_for('product_owner'), next_url=url_for('questionario_modulo2'), previous_label='Previous', next_label='Next')
+    return render_template('conteudos/modulo2/dev.html', previous_url=url_for('product_owner'), next_url=url_for('questionario_modulo2'), previous_label='Anterior', next_label='Próximo')
 
 @app.route('/questionario_02')
 def questionario_modulo2():
@@ -201,7 +198,7 @@ def questionario_modulo2():
 # Módulo 03
 @app.route('/eventos_scrum')
 def eventos_scrum():
-    return render_template('conteudos/modulo3/eventos_scrum.html', first_page=True, next_url=url_for('questionario_modulo3'), next_label='Next')
+    return render_template('conteudos/modulo3/eventos_scrum.html', first_page=True, next_url=url_for('questionario_modulo3'), next_label='Próximo')
 
 @app.route('/questionario_03')
 def questionario_modulo3():
@@ -210,19 +207,24 @@ def questionario_modulo3():
 # Módulo 04
 @app.route('/sprint_backlog')
 def sprint_backlog():
-    return render_template('conteudos/modulo4/sprint_backlog.html', first_page=True, next_url=url_for('mvp'), next_label='Next')
+    return render_template('conteudos/modulo4/sprint_backlog.html', first_page=True, next_url=url_for('mvp'), next_label='Próximo')
 
 @app.route('/mvp')
 def mvp():
-    return render_template('conteudos/modulo4/mvp.html', previous_url=url_for('sprint_backlog'), next_url=url_for('product_increment'), previous_label='Previous', next_label='Next')
+    return render_template('conteudos/modulo4/mvp.html', previous_url=url_for('sprint_backlog'), next_url=url_for('product_increment'), previous_label='Anterior', next_label='Próximo')
+
+
+@app.route('/definition_ready_done')
+def definition_ready_done():
+    return render_template('conteudos/modulo1/definitionReadyDone.html', previous_url=url_for('mvp'), next_url=url_for('product_increment'), previous_label='Anterior', next_label='Quiz')
 
 @app.route('/product_increment')
 def product_increment():
-    return render_template('conteudos/modulo4/product_increment.html', previous_url=url_for('mvp'), next_url=url_for('product_backlog'), previous_label='Previous', next_label='Next')
+    return render_template('conteudos/modulo4/product_increment.html', previous_url=url_for('definition_ready_done'), next_url=url_for('product_backlog'), previous_label='Anterior', next_label='Próximo')
 
 @app.route('/product_backlog')
 def product_backlog():
-    return render_template('conteudos/modulo4/product_backlog.html', previous_url=url_for('product_increment'), next_url=url_for('questionario_modulo4'), previous_label='Previous', next_label='Next')
+    return render_template('conteudos/modulo4/product_backlog.html', previous_url=url_for('product_increment'), next_url=url_for('questionario_modulo4'), previous_label='Anterior', next_label='Próximo')
 
 @app.route('/questionario_04')
 def questionario_modulo4():
@@ -231,15 +233,15 @@ def questionario_modulo4():
 # Módulo 05
 @app.route('/estimativas')
 def estimativas():
-    return render_template('conteudos/modulo5/estimativa.html', first_page=True, next_url=url_for('planningpoker'), next_label='Next')
+    return render_template('conteudos/modulo5/estimativa.html', first_page=True, next_url=url_for('planningpoker'), next_label='Próximo')
 
 @app.route('/planningpoker')
 def planningpoker():
-    return render_template('conteudos/modulo5/planningpoker.html',previous_url=url_for('estimativas'), previous_label='Previous', next_url=url_for('fibonacci'), next_label='Next')
+    return render_template('conteudos/modulo5/planningpoker.html',previous_url=url_for('estimativas'), previous_label='Anterior', next_url=url_for('fibonacci'), next_label='Próximo')
 
 @app.route('/fibonacci')
 def fibonacci():
-    return render_template('conteudos/modulo5/fibonacci.html', previous_url=url_for('planningpoker'),previous_label='Previous',next_url=url_for('questionario_modulo5'), next_label='Next')
+    return render_template('conteudos/modulo5/fibonacci.html', previous_url=url_for('planningpoker'),previous_label='Anterior',next_url=url_for('questionario_modulo5'), next_label='Próximo')
 
 @app.route('/questionario')
 def questionario_modulo5():
@@ -252,6 +254,10 @@ def questionarios():
 @app.route('/download/<path:filename>')
 def download_file(filename):
     return send_from_directory('static', filename, as_attachment=True)
+
+@app.route('/modulos')
+def modulos():
+    return render_template('conteudos/modulos-info/modulos.html')
 
 
 ######################## DASHBOARD DO ADMINSTRADOR #################################
