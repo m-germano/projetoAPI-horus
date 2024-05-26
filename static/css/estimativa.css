@@ -1,25 +1,10 @@
 
-
-.contt{
-    margin-top: calc(var(--header-height)+2rem);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding:10rem 0;
-}
 @keyframes fadein {
     100%{opacity: 1;}
     0%{opacity: 0;}
 }
 
-.contt{
-    animation: fadein 5s;
-}
 
-.contp{
-    font-family: "Arvo", serif;
-}
 
 .contp p{
     font-size: 1.5rem;
@@ -29,12 +14,11 @@
 }
 .contt h2{
     font-size: 3rem;
-    color: var(--green-theme);
+    color: var(--blue-theme);
     font-weight: 700;
 }
 
 .sub1 {
-    font-family: "Arvo", serif;
     animation: fadein 5s;
     display: flex;
     flex-direction: column;
@@ -45,37 +29,30 @@
     background-color: rgb(225, 255, 248);
 } 
 .subtitle1{
-    font-family: "Arvo", serif;
-    color: var( --green-theme);
+
+    color: var( --blue-theme);
 }
 .resume-title{
-    font-family: "Arvo", serif;
-    color: var( --green-theme);
+
+    color: var( --blue-theme);
 }
 .sub2{
-    font-family: "Arvo", serif;
+
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    padding-top: 3rem;
-    padding-bottom: 0.5rem;
+    padding: 3rem;
     gap: 1rem;
     background-color: rgb(234, 241, 248);
 }  
 .subtitle2{
-    font-family: "Arvo", serif;
-    color: var( --green-theme);
+    color: var( --blue-theme);
     text-align: center;
     padding-bottom: 0.5rem;
 }
-.paragrafo{
-    padding: 0.5rem;
-    text-align: center;
-    font-family: "Arvo", serif;
-}
+
 .sub3{
-    font-family: "Arvo", serif;
     display: flex;
     flex-direction: raw;
     justify-content: space-evenly;
@@ -86,21 +63,21 @@
     background-color: #fbf3e3;
 }  
 .lista{
-    font-family: "Arvo", serif;
+
     max-width: 80%;
     font-size: 18px;
 }
 .subtitle3{
-    font-family: "Arvo", serif;
-    color: var( --green-theme);
+
+    color: var( --blue-theme);
     padding-bottom: 1.5rem;
 }
 .subtitle5{
-    font-family: "Arvo", serif;
-    color: var( --green-theme);
+
+    color: var( --blue-theme);
 }
 .sub5{
-    font-family: "Arvo", serif;
+
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -110,7 +87,7 @@
 
 }
 .sub5cont{
-    font-family: "Arvo", serif;
+
     text-align: center;
 }
 .subtitle1, .subtitle2, .subtitle3, .subtitle5{

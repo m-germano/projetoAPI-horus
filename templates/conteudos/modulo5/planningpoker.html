@@ -1,0 +1,67 @@
+{% extends 'main/base.html' %}
+
+{%block css%}<link rel="stylesheet" href="../static/css/estimativa.css">{%endblock css%}
+    
+
+
+{%block conteudo%}
+
+
+{% include 'include_files/navbar-dropdown.html' %} 
+
+<div class="theme-intro">
+    <h1>Planning Poker</h1>
+</div>
+
+
+<div class="contp">
+
+    <div class="sub2">
+        <div class="sub2txt">
+            <h3 class="subtitle2">O que é Planning Poker e como funciona?</h3>
+            <p class="paragrafo">O Planning Poker se baseia em um jogo de cartas bastante simples.
+            Cada participante recebe um baralho de cartas contendo valores numéricos. 
+            Cada número representa o nível de esforço que o participante acha necessário para 
+            desenvolver o projeto em discussão no jogo.</p>
+
+            <p class="paragrafo">Na regra clássica do Planning Poker, o baralho entregue a cada participante contém 10 cartas, 
+                que seguem a seguinte sequência numérica: 0, 1, 2, 3, 5, 8, 13, 20, 40 e 100. 
+                Quanto maior for o número da carta escolhida pelo participante,maior é o nível de complexidade
+                estimado para realizar o projeto em discussão.
+            </p>
+        </div>
+        <img src="../static/imagens/planning-poker-1-e1608806334625.png" height="40%" width="40%" class="sub2img">
+    </div>
+    <div class="sub3">
+        <img src="../static/imagens/trokaideias.png" height="40%" width="40%" #fbf3e3 class="imgsub3">
+            <div class="sub3cont">
+                <h3 class="subtitle3">O jogo consiste nas seguintes etapas:</h3>
+                <ol class="lista">
+                    <li>Um moderador descreve uma tarefa e os jogadores escolhem a carta que melhor representa sua opnião 
+                      sobre a dificuldade e tempo que se pode realizar a tarefa.
+                    </li> <br>
+                    <li>Em seguida, o grupo discute sobre o projeto abertamente.Cada participante deve descrever como imagina lidar com o trabalho,
+                        quantas pessoas estima que estariam envolvidas,
+                    quais conjuntos de habilidades serão necessários e quais obstáculos ele vê retardando o progresso.  </li> <br>
+                    <li>Após a discussão é realizada outra votação com as cartas.Caso a maioria dos jogadores tenham entrado em 
+                        consenso sobre o nível de dificuldade do projeto,a estimativa é considerada finalizada,
+                        e ou tras tarefas podem ser colocadas em pauta. 
+                        Porém, se persistirem divergências significativas, novas discussões podem ser realizadas.
+                    </li>
+                </ol>
+            </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+    {% include 'include_files/pagination.html' %}
+    {% include 'include_files/footer.html' %}
+
+
+
+{%endblock conteudo%}

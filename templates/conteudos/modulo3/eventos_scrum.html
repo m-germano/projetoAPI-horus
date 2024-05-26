@@ -8,11 +8,15 @@
 
 {%block conteudo%}
 {% include 'include_files/navbar-dropdown.html' %} 
+
+<div class="theme-intro">
+    <h1>Eventos de Scrum</h1>
+</div>
+
 <div class="container-eventos">
 
 
     <div class="section-content" >
-        <h2 id="introducao">Introdução</h2>
         <p >As metodologias de gestão de projetos têm evoluído cada vez mais para acompanhar as necessidades de gerenciamento de cada tipo de projeto. Os projetos de TI, por exemplo, que são constantemente mutáveis e envolvem muitos interessados, adotaram as metodologias e frameworks ágeis para acompanhar as etapas de execução de perto e manter todos os envolvidos na mesma página. Dentro desse contexto, o framework Scrum é o mais famoso, e seu ponto chave é a segmentação do trabalho em Sprints.</p>
         <p>Neste texto, vamos aprender o que é uma Sprint, quem faz parte dela e como ela se organiza dentro de um projeto ágil.</p>
         <p>Pronto para começar? Boa leitura!</p>
@@ -103,9 +107,9 @@
        <p>Durante a Sprint Retrospective, o Burndown Chart pode ser utilizado como uma ferramenta valiosa para ajudar a equipe a refletir sobre seu desempenho ao longo da Sprint. Ao analisar o gráfico, a equipe pode identificar padrões, tendências e áreas de melhoria. Por exemplo, se o Burndown Chart mostrar uma linha reta ou uma tendência ascendente, pode indicar que a equipe teve dificuldades para concluir as tarefas conforme o planejado. Isso pode levar a discussões construtivas sobre os desafios enfrentados e possíveis soluções para melhorar o processo de desenvolvimento na próxima Sprint.</p>
 
     </div>
-    <div class="download-div">
+    <div class="section-content">
 
-        <h1>Baixar exemplo de Burndown Chart</h1>
+        <h2>Baixar exemplo de Burndown Chart</h2>
         <p>Clique no botao abaixo, para visualizar em seu proprio dispositivo, um modelo real de burndown chart</p>
          <a href="{{ url_for('static', filename='files/Burndown-Horus.xlsx') }}" download onclick="confirmarAcao()">
         <button class="btn btn-outline-primary btn-lg">Download Burndown Chart</button>

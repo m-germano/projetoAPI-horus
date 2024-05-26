@@ -81,7 +81,7 @@ class ChangePasswordForm(FlaskForm):
 
 
 ##########################################     APP ROUTE          ###################################################
-@app.route('/')
+@app.route('/', methods=['GET', 'POST'])
 def home():
     return render_template('main/index.html')
 
@@ -231,7 +231,15 @@ def questionario_modulo4():
 # Módulo 05
 @app.route('/estimativas')
 def estimativas():
-    return render_template('conteudos/modulo5/estimativa.html', first_page=True, next_url=url_for('questionario_modulo5'), next_label='Next')
+    return render_template('conteudos/modulo5/estimativa.html', first_page=True, next_url=url_for('planningpoker'), next_label='Next')
+
+@app.route('/planningpoker')
+def planningpoker():
+    return render_template('conteudos/modulo5/planningpoker.html',previous_url=url_for('estimativas'), previous_label='Previous', next_url=url_for('fibonacci'), next_label='Next')
+
+@app.route('/fibonacci')
+def fibonacci():
+    return render_template('conteudos/modulo5/fibonacci.html', previous_url=url_for('planningpoker'),previous_label='Previous',next_url=url_for('questionario_modulo5'), next_label='Next')
 
 @app.route('/questionario')
 def questionario_modulo5():
@@ -247,12 +255,6 @@ def download_file(filename):
 
 
 ######################## DASHBOARD DO ADMINSTRADOR #################################
-
-@app.route('/avaliacoes', methods=['POST', 'GET'])
-@login_required
-def principal():
-    lista = databaseProjeto.query.all()  # Buscar todos os itens
-    return render_template('avaliacao/tabela.html', lista=lista)
 
 
 @app.route('/avaliar', methods=['POST', 'GET'])
@@ -275,7 +277,11 @@ def avaliar():
             return redirect(url_for('home'))
     return render_template('avaliacao/avaliar.html')
 
-
+@app.route('/avaliacoes', methods=['POST', 'GET'])
+@login_required
+def principal():
+    lista = databaseProjeto.query.all()  # Buscar todos os itens
+    return render_template('avaliacao/tabela.html', lista=lista)
 
 @app.route('/<int:id>/remover')
 def remover(id):

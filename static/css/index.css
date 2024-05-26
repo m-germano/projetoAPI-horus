@@ -99,6 +99,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow-x: hidden;
 
 }
 
@@ -132,7 +133,7 @@
 }
 
 .content h1{
-    font-family: "poppins";
+    font-family: "poppins",serif;
     font-weight: 800;
     color: #fff;
     line-height: 1em;
@@ -215,7 +216,10 @@
 /* ################################## */
 
 
-/* ####################################### */
+
+
+
+/* ################ QUEM SOMOS? ####################### */
 
 
 
@@ -237,6 +241,7 @@
     gap: 5rem;
     margin:  6rem 0;
 }
+
 
 .carousel-indicators img{
     width: 70px;
@@ -278,7 +283,7 @@
 
 }
 
-/* ####################################### */
+/* ################# Cards Trilha ###################### */
 
 .cards-section {
     height: auto; 
@@ -503,7 +508,7 @@
 
   .faq-container{
   width: 100%;
-  font-family: "Poppins";
+  font-family: "Poppins",serif;
   padding: 10rem;
   background:#F3ECEA;
   
@@ -604,6 +609,15 @@
 
 
 @media screen and (max-width:350px){
+
+  *{
+    margin-inline: 0!important;
+
+  }
+
+  .quemsomos{
+    padding: 1rem;
+  }
   .quemsomos h2{
     font-size: 2rem;
   }
@@ -620,8 +634,10 @@
 }
 
   .container-quiz a{
-    font-size: 1.4rem;
+    font-size: 1rem;
     align-items: center;
+    padding: 2rem;
+    margin: 0;
   }
   .container-quiz h2{
     font-size: 1.4rem;

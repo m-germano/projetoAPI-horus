@@ -1,59 +1,65 @@
 
-body{
-    /* background-color: rgb(230, 230, 230); */
-    background-color: #f5f5f5;
-    font-family: "Arvo", serif;
-    
-    
-}
-
-
-h1,h2,h3{
-    margin:3rem 0 3rem 0;
-}
-
 p{
     text-indent: 2rem;
 }
 
 /* ############# PRINCIPAL ################ */
 
-.kanban-principal{
-    font-family: "Arvo", serif;
-}
 
-.kanban-principal h1{
-    display: flex;
-    justify-content: center;
-    font-size: 350%;
-}
-
-.kanban-principal p{
-    font-size: 150%;
-    display: flex;
-    justify-content: center;
-}
-
-.kanban-principal h2{
-    display: flex;
-    justify-content: center;
-    font-size: 200%;
-    color: #0075dc; 
-
-}
 
 .subtitulos{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    width: 100%;
+    height: auto;
     
 }
 
+
+.subtitulos-div{
+    padding: 3rem 2rem;
+    width: 25%;
+    flex-direction: column;
+    justify-content: left;
+
+
+}
+
+.subtitulos-div a{
+
+    display: inline-block;
+    margin-block: 2rem;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+
+}
+
+.subtitulos-div ul{
+    gap: 3rem;
+}
+
+.subtitulos-div ul li{
+    text-align: left;
+    list-style: circle;
+    margin-block: 1rem;
+    font-size: 1.6rem;
+
+}
 /* ############# Conceitos ################ */
 
 .display-flex{
     display: flex;
     justify-content: space-evenly;
+    width: 100%;
+    padding: 1rem;
+ 
 
+}
+
+.display-flex h3{
+    text-align: center!important;
+ 
 }
 
 .content-flex:last-child{
@@ -62,9 +68,7 @@ p{
     
 }
 
-.conceitos{
-    padding: 1rem 4rem;
-}
+
 .conceitos h1{
     color: #0075dc;
 }
@@ -88,6 +92,7 @@ p{
 }
 
 
+   
 /* ############# Aplicação ################ */
 
 
@@ -124,7 +129,7 @@ p{
 }
 
 .card-flex{
-    border: 2px solid #0075dc;
+    border: 0.1rem solid #0075dc;
     padding: 2rem;
     background-color:aliceblue;
     border-radius: 3rem;
@@ -135,6 +140,7 @@ p{
     justify-content: space-evenly;
     text-align: center;
     margin-bottom: 3rem;
+    margin: 0 auto;
     
     
 }
@@ -154,16 +160,29 @@ p{
 
 /* teste */
 
-@media screen and (max-width:768px){
-    .subtitulos{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
+@media screen and (max-width:800px){
 
+    .section-content{
+        width: 100%;
+    }
+    .subtitulos{
+        flex-direction: column;
+    }
     .subtitulos-div{
+        width: 100%;
+        justify-content: center;
         text-align: center;
     }
+
+  
+ 
+
+    .subtitulos-div ul li{
+        text-align: center;
+        align-items: center;
+        list-style: none;
+    }
+
 
     .display-flex{
         width: 100%;
@@ -175,11 +194,12 @@ p{
 
     .card-flex{
         margin: 2rem auto;
-        width: 85%;
+        width: 100%;
 
     }
 
     .vantagens{
         text-align: center;
     }
+
 }

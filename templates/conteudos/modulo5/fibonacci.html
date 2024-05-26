@@ -1,0 +1,41 @@
+{% extends 'main/base.html' %}
+
+{%block css%}<link rel="stylesheet" href="../static/css/estimativa.css">{%endblock css%}
+    
+
+
+{%block conteudo%}
+{% include 'include_files/navbar-dropdown.html' %} 
+<div class="theme-intro">
+    <h1>Sequência de Fibonacci </h1>
+</div>
+
+
+
+<div class="contp">
+        <div class="sub1">
+
+            <h3>Sequência de Fibonacci</h3>
+            <p>A sequência de Fibonacci contém números que aumentam exponencialmente. 
+               É justamente por isso que os times de metodologia ágil passaram a usar 
+               a escala de Fibonacci para os negócios. 
+               No geral, a escala de Fibonacci no Scrum é um método poderoso para garantir 
+               que o trabalho seja distribuído a todos por igual, além de poder ajudar a garantir que 
+            </p>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+    {% include 'include_files/pagination.html' %}
+    {% include 'include_files/footer.html' %}
+
+
+
+{%endblock conteudo%}
