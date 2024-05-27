@@ -1,5 +1,12 @@
 <h1 align="center">Projeto API - 1º Semestre ADS 2024 </h1>
 
+![horus-intro (1)](https://github.com/m-germano/projetoAPI-horus/assets/107308515/88ae2313-5925-4f8e-99b9-be23d12e9bc3)
+
+
+
+<br>
+<br>
+
 ## 🔗 Índice
 * [🎯 Objetivo](#-objetivo)
 * [📍 Requisitos funcionais](#-requisitos-funcionais)
@@ -12,8 +19,10 @@
 * [📽️ Vídeo do protótipo - Sprint 2](#️-vídeo-do-protótipo---sprint-2)
 * [📽️ Vídeo do protótipo - Sprint 3](#️-vídeo-do-protótipo---sprint-3)
 * [❓ Como usar o site no seu computador - Windows](#-como-usar-o-site-no-seu-computador---windows)
-* [❓ Como usar o site no seu computador Linux](#-como-usar-o-site-no-seu-computador-linux)
+* [❓ Como usar o site no seu computador - Linux](#-como-usar-o-site-no-seu-computador---linux)
 
+<br>
+<br>
 
 ## 🎯 Objetivo
 
@@ -30,7 +39,7 @@ Desenvolver um site informativo simples e funcional sobre a Metodologia Ágil qu
 <br>
 • Desenvolver um sistema web intuitivo e não ter poluições de informações.
 
-
+<br>
 
 ## 📍 Requisitos não-funcionais
 
@@ -75,17 +84,20 @@ Desenvolver um site informativo simples e funcional sobre a Metodologia Ágil qu
 
 ## 📋 MVP
 
-![mvp-sprint3](https://github.com/m-germano/projetoAPI-horus/assets/107308515/8523af61-a87f-4ce4-a5e2-bb8ad572cf0c)
-><br>
+![mvp-sprint3 (1)](https://github.com/m-germano/projetoAPI-horus/assets/107308515/0ed311a9-1353-4573-824e-fd3e14de428f)
+
+
+<br>
 
 ## 📽️ Vídeo do protótipo - Sprint 1
+https://github.com/m-germano/projetoAPI-horus/assets/107308515/5e84e16a-0893-48e1-8057-933bebb8b9e8
 
-[Assista aqui](https://github.com/m-germano/projetoAPI-horus/assets/107308515/5e84e16a-0893-48e1-8057-933bebb8b9e8)
-><br>
+<br>
 
 ## 📽️ Vídeo do protótipo - Sprint 2
+https://github.com/m-germano/projetoAPI-horus/assets/107308515/1f97bafe-1a7f-46fb-8afd-d33b52c9a5bd
 
-[Assista aqui](https://github.com/m-germano/projetoAPI-horus/assets/107308515/1f97bafe-1a7f-46fb-8afd-d33b52c9a5bd)
+<br>
 
 ## 📽️ Vídeo do protótipo - Sprint 3
 
@@ -93,9 +105,9 @@ Desenvolver um site informativo simples e funcional sobre a Metodologia Ágil qu
 https://github.com/m-germano/projetoAPI-horus/assets/107308515/04181982-4428-4c58-89dd-69741880bbb3
 
 
+<br>
+<br>
 
-<br>
-<br>
 ## ❓ Como usar o site no seu computador - Windows
 
 • O Github permite que você baixe os arquivos do projeto como uma pasta zip, o que facilita o acesso à plataforma pelo seu terminal.
@@ -107,7 +119,7 @@ https://github.com/m-germano/projetoAPI-horus/assets/107308515/04181982-4428-4c5
 
 • No explorador de arquivos do seu computador, verifique o caminho do projeto. Logo após utilizando o cmd ou o terminal do vscode, utilizando o comando cd (Change Directory, navegue até a localização.
 
-###Exemplo de caminho
+### Exemplo de caminho
 
 ```
 C:\Users\Guest\Desktop\projetoAPI-horus
@@ -126,9 +138,9 @@ C:\Users\Guest\Desktop\projetoAPI-horus
 ```
 
 • Copie o link do site e cole-o em seu navegador (caso tudo tenha ocorrido corretamente, o caminho provavelmente será: http://127.0.0.1:5000).
-><br>
+<br>
 
-## ❓ Resolucão de dois possíveis erros
+### Resolucão de dois possíveis erros
 • Existem dois possíveis erros que podem ocorrer durante essas etapas. O primeiro é a falta de permissão de execução em seu computador. Para corrigir isso, abra o PowerShell do seu computador como administrador e digite os seguintes comandos:
 
 ```
@@ -136,8 +148,10 @@ C:\Users\Guest\Desktop\projetoAPI-horus
 
 2- Pressione 'S' e 'Enter' para confirmar.
 ```
-><br>
-## ❓ Como usar o site no seu computador Linux
+<br>
+<br>
+
+## ❓ Como usar o site no seu computador - Linux
 
 ###  Instalando dependências necessárias
 ```
