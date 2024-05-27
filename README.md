@@ -110,20 +110,8 @@ https://github.com/m-germano/projetoAPI-horus/assets/107308515/04181982-4428-4c5
 
 ## ❓ Como usar o site no seu computador - Windows
 
-• O Github permite que você baixe os arquivos do projeto como uma pasta zip, o que facilita o acesso à plataforma pelo seu terminal.
+![infografico-comobaixar](https://github.com/m-germano/projetoAPI-horus/assets/107308515/4caf90c2-ca9e-4bda-9b21-9888f6f020cc)
 
-• Para baixar, basta clicar em <>Code no GitHub e fazer o download do arquivo zip.
-![download-zip](https://github.com/m-germano/projetoAPI-horus/assets/107308515/c8c982a9-2daa-4103-aee1-c71ac97f8cd5)
-
-• Para simplificar, mova o arquivo zip para a área de trabalho e extraia-o.
-
-• No explorador de arquivos do seu computador, verifique o caminho do projeto. Logo após utilizando o cmd ou o terminal do vscode, utilizando o comando cd (Change Directory, navegue até a localização.
-
-### Exemplo de caminho
-
-```
-C:\Users\Guest\Desktop\projetoAPI-horus
-```
 • No caminho localizado, digite os seguintes comandos:
 
 ```
@@ -159,8 +147,12 @@ sudo apt update
 sudo apt install python3
 sudo apt install python3-pip
 ```
+###  Utilizando o comando MKDIR, crie um diretório para o projeto e logo após:
+```
+git clone https://github.com/m-germano/projetoAPI-horus.git
+```
 
-### Criar e ativar um ambiente virtual (executar somente na primeira vez. )
+### Criar e ativar um ambiente virtual (executar somente na primeira vez e dentro da pasta do projeto. )
 ```
 python3 -m venv myenv
 ```
