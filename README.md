@@ -1,27 +1,42 @@
 <h1 align="center">Projeto API - 1º Semestre ADS 2024 </h1>
 
-##🎯 Objetivo
+## 🔗 Índice
+* [🎯 Objetivo](#-objetivo)
+* [📍 Requisitos funcionais](#-requisitos-funcionais)
+* [📍 Requisitos não-funcionais](#-requisitos-não-funcionais)
+* [🔧 Tecnologias utilizadas](#-tecnologias-utilizadas)
+* [👥 Grupo Horus](#-grupo-horus)
+* [📊 Product Backlog](#-product-backlog)
+* [📋 MVP](#-mvp)
+* [📽️ Vídeo do protótipo - Sprint 1](#️-vídeo-do-protótipo---sprint-1)
+* [📽️ Vídeo do protótipo - Sprint 2](#️-vídeo-do-protótipo---sprint-2)
+* [📽️ Vídeo do protótipo - Sprint 3](#️-vídeo-do-protótipo---sprint-3)
+* [❓ Como usar o site no seu computador - Windows](#-como-usar-o-site-no-seu-computador---windows)
+* [❓ Como usar o site no seu computador Linux](#-como-usar-o-site-no-seu-computador-linux)
+
+
+## 🎯 Objetivo
 
 Desenvolver um site informativo simples e funcional sobre a Metodologia Ágil que contenha conceitos e fundamentos, assim como exemplos práticos e avaliações para o usuário.
 
 ## 📍 Requisitos Funcionais
-•	Desenvolver uma interface web com os seguintes artefatos ágeis: Linguagem Python (Requisito Fatec), Linguagem HTML e CSS (Requisito Fatec), Uso do framework Bootstrap, Apresentação via Github, Processo Scrum, Burndown, Product Backlog,  Sprint, Sprint Planning,  Sprint Review, Sprint Backlog, Dailys, Retrospective, DOR – Definition of Ready, DOD – Definition of Done, Planning Poker, Kanban e  MVP. 
+• Desenvolver uma interface web com os seguintes artefatos ágeis: Linguagem Python (Requisito Fatec), Linguagem HTML e CSS (Requisito Fatec), Uso do framework Bootstrap, Apresentação via Github, Processo Scrum, Burndown, Product Backlog, Sprint, Sprint Planning, Sprint Review, Sprint Backlog, Dailys, Retrospective, DOR – Definition of Ready, DOD – Definition of Done, Planning Poker, Kanban e MVP. 
 <br>
-•Desenvolver um sistema de avaliação (Processo, Produto e Conhecimento em disciplina, SM., PO., TD)
+• Desenvolver um sistema de avaliação (Processo, Produto e Conhecimento em disciplina, SM., PO., TD)
 <br>
-•Possuir um sistema de avaliação de curso, para poder obter um feedback acerca das opiniões do usuário final (devem ficar salvas em um banco de dados). 
+• Possuir um sistema de avaliação de curso, para poder obter um feedback acerca das opiniões do usuário final (devem ficar salvas em um banco de dados). 
 <br>
-•Possuir um sistema de login adminstrador em que, uma vez logado, permita ver o histórico de avaliações realizadas.
+• Possuir um sistema de login adminstrador em que, uma vez logado, permita ver o histórico de avaliações realizadas.
 <br>
-•	Desenvolver um sistema web intuitivo e não ter poluições de informações.
+• Desenvolver um sistema web intuitivo e não ter poluições de informações.
 
 
 
 ## 📍 Requisitos não-funcionais
 
-•	Manual do Usuário (Github);
+• Manual do Usuário (Github);
 <br>
-•	Guia de instalação (Github);
+• Guia de instalação (Github);
 
 ## 🔧 Tecnologias utilizadas
 
@@ -50,26 +65,33 @@ Desenvolver um site informativo simples e funcional sobre a Metodologia Ágil qu
 
 <br><br>
 
-## Product Backlog 
+## 📊 Product Backlog
 ![product-backlog](https://github.com/m-germano/projetoAPI-horus/assets/107308515/69e55010-4993-4aeb-83ae-3d2c6c773e39)
 
-## Product Backlog - Download PDF
+### Download PDF
 [Backlog-Github.pdf](https://github.com/m-germano/projetoAPI-horus/files/15214824/Backlog-Github.pdf)
 
-<br><br>
+<br>
+
+## 📋 MVP
+
+![mvp-sprint3](https://github.com/m-germano/projetoAPI-horus/assets/107308515/8523af61-a87f-4ce4-a5e2-bb8ad572cf0c)
+><br>
 
 ## 📽️ Vídeo do protótipo - Sprint 1
 
-https://github.com/m-germano/projetoAPI-horus/assets/107308515/5e84e16a-0893-48e1-8057-933bebb8b9e8
+[Assista aqui](https://github.com/m-germano/projetoAPI-horus/assets/107308515/5e84e16a-0893-48e1-8057-933bebb8b9e8)
+><br>
 
 ## 📽️ Vídeo do protótipo - Sprint 2
 
-https://github.com/m-germano/projetoAPI-horus/assets/107308515/1f97bafe-1a7f-46fb-8afd-d33b52c9a5bd
+[Assista aqui](https://github.com/m-germano/projetoAPI-horus/assets/107308515/1f97bafe-1a7f-46fb-8afd-d33b52c9a5bd)
 
 ## 📽️ Vídeo do protótipo - Sprint 3
 
-
-
+[Assista aqui](https://github.com/m-germano/projetoAPI-horus/assets/107308515/229adefd-e2b8-4674-96bf-41d13fc17b04)
+<br>
+<br>
 ## ❓ Como usar o site no seu computador - Windows
 
 • O Github permite que você baixe os arquivos do projeto como uma pasta zip, o que facilita o acesso à plataforma pelo seu terminal.
@@ -82,6 +104,7 @@ https://github.com/m-germano/projetoAPI-horus/assets/107308515/1f97bafe-1a7f-46f
 • No explorador de arquivos do seu computador, verifique o caminho do projeto. Logo após utilizando o cmd ou o terminal do vscode, utilizando o comando cd (Change Directory, navegue até a localização.
 
 ###Exemplo de caminho
+
 ```
 C:\Users\Guest\Desktop\projetoAPI-horus
 ```
@@ -99,6 +122,7 @@ C:\Users\Guest\Desktop\projetoAPI-horus
 ```
 
 • Copie o link do site e cole-o em seu navegador (caso tudo tenha ocorrido corretamente, o caminho provavelmente será: http://127.0.0.1:5000).
+><br>
 
 ## ❓ Resolucão de dois possíveis erros
 • Existem dois possíveis erros que podem ocorrer durante essas etapas. O primeiro é a falta de permissão de execução em seu computador. Para corrigir isso, abra o PowerShell do seu computador como administrador e digite os seguintes comandos:
@@ -108,8 +132,8 @@ C:\Users\Guest\Desktop\projetoAPI-horus
 
 2- Pressione 'S' e 'Enter' para confirmar.
 ```
-
-##  Como usar o site no seu computador - Linux
+><br>
+## ❓ Como usar o site no seu computador Linux
 
 ###  Instalando dependências necessárias
 ```
