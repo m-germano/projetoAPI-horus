@@ -89,7 +89,11 @@ Desenvolver um site informativo simples e funcional sobre a Metodologia Ágil qu
 
 ## 📽️ Vídeo do protótipo - Sprint 3
 
-[Assista aqui](https://github.com/m-germano/projetoAPI-horus/assets/107308515/229adefd-e2b8-4674-96bf-41d13fc17b04)
+
+https://github.com/m-germano/projetoAPI-horus/assets/107308515/04181982-4428-4c58-89dd-69741880bbb3
+
+
+
 <br>
 <br>
 ## ❓ Como usar o site no seu computador - Windows
