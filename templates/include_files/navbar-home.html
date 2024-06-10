@@ -1,3 +1,99 @@
+<style>
+    nav{
+    
+    box-shadow: 1px 1px 1px 1px #b9b9b9;
+
+  }
+  nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0;
+
+    
+  }
+  nav li{
+    height: 50px;
+  }
+  nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #FFF;
+    font-size: 1.2rem;
+    
+    
+  }
+  nav a:hover{
+    background-color: #4e4e4e;
+  }
+  nav li:first-child{
+    margin-right: auto;
+  }
+
+  h2{
+    font-size: 4rem;
+    font-weight: 700;
+    text-align: center;
+    font-family: "Poppins", serif;
+
+}
+
+
+  .sidebar{
+    position: fixed;
+    top: 0; 
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    background-color: #f0f0f0;
+    
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    z-index: 2;
+   
+  }
+  .sidebar li{
+    width: 100%;
+    
+  }
+  .sidebar a{
+    width: 100%;
+    color: #000;
+   
+  }
+  .menu-button{
+    display: none;
+  }
+
+  @media(max-width: 800px){
+    .hideOnMobile{
+      display: none;
+    }
+    .menu-button{
+      display: block;
+      
+    }
+
+
+  }
+  @media(max-width: 400px){
+    .sidebar{
+      width: 100%;
+    }
+  }
+
+
+</style>
+
 <header class="animated">
     <nav>
         <ul class="sidebar">

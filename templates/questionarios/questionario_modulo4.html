@@ -5,10 +5,24 @@
     
 
 {%block conteudo%}
+
+<style>
+    @media screen and (max-width:400px){
+        .app-container{
+            border:0;
+            padding: 10px;
+            margin-top:2rem;
+        }
+        .quiz, .answer-buttons{
+           
+            margin: 0;
+        }
+    }
+</style>
 <div class="app-container">
     <h1>Quiz - Artefatos de Scrum</h1>
     <div class="quiz">
-        <h2 id="questao-local">Local da Questao</h2>
+        <h3 id="questao-local">Local da Questao</h3>
         <div id="answer-buttons">
             <button class="btn">Respostas 1</button>
             <button class="btn">Respostas 2</button>

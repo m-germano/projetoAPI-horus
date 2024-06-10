@@ -1,14 +1,7 @@
-body{
-    background-color: hsl(220, 100%, 97%);
-    margin: 0; /* Certifique-se de que não há margem padrão */
-    padding: 0;
-    box-sizing: border-box;
-}
-
 .app-container{
     font-family: "Poppins", serif;
     background-color: #fff;
-    border: 0.1rem solid black;
+
     height: auto;
     max-width: 1024px;
     margin: 10rem auto;
@@ -18,10 +11,10 @@ body{
 
 .app-container h1{
     font-weight: bolder;
-    color: #222;
-    font-size: 2rem;
-    border-bottom: 0.1rem solid #333;
+    border-bottom: 0.1rem solid var(--blue-theme);
     padding-bottom: 1rem;
+    text-align: center;
+
 }
 
 .quiz{
@@ -29,7 +22,7 @@ body{
 }
 
 .quiz h2{
-    font-size: 1.5rem;
+
     color: #222;
     font-weight: 700;
     text-align: justify;
@@ -59,7 +52,7 @@ body{
 }
 
 #next-btn{
-    background: #222;
+    background: var(--blue-theme);
     color: var(--white-color);
     font-weight: 500;
     border: 0;
@@ -137,23 +130,20 @@ body{
     background: #222;
     color: #fff;
 }
-/* .questionarios-list{
-    ...
-} */
 
 
-
-
-
-
-@media screen and (max-width:1024px) {
-.app-container{
-    max-width: 1024px;
-    margin-inline: 0;
-    border-radius: 10px;
-    border: 0.1rem solid black;
-
+@media screen and (max-width:400px){
+    .app-container{
+        border:0;
+        padding: 10px;
+        margin-top:2rem;
+    }
+    .quiz, .answer-buttons{
+       
+        margin: 0;
+    }
 }
 
-    
-}
+
+
+

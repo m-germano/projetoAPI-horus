@@ -14,7 +14,7 @@
     <div class="overlay"></div>
     <div class="content-home">
         <h1 class="animated">SCRUM</h1>
-        <p class="animated">Aprenda o framework de gestão de projetos <br> mais utilizado pelas grandes empresas.</p>
+        <p class="animated">Aprenda o framework de gestão de projetos mais utilizado pelas grandes empresas.</p>
         
  
        
@@ -142,9 +142,9 @@
               <div class="ag-courses-item_bg"></div>
       
               <div class="ag-courses-item_title">
-                Módulo 01: Introdução ao SCRUM
+                Módulo 01<span class="hideInSmallDevices">: Introdução ao SCRUM</span>
               </div>
-      
+              
           
             </a>
           </div>
@@ -155,7 +155,7 @@
               <div class="ag-courses-item_bg"></div>
       
               <div class="ag-courses-item_title">
-                Módulo 02: Responsabilidades
+                Módulo 02<span class="hideInSmallDevices">: Responsabilidades</span>
               </div>
       
             </a>
@@ -166,7 +166,7 @@
               <div class="ag-courses-item_bg"></div>
       
               <div class="ag-courses-item_title">
-                Módulo 03: Eventos de Scrum
+                Módulo 03<span class="hideInSmallDevices">: Eventos de Scrum</span>
               </div>
       
           
@@ -178,7 +178,7 @@
               <div class="ag-courses-item_bg"></div>
       
               <div class="ag-courses-item_title">
-                Módulo 04: Artefatos de Scrum
+                Módulo 04<span class="hideInSmallDevices">: Artefatos de Scrum</span>
               </div>
       
              
@@ -190,7 +190,7 @@
               <div class="ag-courses-item_bg"></div>
       
               <div class="ag-courses-item_title">
-                Módulo 05: Estimativas
+                Módulo 05<span class="hideInSmallDevices">: Estimativas</span>
               </div>
       
              
@@ -207,6 +207,15 @@
             </a>
           </div>
       
+          <div class="ag-courses_item">
+            <a href="{{url_for('avaliar')}}" class="ag-courses-item_link animated">
+              <div class="ag-courses-item_bg"></div>
+      
+              <div class="ag-courses-item_title">
+                Questionários
+              </div>
+            </a>
+          </div>
 
         </div>
       </div>
@@ -215,12 +224,10 @@
 
 <svg id="wave" style="transform:rotate(180deg); transition: 0.3s" viewBox="0 0 1440 140" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(34, 34, 34, 1)" offset="0%"></stop><stop stop-color="rgba(34, 34, 34, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,84L240,86.3C480,89,960,93,1440,81.7C1920,70,2400,42,2880,42C3360,42,3840,70,4320,67.7C4800,65,5280,33,5760,32.7C6240,33,6720,65,7200,74.7C7680,84,8160,70,8640,60.7C9120,51,9600,47,10080,44.3C10560,42,11040,42,11520,56C12000,70,12480,98,12960,100.3C13440,103,13920,79,14400,77C14880,75,15360,93,15840,102.7C16320,112,16800,112,17280,109.7C17760,107,18240,103,18720,88.7C19200,75,19680,51,20160,51.3C20640,51,21120,75,21600,74.7C22080,75,22560,51,23040,56C23520,61,24000,93,24480,107.3C24960,121,25440,117,25920,100.3C26400,84,26880,56,27360,44.3C27840,33,28320,37,28800,51.3C29280,65,29760,89,30240,84C30720,79,31200,47,31680,39.7C32160,33,32640,51,33120,65.3C33600,79,34080,89,34320,93.3L34560,98L34560,140L34320,140C34080,140,33600,140,33120,140C32640,140,32160,140,31680,140C31200,140,30720,140,30240,140C29760,140,29280,140,28800,140C28320,140,27840,140,27360,140C26880,140,26400,140,25920,140C25440,140,24960,140,24480,140C24000,140,23520,140,23040,140C22560,140,22080,140,21600,140C21120,140,20640,140,20160,140C19680,140,19200,140,18720,140C18240,140,17760,140,17280,140C16800,140,16320,140,15840,140C15360,140,14880,140,14400,140C13920,140,13440,140,12960,140C12480,140,12000,140,11520,140C11040,140,10560,140,10080,140C9600,140,9120,140,8640,140C8160,140,7680,140,7200,140C6720,140,6240,140,5760,140C5280,140,4800,140,4320,140C3840,140,3360,140,2880,140C2400,140,1920,140,1440,140C960,140,480,140,240,140L0,140Z"></path></svg>
 
-<div class="container-quiz animated" id="quiz-container" >
-    <h2 >Teste seus conhecimentos!</h2>
-    <a href="{{url_for('questionarios')}}">Questionários</a>
-  
-  </div>
-   
+
+
+
+
 
 
   <div class="faq-container animated" id="faq" >

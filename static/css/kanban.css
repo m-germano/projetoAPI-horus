@@ -1,7 +1,4 @@
 
-p{
-    text-indent: 2rem;
-}
 
 /* ############# PRINCIPAL ################ */
 
@@ -32,6 +29,7 @@ p{
     text-decoration: none;
     font-size: 2rem;
     font-weight: 700;
+    color: var(--blue-theme);
 
 }
 
@@ -69,9 +67,6 @@ p{
 }
 
 
-.conceitos h1{
-    color: #0075dc;
-}
 
 
 .conceitos img{
@@ -100,10 +95,7 @@ p{
     padding: 5% 10%;
 }
 
-.aplicação h1{
-    display: flex;
-    color: #0075dc;
-}
+
 
 .aplicação h3{
     display: flex;
@@ -115,12 +107,6 @@ p{
 
 /* ############# Kanban vs Scrum ################ */
 
-.vantagens h1{
-    display: flex;
-    justify-content: center;
-    color: #0075dc; 
-
-}
 
 .vantagens p{
     display: flex;
@@ -162,9 +148,6 @@ p{
 
 @media screen and (max-width:800px){
 
-    .section-content{
-        width: 100%;
-    }
     .subtitulos{
         flex-direction: column;
     }

@@ -7,7 +7,7 @@
 
 
 {%block conteudo%}
-{% include 'include_files/navbar-dropdown.html' %} 
+
 
 <div class="theme-intro">
     <h1>Eventos de Scrum</h1>
@@ -112,7 +112,7 @@
         <h2>Baixar exemplo de Burndown Chart</h2>
         <p>Clique no botao abaixo, para visualizar em seu proprio dispositivo, um modelo real de burndown chart</p>
          <a href="{{ url_for('static', filename='files/Burndown-Horus.xlsx') }}" download onclick="confirmarAcao()">
-        <button class="btn btn-outline-primary btn-lg">Download Burndown Chart</button>
+        <button class="btn">Download Burndown Chart</button>
         </a>
 
     </div>
