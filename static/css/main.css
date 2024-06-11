@@ -235,7 +235,7 @@ p{
 
 .section-content{
   width: 100%;
-  max-width: 1400px;
+  max-width: 1500px;
   padding: 1rem;
   margin: 1rem auto;
 }
@@ -254,12 +254,13 @@ p{
 
 
 .section-content ul{
-  margin-top: 2rem;
+  margin-block: 2rem;
   padding-left: 10%;
 }
 
 .section-content li{
   list-style: circle;
+  font-size: 1.3rem;
 }
 
 @media screen and (max-width:350px){
@@ -294,6 +295,7 @@ p{
   width: 100%;
   text-align: center;
   padding: 0;
+  margin-block: 5rem;
   
 }
 
@@ -550,7 +552,7 @@ p{
   margin-top: 5rem;
 }
 .login-form{
-  background: #222;
+  background: var(--blue-theme);
   padding: 6rem 6rem;
   width: 80%;
   margin: 10rem;
@@ -778,7 +780,7 @@ p{
 @media screen and (max-width: 550px) {
   .content{
     width: 100%;
-    padding-inline: 0.5rem;
+    padding-inline: 0.9rem;
   
   }
 
@@ -804,9 +806,9 @@ p{
 
 /* ###################AVALIACAO FORM############################### */
 .avaliacao-form {
-  max-width: 600px;
+  max-width: 700px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 4rem;
   border: 1px solid #ccc;
   border-radius: 0.5rem;
   background-color: #f9f9f9;
@@ -861,7 +863,7 @@ p{
   padding: 1rem;
   border: none;
   border-radius: 0.5rem;
-  background-color: #007bff;
+  background-color: var(--blue-theme);
   color: #fff;
   font-size: 1rem;
   cursor: pointer;
@@ -884,6 +886,8 @@ p{
   margin-bottom: 3rem;
 
 }
+
+
 
 .container-video video{
   object-fit: cover;
@@ -912,6 +916,7 @@ p{
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+
 }
 
 .content-home h1{
@@ -960,26 +965,6 @@ p{
   
 }
 
-@media screen and (max-width:750px){
-  .content-home a{
-      max-width:150px;
-      font-size: 19px;
-
-  }
-  .content-home h1{
-      font-size:5rem;
-  }
-
-  .content-home p{
-      font-size: 1.1rem;
-     
-  }
-
- 
-
- 
- 
-}
 
 @media (min-aspect-ratio:16/9) {
   .background-clip{
@@ -1000,12 +985,7 @@ p{
     padding: 1rem;
     text-align: center;
   }
-  .content-home a{
-    padding-block: 1rem;
-    font-size: 16px;
-    
-
-}
+  
 .content-home h1{
     font-size:3rem;
     text-align: center;
@@ -1016,6 +996,17 @@ p{
     word-break: break-all;
    
 }
+
+
+.content-home a{
+  max-width:150px;
+  font-size: 19px;
+  margin: 0 auto;
+
+}
+
+
+
 
 }
 
@@ -1082,10 +1073,7 @@ text-align: justify;
   display: none;
 }
 
-.container-video h1{
-  font-size: 3rem;
-  
-}
+
 }
 
 /* ################# Cards Trilha ###################### */
@@ -1093,6 +1081,8 @@ text-align: justify;
 .cards-section {
   height: auto; 
   background: #222;
+  padding: 1.5rem;
+  
 
 }
 
@@ -1164,7 +1154,6 @@ text-align: justify;
   color: #FFF;
   z-index: 2;
   position: relative;
-  text-transform: uppercase;
   display: flex;
   align-items: center;
 
@@ -1357,8 +1346,11 @@ text-align: center;
 }
 
 
-@media screen and (max-width:350px){
+@media screen and (max-width:400px){
 
+.cards-section{
+  padding: 0.5rem;
+}
 
 .quemsomos {
   padding: 10px;
@@ -1372,10 +1364,7 @@ text-align: center;
   font-size: 1rem;
 }
 
-.container-video h1{
-  font-size: 2rem;
- 
-}
+
 
 .faq-container summary{
 font-size: 1rem;
@@ -1410,3 +1399,9 @@ margin: 0 auto;
 }
 }
 
+@media screen and (min-width:1200px){
+  .container-video h1{
+    font-size: 7rem!important;
+   
+  }
+}
