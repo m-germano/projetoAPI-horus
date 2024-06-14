@@ -198,7 +198,11 @@ def questionario_modulo2():
 # Módulo 03
 @app.route('/eventos_scrum')
 def eventos_scrum():
-    return render_template('conteudos/modulo3/eventos_scrum.html', first_page=True, next_url=url_for('questionario_modulo3'), next_label='Próximo')
+    return render_template('conteudos/modulo3/eventos_scrum.html', first_page=True, next_url=url_for('eventos_scrum2'), next_label='Próximo')
+
+@app.route('/eventos_scrum-burndown')
+def eventos_scrum2():
+    return render_template('conteudos/modulo3/eventos_scrum2.html', previous_url=url_for('eventos_scrum'), next_url=url_for('questionario_modulo3'), previous_label='Anterior', next_label='Próximo')
 
 @app.route('/questionario_03')
 def questionario_modulo3():
@@ -296,6 +300,10 @@ def remover(id):
     db.session.commit()
     return redirect(url_for('principal'))
 
+
+@app.route('/dicionario')
+def dicionario():
+    return render_template('dicionario.html')
 
 
 if __name__ == "__main__":

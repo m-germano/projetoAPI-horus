@@ -13,7 +13,7 @@
     <h1>Eventos de Scrum</h1>
 </div>
 
-<div class="container-eventos">
+<div class="container-fluid">
 
 
     <div class="section-content" >
@@ -49,6 +49,8 @@
     <p>Como resultado, é produzido o <strong><a href="{{ url_for('sprint_backlog')}}">Backlog da Sprint (ou Sprint Backlog)</a></strong>, que é a junção dos itens selecionados do Backlog do Produto e seus respectivos planos de entrega.</p>
 
     </div>
+
+    <div></div>
 
     <div class="section-content">
     <h2 id="daily-scrum">Daily Scrum (Reunião Diária)</h2>
@@ -86,38 +88,41 @@
    
     </div>
 
-    <div class="section-content">
-        <h2 id="burndown-chart">Burndown Chart e seu papel dentro das sprints</h2>
-        
-        <h3>Introdução ao Burndown Chart no Scrum</h3>
-        <p>No contexto do Scrum, uma metodologia ágil amplamente adotada para o desenvolvimento de software, o Burndown Chart emerge como uma ferramenta essencial para acompanhar e visualizar o progresso do trabalho ao longo de uma Sprint. Uma Sprint é um período de tempo definido durante o qual uma equipe de desenvolvimento trabalha para entregar um incremento de produto potencialmente entregável.</p>
-        <p>O Burndown Chart é uma representação gráfica simples, porém poderosa, que ilustra a quantidade de trabalho restante ao longo do tempo durante uma Sprint. Ele mostra a evolução do trabalho pendente, comparando a quantidade de trabalho planejada com o tempo disponível.</p>
-        <p>Essa ferramenta é crucial para ajudar as equipes do Scrum a monitorar seu progresso diariamente, identificar tendências, prever a conclusão do trabalho e, se necessário, tomar medidas corretivas para atingir as metas da Sprint.</p>
-        <div class="img">
-            <img src="/static/imagens/burndown-example.jpg" alt="">
+    <div class="div-flipcards">
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <p>O que é o Sprint Planning?</p>
+                    <button class="flip-button" id="flip-button-1">Resposta</button>
+                </div>
+                <div class="flip-card-back">
+                    <p>Sprint Planning é uma reunião colaborativa no início de cada sprint, onde o Product Owner apresenta os itens prioritários do Product Backlog e o time de desenvolvimento planeja como esses itens serão entregues.</p>
+                    <button class="flip-button" id="flip-back-button-1">Pergunta</button>
+                </div>
+            </div>
         </div>
-       <h3>Sprint Planning</h3>
-       <p>Nesta fase, a equipe do Scrum se reúne para planejar o trabalho que será realizado durante a Sprint. O Burndown Chart pode ser utilizado durante o Sprint Planning para ajudar a estimar a capacidade da equipe e definir as metas da Sprint com base na velocidade histórica da equipe. Isso permite que a equipe tenha uma compreensão clara do trabalho esperado e estabeleça expectativas realistas para o período da Sprint. Durante essa reunião, o Burndown Chart pode ser uma ferramenta valiosa para visualizar o escopo do trabalho e determinar se as metas são alcançáveis dentro do período da Sprint.</p>
-
-       <h3>Daily Scrum</h3>
-       <p>Durante a Daily Scrum, o Burndown Chart pode desempenhar um papel importante ao fornecer uma visão rápida do progresso da equipe em relação às metas da Sprint. Durante essa reunião diária de sincronização, a equipe pode atualizar o Burndown Chart com o trabalho realizado até o momento, o que permite identificar rapidamente se estão no caminho certo para concluir as tarefas planejadas dentro do prazo da Sprint. Isso ajuda a equipe a identificar qualquer desvio do plano inicial e a tomar medidas corretivas conforme necessário para garantir que possam atingir seus objetivos.</p>
-       <h3>Sprint Review</h3>
-       <p>Durante a Sprint Review, o Burndown Chart pode ser usado para fornecer uma perspectiva visual do progresso da equipe ao longo da Sprint. Ele pode ajudar a destacar o trabalho realizado e o que ainda precisa ser feito, proporcionando uma visão geral clara para os stakeholders sobre o andamento do projeto. Além disso, o Burndown Chart pode ser uma ferramenta útil para facilitar discussões durante a revisão, permitindo que a equipe e os stakeholders identifiquem áreas de sucesso e oportunidades de melhoria para futuras Sprints.</p>
-       <h3>Sprint Retrospective</h3>
-       <p>Durante a Sprint Retrospective, o Burndown Chart pode ser utilizado como uma ferramenta valiosa para ajudar a equipe a refletir sobre seu desempenho ao longo da Sprint. Ao analisar o gráfico, a equipe pode identificar padrões, tendências e áreas de melhoria. Por exemplo, se o Burndown Chart mostrar uma linha reta ou uma tendência ascendente, pode indicar que a equipe teve dificuldades para concluir as tarefas conforme o planejado. Isso pode levar a discussões construtivas sobre os desafios enfrentados e possíveis soluções para melhorar o processo de desenvolvimento na próxima Sprint.</p>
-
-    </div>
-    <div class="section-content">
-
-        <h2>Baixar exemplo de Burndown Chart</h2>
-        <p>Clique no botao abaixo, para visualizar em seu proprio dispositivo, um modelo real de burndown chart</p>
-         <a href="{{ url_for('static', filename='files/Burndown-Horus.xlsx') }}" download onclick="confirmarAcao()">
-        <button class="btn">Download Burndown Chart</button>
-        </a>
+    
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <p>Qual é a duração ideal do Daily Scrum?</p>
+                    <button class="flip-button" id="flip-button-2">Resposta</button>
+                </div>
+                <div class="flip-card-back">
+                    <p>O Daily Scrum deve ter uma duração máxima de 15 minutos para manter o foco e a eficiência. É uma oportunidade diária para o time de desenvolvimento sincronizar suas atividades e planejar o trabalho para o dia.
+                        </p>
+                    <button class="flip-button" id="flip-back-button-2">Pergunta</button>
+                </div>
+            </div>
 
     </div>
+</div>  
 
-</div>
+</div>   
+      
+
+
 
 
 {% include 'include_files/pagination.html' %}

@@ -36,7 +36,7 @@
 
   --font-regular: 400;
   --font-semi-bold: 600;
-
+  --flashcard-color:#E0E0CE;
   --z-tooltip: 10;
   --z-fixed: 100;
 }
@@ -1403,5 +1403,121 @@ margin: 0 auto;
   .container-video h1{
     font-size: 7rem!important;
    
+  }
+}
+
+/* flipcards */
+
+.flip-card {
+  width: 500px;
+  height: 350px;
+
+  perspective: 1000px; /* Profundidade do efeito de perspectiva */
+  padding: 20px; /* Adicionando padding de 20px ao redor do flip card */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Alinha o conteúdo verticalmente */
+
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--flashcard-color);
+  backface-visibility: hidden;
+  padding: 20px; /* Adicionando padding de 20px ao conteúdo do flip card */
+  border-radius: 20px;
+}
+
+.flip-card-back p{
+  margin: 2rem;
+  font-size: 1.1rem;
+}
+
+.flip-card-front {
+  background-color: var(--blue-theme);
+  color: white;
+}
+
+.flip-card-back {
+  background-color: var(--blue-theme);
+  color: white;
+  transform: rotateY(180deg);
+}
+
+/* Botão para virar o card */
+.flip-button {
+  top:10px;
+  right: 10px;
+  width: 100px;
+  position: absolute;
+  padding: 5px; /* Espaçamento interno do botão */
+  background-color: white;
+  color: var(--blue-theme);
+  border: none;
+  cursor: pointer;
+  border-radius: 0.5rem;
+
+}
+
+/* Media query para resoluções menores que 500px */
+@media (max-width: 500px) {
+  .flip-card {
+    width: 100%; /* Ocupa toda a largura disponível */
+    padding: 5px;
+  }
+
+  .flip-card-back{
+
+    padding: 15px 2px 2px 2px;
+  }
+  .flip-card-back p{
+    font-size: 1.2rem;
+    line-height: 20px;
+    text-align: justify;
+
+  }
+
+  .flip-card-front, .flip-card-back{
+    border-radius: 0;
+  }
+  .flip-button {
+    position: absolute;
+
+    width: 90%;
+
+    height: 2rem;
+    border-radius: 0.5rem;
+  }
+
+  .div-flipcards{
+    justify-content: center;
+  }
+}
+
+.div-flipcards{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 5rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+
+}
+
+@media (max-width: 500px) {
+  .flip-card-back p{
+    font-size: 0.8rem;
+
   }
 }

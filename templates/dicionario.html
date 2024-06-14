@@ -1,0 +1,130 @@
+{% extends 'main/base.html' %}
+
+{% block css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+{% endblock css %}
+
+{% block conteudo %}
+<style>
+    .term {
+    color: blue;
+    cursor: pointer;
+}
+
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+}
+
+.close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+.dict-content{
+    list-style: none;
+}
+.dict-content li{
+    border: 0.1rem solid black;
+    list-style: none;
+    padding: 1rem;
+}
+.dict-content li a{
+    color: black;
+    
+}
+
+.dict-heading{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+</style>
+
+<div class="section-content">
+    <h1>Dicionário Scrum</h1>
+    <p>Clique em um termo para ver a descrição:</p>
+    <ul class="dict-content">
+        <li class="dict-heading">A</li>
+        <li><a href="#" class="term" data-term="artefato">Artefato</a></li>
+        <li><a href="#" class="term" data-term="aceitacao">Aceitação (Critérios de Aceitação)</a></li>
+        <li><a href="#" class="term" data-term="agile">Ágil (Agile)</a></li>
+        <li><a href="#" class="term" data-term="aperfeicoamento">Aperfeiçoamento do Backlog (Backlog Refinement)</a></li>
+        <li><a href="#" class="term" data-term="adaptar">Adaptar (Adapt)</a></li>
+        <li><a href="#" class="term" data-term="aprovacao">Aprovação (Approval)</a></li>
+        <li><a href="#" class="term" data-term="autoOrganizacao">Auto-organização (Self-organization)</a></li>
+        <li><a href="#" class="term" data-term="atribuicao">Atribuição de Tarefas (Task Assignment):</a></li>
+        <li><a href="#" class="term" data-term="analiseValor">Análise de Valor (Value Analysis)</a></li>
+        <li><a href="#" class="term" data-term="acompanhamento">Acompanhamento de Progresso (Progress Tracking)</a></li>
+        <li class="dict-heading">B</li>
+        <li><a href="#" class="term" data-term="productBacklog">Backlog do Produto (Product Backlog)</a></li>
+        <li><a href="#" class="term" data-term="sprintBacklog">Backlog da Sprint (Sprint Backlog)</a></li>
+        <li><a href="#" class="term" data-term="burndownChart">Burndown Chart (Gráfico Burndown)</a></li>
+        <li><a href="#" class="term" data-term="backlogRefinement">Backlog Refinement (Refinamento do Backlog)</a></li>
+        <li><a href="#" class="term" data-term="bugs">Bugs (Defeitos)</a></li>
+        <li><a href="#" class="term" data-term="brainstorming">Brainstorming (Tempestade de Ideias)</a></li>
+        <li><a href="#" class="term" data-term="stakeholder">Beneficiário (Stakeholder)</a></li>
+        <li><a href="#" class="term" data-term="boxing">Boxing (Timeboxing)</a></li>
+        <li><a href="#" class="term" data-term="buffer">Buffer (Buffer)</a></li>
+
+        <li class="dict-heading">C</li>
+        <li><a href="#" class="term" data-term="cadencia">Cadência (Cadence)</a></li>
+        <li><a href="#" class="term" data-term="capacidade">Capacidade (Capacity)</a></li>
+        <li><a href="#" class="term" data-term="cerimonias">Cerimônias (Ceremonies)</a></li>
+        <li><a href="#" class="term" data-term="colaboracao">Colaboração (Collaboration)</a></li>
+        <li><a href="#" class="term" data-term="comprometimento">Comprometimento (Commitment)</a></li>
+        <li><a href="#" class="term" data-term="construcaoIncremental">Construção Incremental (Incremental Build)</a></li>
+        <li><a href="#" class="term" data-term="criteriosDeAceitacao">Critérios de Aceitação (Acceptance Criteria)</a></li>
+        <li><a href="#" class="term" data-term="cicloDeVida">Ciclo de Vida (Lifecycle)</a></li>
+        <li><a href="#" class="term" data-term="cliente">Cliente (Customer)</a></li>
+        <li><a href="#" class="term" data-term="confianca">Confiança (Trust)</a></li>
+
+        <li><a href="#" class="term" data-term="productOwner">Product Owner</a></li>
+
+        <li class="dict-heading">S</li>
+        <li><a href="#" class="term" data-term="scrumMaster">Scrum Master</a></li>
+        <li><a href="#" class="term" data-term="sprint">Sprint</a></li>
+
+        <!-- Adicione mais termos conforme necessário -->
+    </ul>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-description"></p>
+        </div>
+    </div>
+</div>
+
+
+{%block script%}<script rel="script" src="/static/js/dicionario.js"></script>{%endblock script%}
+{% endblock conteudo %}
