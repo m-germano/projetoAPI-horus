@@ -6,7 +6,9 @@
 
 
 
-
+.lista{
+    margin-top: 2rem;
+}
 
 .sub1 {
     animation: fadein 5s;
@@ -115,6 +117,7 @@
         width: 45%;
         height: 45%;
     }
+   
     .lista li{
         margin-block: 1rem;
         margin-inline: 0;

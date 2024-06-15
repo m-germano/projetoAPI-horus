@@ -67,11 +67,40 @@
     color: white;
     text-align: center;
 }
+
+.dict-section{
+    background: var(--blue-theme);
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem;
+
+}
+
+.dict-section h1{
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.dict-section input{
+    border-radius: 2rem;
+    padding: 1rem;
+}
 </style>
 
-<div class="section-content">
+<div class="dict-section">
     <h1>Dicionário Scrum</h1>
+    <input type="text" id="searchInput" placeholder="Buscar no dicionário" >
+</div>
+
+<div class="section-content">
+
+   
+    
     <p>Clique em um termo para ver a descrição:</p>
+
+
+
     <ul class="dict-content">
         <li class="dict-heading">A</li>
         <li><a href="#" class="term" data-term="artefato">Artefato</a></li>

@@ -163,7 +163,6 @@ a {
 
 .theme-intro h1{
   font-family: "Poppins", serif;
-
   font-weight: 700;
   color: white;
   text-transform: uppercase;
@@ -218,14 +217,14 @@ p{
 
 @media screen and (max-width:250px){
   h1{
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
   h2{
-    font-size: 1.2rem;
+    font-size: 1.0rem;
   }
   
   h3{
-    font-size: 1.1rem;
+    font-size: 0,9rem;
   }
   
   p{
@@ -557,7 +556,7 @@ p{
   margin-top: 5rem;
 }
 .login-form{
-  background: var(--blue-theme);
+  background: #222;
   padding: 6rem 6rem;
   width: 80%;
   margin: 10rem;
@@ -657,6 +656,11 @@ p{
   .hideInSmallDevices{
     display: none;
   }
+
+  .container-login{
+    margin-top: 0;
+  }
+  
 }
 
 
@@ -998,7 +1002,7 @@ p{
 
 .content-home p{
     font-size: 1.1rem;
-    word-break: break-all;
+    
    
 }
 

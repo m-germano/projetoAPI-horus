@@ -129,3 +129,44 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const searchInput = document.getElementById('searchInput');
+    const terms = document.querySelectorAll('.term');
+    const headings = document.querySelectorAll('.dict-heading');
+
+    searchInput.addEventListener('input', function() {
+        const searchTerm = searchInput.value.trim().toLowerCase();
+
+        terms.forEach(term => {
+            const termText = term.textContent.trim().toLowerCase();
+            const li = term.parentElement; // Pegar o <li> que contém o termo
+
+            if (termText.includes(searchTerm)) {
+                li.style.display = 'block'; // Mostrar o termo
+            } else {
+                li.style.display = 'none'; // Esconder o termo
+            }
+        });
+
+        // Exibir todos os cabeçalhos e ocultar apenas aqueles sem termos visíveis
+        headings.forEach(heading => {
+            let anyVisible = false;
+
+            // Verificar se há algum termo visível sob este cabeçalho
+            heading.nextElementSibling.querySelectorAll('li').forEach(li => {
+                if (li.style.display !== 'none') {
+                    anyVisible = true;
+                }
+            });
+
+            // Mostrar ou ocultar o cabeçalho com base na visibilidade dos termos
+            if (anyVisible) {
+                heading.style.display = 'block';
+            } else {
+                heading.style.display = 'none';
+            }
+        });
+    });
+});
