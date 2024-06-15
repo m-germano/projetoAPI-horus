@@ -241,7 +241,11 @@ def estimativas():
 
 @app.route('/planningpoker')
 def planningpoker():
-    return render_template('conteudos/modulo5/planningpoker.html',previous_url=url_for('estimativas'), previous_label='Anterior', next_url=url_for('fibonacci'), next_label='Próximo')
+    return render_template('conteudos/modulo5/planningpoker.html',previous_url=url_for('estimativas'), previous_label='Anterior', next_url=url_for('userstories'), next_label='Próximo')
+
+@app.route('/userstories')
+def userstories():
+    return render_template('conteudos/modulo5/userstories.html',previous_url=url_for('planningpoker'), previous_label='Anterior', next_url=url_for('fibonacci'), next_label='Próximo')
 
 @app.route('/fibonacci')
 def fibonacci():

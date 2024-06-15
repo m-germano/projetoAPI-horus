@@ -6,17 +6,7 @@
 
 
 
-.contp p{
-    font-size: 1.5rem;
-}
-.contp h3{
-    margin:3rem 0;
-}
-.contt h2{
-    font-size: 3rem;
-    color: var(--blue-theme);
-    font-weight: 700;
-}
+
 
 .sub1 {
     animation: fadein 5s;
@@ -26,16 +16,10 @@
     justify-content: center;
     padding: 3rem 20%;
     text-align: center;
-    background-color: rgb(225, 255, 248);
+    background-color: #F5F5F5;
 } 
-.subtitle1{
 
-    color: var( --blue-theme);
-}
-.resume-title{
 
-    color: var( --blue-theme);
-}
 .sub2{
 
     display: flex;
@@ -46,11 +30,7 @@
     gap: 1rem;
     background-color: rgb(234, 241, 248);
 }  
-.subtitle2{
-    color: var( --blue-theme);
-    text-align: center;
-    padding-bottom: 0.5rem;
-}
+
 
 .sub3{
     display: flex;
@@ -60,22 +40,11 @@
     padding-top: 3rem;
     padding-bottom: 0.5rem;
     gap: 1rem;
-    background-color: #fbf3e3;
+    background-color: #F5F5F5;
 }  
-.lista{
 
-    max-width: 80%;
-    font-size: 18px;
-}
-.subtitle3{
 
-    color: var( --blue-theme);
-    padding-bottom: 1.5rem;
-}
-.subtitle5{
 
-    color: var( --blue-theme);
-}
 .sub5{
 
     display: flex;
@@ -95,9 +64,7 @@
 }
 
 @media screen and (max-width: 1055px){
-    .subtitle1, .subtitle2, .subtitle3, .subtitle5{
-        font-size: 35px;
-    }
+    
     .sub2 {
         display: flex;
         flex-direction: column;
@@ -137,9 +104,6 @@
         flex-direction: column;
         align-items: center;
     }
-    .lista{
-        font-size: 17px;
-    }
     .sub5 {
         display: flex;
         flex-direction: column;
@@ -150,6 +114,11 @@
     .sub2img {
         width: 45%;
         height: 45%;
+    }
+    .lista li{
+        margin-block: 1rem;
+        margin-inline: 0;
+        list-style: none;
     }
 }
 @media screen and (max-width: 750px) {
@@ -167,8 +136,7 @@
 }
 @media screen and (max-width: 650px){
     .sub2img{
-        height: 50%;
-        width: 50%;
+        width: 100%;
     }
     .imgsub3{
         width: 70%;
@@ -180,10 +148,10 @@
     }
 }
 @media screen and (max-width: 500px){
-    .sub2img{
-        height: 65%;
-        width: 65%;
+    .sub2{
+        padding: 0;
     }
+    
     .imgsub3{
         width: 80%;
         height: 80%;

@@ -1,0 +1,50 @@
+{% extends 'main/base.html' %}
+
+{%block css%}<link rel="stylesheet" href="../static/css/vanessa.css">{%endblock css%}
+
+{%block conteudo%}
+{% include 'include_files/navbar-dropdown.html' %}
+
+<div class="theme-intro">
+    <h1>Estimativa de Pontos de História <br>(User Stories)</h1>
+</div>
+<div class="section-content">
+<p>Os Pontos de História (Story Points) são uma unidade de medida utilizada nas metodologias ágeis, como o Scrum, para estimar o esforço necessário para implementar uma história de usuário ou tarefa. Em vez de medir o tempo, os Pontos de História medem a complexidade, o trabalho e o risco associados a uma tarefa.</p>
+
+<h2>O que são Pontos de História?</h2>
+<p>Pontos de História são uma métrica subjetiva que a equipe de desenvolvimento utiliza para avaliar a dificuldade de uma história de usuário. Eles levam em consideração vários fatores, como a quantidade de trabalho, a complexidade técnica e o nível de incerteza.</p>
+
+<h2>Importância dos Pontos de História no Scrum</h2>
+<p>No Scrum, os Pontos de História são essenciais para o planejamento do sprint e a previsão do trabalho. Eles ajudam a equipe a entender quanto trabalho podem assumir em um sprint e permitem uma melhor gestão do tempo e dos recursos.</p>
+
+<h2>Como Funciona a Estimativa de Pontos de História?</h2>
+<p>A estimativa de Pontos de História é geralmente feita em grupo durante as reuniões de planejamento do sprint. Aqui estão os passos principais para usar Pontos de História na estimativa:</p>
+
+<h3>1. Definição das Histórias de Usuário</h3>
+<p>Primeiro, a equipe define e detalha as histórias de usuário que precisam ser estimadas. Cada história deve ser clara e compreendida por todos os membros da equipe.</p>
+
+<h3>2. Discussão e Compreensão</h3>
+<p>A equipe discute cada história de usuário para garantir que todos compreendem o trabalho necessário. Detalhes são esclarecidos e dúvidas são resolvidas nesta etapa.</p>
+
+<h3>3. Estimativa com Pontos de História</h3>
+<p>Os membros da equipe utilizam técnicas como o Planning Poker para atribuir Pontos de História a cada tarefa. Cada membro escolhe um número de Pontos de História que representa sua estimativa de esforço.</p>
+
+<h3>4. Consenso e Ajustes</h3>
+<p>Se houver grandes discrepâncias nas estimativas, a equipe discute as razões por trás das diferenças e tenta chegar a um consenso. Isso pode envolver ajustar a estimativa ou redefinir a tarefa para maior clareza.</p>
+
+<h2>Vantagens de Usar Pontos de História no Scrum</h2>
+<p>Utilizar Pontos de História para estimativas no Scrum apresenta várias vantagens:</p>
+<ul>
+    <li><strong>Mede a Complexidade:</strong> Pontos de História ajudam a medir a complexidade e o esforço relativo das tarefas, em vez de apenas o tempo.</li>
+    <li><strong>Facilita a Comparação:</strong> Permite que a equipe compare tarefas diferentes e entenda quais são mais desafiadoras.</li>
+    <li><strong>Promove o Consenso:</strong> A técnica de estimativa em grupo promove a colaboração e o consenso dentro da equipe.</li>
+    <li><strong>Adaptável:</strong> Pontos de História são adaptáveis a mudanças e permitem que a equipe ajuste suas estimativas à medida que obtêm mais informações.</li>
+</ul>
+
+<h2>Conclusão</h2>
+<p>A estimativa de Pontos de História é uma prática fundamental no Scrum que ajuda as equipes a planejar seus sprints de forma mais eficaz. Ao medir a complexidade e o esforço das tarefas, as equipes podem melhorar sua precisão nas estimativas e gerenciar melhor seu trabalho.</p>
+
+</div>
+{% include 'include_files/pagination.html' %}
+{% include 'include_files/footer.html' %}
+{%endblock conteudo%}
