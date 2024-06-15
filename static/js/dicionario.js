@@ -63,7 +63,34 @@ document.addEventListener('DOMContentLoaded', () => {
         lifecycle: 'O Ciclo de Vida no Scrum refere-se ao conjunto de fases e atividades que um produto passa desde sua concepção até sua obsolescência. Inclui todas as etapas de desenvolvimento, manutenção e eventual retirada do mercado.',
         lean: 'Lean é uma abordagem de gestão focada na criação de valor com o mínimo de desperdício. No contexto do Scrum, princípios lean como eliminação de desperdícios e otimização de fluxos de trabalho são frequentemente aplicados para aumentar a eficiência e reduzir o tempo de entrega.',
        
-        
+        meta: 'A Meta da Sprint é o objetivo geral que a equipe pretende alcançar até o final da Sprint. É uma declaração breve que descreve o que deve ser construído durante a Sprint para que o trabalho seja considerado completo.',
+        meeting: 'No Scrum, as reuniões são eventos estruturados que fazem parte das cerimônias do Scrum, como a Reunião de Planejamento da Sprint, Daily Scrum, Revisão da Sprint e Retrospectiva da Sprint. Cada uma dessas reuniões tem um propósito específico para manter a equipe alinhada e focada nos objetivos.',
+        mvp: 'O Produto Mínimo Viável (MVP) é a versão mais simples de um produto que ainda entrega valor significativo aos usuários. É utilizado para validar hipóteses de mercado e aprender com o feedback dos clientes antes de investir em funcionalidades adicionais.',
+
+        negociacao: 'Negociação no contexto do Scrum envolve a colaboração e discussão entre o Product Owner, equipe de desenvolvimento e stakeholders para priorizar requisitos e planejar o trabalho de forma a maximizar o valor entregue pelo produto.',
+        nfr: 'Requisitos Não Funcionais (NFR) são critérios que especificam características do sistema além das funcionalidades principais. Eles abrangem aspectos como desempenho, segurança, usabilidade e confiabilidade.',
+        nexus: 'Nexus é um framework desenvolvido pelo Scrum.org para escalar o Scrum além de uma única equipe. Ele fornece orientação e práticas para coordenar e integrar atividades de múltiplas equipes Scrum que trabalham juntas em um produto.',
+
+        ownership: 'Propriedade no contexto do Scrum refere-se ao senso de responsabilidade e comprometimento que os membros da equipe têm em relação às tarefas e ao produto. Cada membro é incentivado a assumir a propriedade de suas responsabilidades e trabalhar para alcançar os objetivos da equipe.',
+        observability: 'Observabilidade é a capacidade de entender e monitorar o comportamento interno de um sistema, através de métricas, logs e outros dados gerados. No contexto do desenvolvimento de software, é crucial para identificar problemas e otimizar o desempenho do sistema.',
+        overhead: 'Overhead refere-se ao custo adicional de tempo, recursos ou esforço que não contribui diretamente para o valor entregue pelo produto. No Scrum, o objetivo é minimizar o overhead para maximizar a eficiência e a entrega de valor.',
+
+
+        productOwner: 'O Product Owner é responsável por maximizar o valor do produto e o trabalho do time de desenvolvimento.',
+        planningPoker: 'Planning Poker é uma técnica de estimativa usada pelo Scrum Team para determinar o esforço ou tamanho relativo das histórias de usuário. Os membros da equipe atribuem valores de Story Points às histórias usando cartas numeradas, facilitando o consenso e a colaboração.',
+        productIncrement: 'Incremento do Produto é a soma de todas as histórias de usuário completadas durante uma Sprint, além do trabalho realizado nas Sprints anteriores. É um produto em evolução, com novas funcionalidades adicionadas a cada Sprint e pronto para ser entregue ao final de cada Sprint.',
+
+        retrospectiva: 'A Retrospectiva é uma cerimônia do Scrum realizada ao final de cada Sprint, onde a equipe revisa o trabalho realizado e identifica melhorias contínuas. O objetivo é aprender com experiências passadas para ajustar e adaptar práticas que maximizem a eficácia da equipe.',
+        release: 'Um Release no Scrum refere-se à entrega de um incremento de produto que alcança um conjunto de metas e requisitos. Pode incluir novas funcionalidades, correções de bugs e melhorias, geralmente resultando em uma versão do produto que pode ser disponibilizada para os clientes ou usuários finais.',
+        risk: 'Risco no contexto do Scrum refere-se a eventos incertos ou condições que, se ocorrerem, podem ter um impacto negativo no sucesso do projeto. A gestão de riscos no Scrum envolve identificar, avaliar e mitigar riscos potenciais durante todo o ciclo de vida do projeto.',
+        functionalRequirements: 'Requisitos Funcionais são descrições detalhadas das funcionalidades ou comportamentos específicos que um sistema, software ou produto deve oferecer. Eles definem o que o sistema deve fazer, suas capacidades e como ele deve se comportar em determinadas situações. Esses requisitos são geralmente expressos em termos de funções do sistema, operações, entradas e saídas esperadas.',
+
+
+        scrumMaster: 'O Scrum Master é responsável por promover e suportar o Scrum conforme definido no Guia do Scrum.',
+        sprint: 'Uma Sprint é um período de tempo durante o qual um incremento de produto "Pronto" é criado. Tem uma duração fixa de um mês ou menos.',
+        scrum: 'Scrum é um framework ágil para gerenciar e desenvolver produtos complexos. É baseado em iterações curtas chamadas Sprints, onde a equipe trabalha para entregar incrementos de produto funcionais a cada duas semanas a um mês.',
+
+
         // Adicione mais descrições conforme necessário
     };
 
