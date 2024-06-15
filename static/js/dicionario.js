@@ -40,10 +40,29 @@ document.addEventListener('DOMContentLoaded', () => {
         cicloDeVida: 'O ciclo de vida no Scrum refere-se ao processo completo de desenvolvimento do produto, desde a concepção até a entrega e manutenção. Inclui todas as fases e atividades envolvidas na criação do produto.',
         cliente: 'O cliente no Scrum é a pessoa ou entidade que receberá o produto final. Representa os interesses dos usuários finais e stakeholders, e trabalha em estreita colaboração com o Product Owner para garantir que suas necessidades sejam atendidas.',
         confianca: 'A confiança é essencial no Scrum para promover uma colaboração eficaz entre os membros da equipe, stakeholders e clientes. A confiança mútua facilita a comunicação aberta, a resolução de problemas e o alcance dos objetivos do projeto.',
+        dailyScrum: 'Reunião diária realizada pela equipe Scrum para sincronizar atividades e planejar o trabalho para as próximas 24 horas. Ajuda a identificar impedimentos e manter o foco na meta da Sprint.',
+        definitionOfDone: 'Critérios claros e concisos que uma funcionalidade ou incremento do produto deve atender para ser considerado pronto para entrega. Define as condições de qualidade que o produto deve alcançar.',
+        demo: 'Apresentação do incremento de produto concluído ao Product Owner e stakeholders ao final da Sprint. Serve para obter feedback e validar se os requisitos foram atendidos.',
+        devOps: 'Práticas e ferramentas que integram desenvolvimento (Dev) e operações (Ops) para melhorar a colaboração e a entrega contínua de software de alta qualidade.',
+        debt: 'Débito Técnico refere-se ao custo adicional incorrido no futuro devido a escolhas de desenvolvimento rápidas ou soluções temporárias que comprometem a qualidade do software.',
+        //LETRA E
+        estimativa: 'Processo de estimar o esforço necessário para completar uma tarefa ou uma história de usuário. Pode ser feito usando técnicas como Planning Poker, Story Points, ou horas estimadas.',
+        entregaContinua: 'Prática de liberar software em pequenos incrementos frequentemente, garantindo que o produto esteja sempre pronto para ser lançado. Promove feedback rápido e reduz riscos.',
+        epic: 'Requisito grande e complexo que pode ser dividido em histórias menores e mais gerenciáveis. É tratado como uma unidade de trabalho significativa que pode levar várias Sprints para ser concluído.',
+        equipe: 'Grupo de indivíduos que trabalham juntos para alcançar um objetivo comum, como desenvolver um produto. No Scrum, a equipe é multifuncional e auto-organizada.',
+        escopo: 'O conjunto de funcionalidades e requisitos que definem o que será entregue em um projeto. O escopo pode mudar ao longo do tempo, especialmente em resposta ao feedback do cliente ou mudanças nos requisitos.',
+        //LETRA F
+        feedback: 'Retorno de informações sobre o produto ou processo, geralmente fornecido por stakeholders, clientes ou usuários finais. O feedback é crucial para melhorar continuamente o produto e o processo de desenvolvimento.',
+        framework: 'Estrutura conceitual e organizacional que facilita o desenvolvimento e a implementação de projetos. No contexto de desenvolvimento ágil, Scrum é um exemplo de framework que define papéis, cerimônias e artefatos.',
 
-        productOwner: 'O Product Owner é responsável por maximizar o valor do produto e o trabalho do time de desenvolvimento.',
-        scrumMaster: 'O Scrum Master é responsável por promover e suportar o Scrum conforme definido no Guia do Scrum.',
-        sprint: 'Uma Sprint é um período de tempo durante o qual um incremento de produto "Pronto" é criado. Tem uma duração fixa de um mês ou menos.',
+        gerenteDeProduto: 'Profissional responsável por liderar o desenvolvimento do produto, alinhando as necessidades do mercado com a visão e estratégia da empresa. No contexto do Scrum, o Gerente de Produto é frequentemente o Product Owner.',
+
+        justInTime: 'Just-in-Time (JIT) é um princípio de gestão de produção que se concentra em reduzir o desperdício e melhorar a eficiência, entregando produtos ou serviços no momento exato em que são necessários. No contexto do desenvolvimento ágil, JIT pode se referir à entrega de valor incremental e oportuna durante as Sprints.',
+
+        leadTime: 'Lead Time é o tempo total decorrido desde o início até a conclusão de um processo ou ciclo, incluindo tempos de espera e de execução. No contexto do desenvolvimento ágil, o Lead Time pode referir-se ao tempo necessário para concluir uma história de usuário, uma Sprint ou um ciclo de desenvolvimento.',
+        lifecycle: 'O Ciclo de Vida no Scrum refere-se ao conjunto de fases e atividades que um produto passa desde sua concepção até sua obsolescência. Inclui todas as etapas de desenvolvimento, manutenção e eventual retirada do mercado.',
+        lean: 'Lean é uma abordagem de gestão focada na criação de valor com o mínimo de desperdício. No contexto do Scrum, princípios lean como eliminação de desperdícios e otimização de fluxos de trabalho são frequentemente aplicados para aumentar a eficiência e reduzir o tempo de entrega.',
+       
         
         // Adicione mais descrições conforme necessário
     };
