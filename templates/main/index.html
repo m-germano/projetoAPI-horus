@@ -9,7 +9,7 @@
 
 <div class="container-video">
 
-  <video autoplay loop muted plays-inline class="background-clip">
+  <video autoplay loop muted playsinline class="background-clip video-bg" >
     <source src="/static/imagens/business.mp4" type="video/mp4">
   </video>
   <div class="overlay"></div>
@@ -171,7 +171,7 @@
           <div class="ag-courses-item_bg"></div>
 
           <div class="ag-courses-item_title">
-            Módulo 02<span class="hideInSmallDevices">: Responsabilidades</span>
+            Módulo 02<span class="hideInSmallDevices">: Papéis no Scrum</span>
           </div>
 
         </a>
@@ -319,5 +319,11 @@
   </div>
 </div>
 
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var video = document.getElementById('video-bg');
+    video.play();
+});
+</script>
 {% include 'include_files/footer.html' %}
 {%endblock conteudo%}
