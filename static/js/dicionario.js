@@ -89,6 +89,21 @@ document.addEventListener('DOMContentLoaded', () => {
         scrumMaster: 'O Scrum Master é responsável por promover e suportar o Scrum conforme definido no Guia do Scrum.',
         sprint: 'Uma Sprint é um período de tempo durante o qual um incremento de produto "Pronto" é criado. Tem uma duração fixa de um mês ou menos.',
         scrum: 'Scrum é um framework ágil para gerenciar e desenvolver produtos complexos. É baseado em iterações curtas chamadas Sprints, onde a equipe trabalha para entregar incrementos de produto funcionais a cada duas semanas a um mês.',
+        task: 'Tarefa (Task) refere-se a uma unidade de trabalho específica que faz parte do Sprint Backlog. Cada membro da equipe de desenvolvimento pode assumir tarefas para completar durante a Sprint, contribuindo para o objetivo da Sprint.',
+        timeboxing: 'Timeboxing é uma técnica de gerenciamento de tempo usada no Scrum para definir um período fixo de tempo durante o qual uma atividade deve ser realizada. Por exemplo, as reuniões do Scrum são timeboxed, como o Daily Scrum, que tem uma duração máxima de 15 minutos.',
+
+        userStory: 'História de Usuário (User Story) é uma descrição curta e simples de uma funcionalidade do sistema, escrita na perspectiva do usuário final. Ela expressa uma necessidade ou objetivo que deve ser atendido pelo desenvolvimento do software.',
+
+        unitTesting: 'Teste Unitário (Unit Testing) é uma prática de desenvolvimento de software onde pequenas partes do código são testadas de forma isolada para verificar se funcionam corretamente. Isso ajuda a garantir que cada unidade de código produza os resultados esperados.',
+
+    
+        productOwner: 'O Product Owner é responsável por maximizar o valor do produto desenvolvido pela equipe de desenvolvimento. Ele representa os stakeholders e é responsável por gerenciar o Product Backlog, definir as prioridades e garantir que a equipe entenda os requisitos do produto.',
+
+        velocity: 'Velocidade (Velocity) é uma métrica usada no Scrum para medir a quantidade de trabalho completada pela equipe em cada Sprint. É calculada somando os Story Points (ou outra unidade de medida) das histórias de usuário concluídas em uma Sprint.',
+
+        value: 'Valor (Value) é um conceito central no Scrum, referindo-se ao benefício que o produto traz para os usuários e stakeholders. O Scrum enfatiza a entrega contínua de valor através de incrementos de produto, priorizando as funcionalidades que trazem mais valor.',
+
+        vision: 'Visão (Vision) é uma descrição clara e inspiradora do que o produto ou projeto deve alcançar. Ela define o propósito e os objetivos de longo prazo, ajudando a guiar as decisões e ações ao longo do desenvolvimento.'
 
 
         // Adicione mais descrições conforme necessário
