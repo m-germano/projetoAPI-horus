@@ -1,41 +1,50 @@
 {% extends 'main/base.html' %}
 
-{%block css%}<link rel="stylesheet" href="../static/css/estimativa.css">{%endblock css%}
-    
-
+{%block css%}<link rel="stylesheet" href="../static/css/vanessa.css">{%endblock css%}
 
 {%block conteudo%}
-{% include 'include_files/navbar-dropdown.html' %} 
+{% include 'include_files/navbar-dropdown.html' %}
+
 <div class="theme-intro">
-    <h1>Sequência de Fibonacci </h1>
+    <h1>Sequência de Fibonacci</h1>
 </div>
+<div class="section-content">
+<p>A sequência de Fibonacci é uma série de números onde cada número é a soma dos dois anteriores. Esta sequência é utilizada em diversos contextos, incluindo a estimativa de esforço em metodologias ágeis como o Scrum.</p>
 
+<h2>O que é a Sequência de Fibonacci?</h2>
+<p>A sequência de Fibonacci é uma série de números inteiros que começa com 0 e 1, e cada número subsequente é a soma dos dois anteriores. Os primeiros números da sequência são:</p>
+<p>0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, ...</p>
 
+<h2>Importância da Sequência de Fibonacci no Scrum</h2>
+<p>No contexto do Scrum, a sequência de Fibonacci é utilizada para estimar o esforço necessário para completar tarefas ou histórias de usuário. A razão pela qual a sequência é usada é porque os números crescem rapidamente, o que reflete a incerteza e a complexidade crescentes de tarefas maiores.</p>
 
-<div class="contp">
-        <div class="sub1">
+<h2>Como Funciona a Estimativa com Fibonacci?</h2>
+<p>A equipe de desenvolvimento utiliza a sequência de Fibonacci durante as reuniões de planejamento do sprint para estimar o tamanho relativo das tarefas. Aqui estão os passos principais para usar a sequência de Fibonacci na estimativa:</p>
 
-            <h3>Sequência de Fibonacci</h3>
-            <p>A sequência de Fibonacci contém números que aumentam exponencialmente. 
-               É justamente por isso que os times de metodologia ágil passaram a usar 
-               a escala de Fibonacci para os negócios. 
-               No geral, a escala de Fibonacci no Scrum é um método poderoso para garantir 
-               que o trabalho seja distribuído a todos por igual, além de poder ajudar a garantir que 
-            </p>
-        </div>
+<h3>1. Definição das Tarefas</h3>
+<p>Primeiro, a equipe define as tarefas ou histórias de usuário que precisam ser estimadas. Cada tarefa deve ser bem compreendida antes de ser estimada.</p>
 
-    </div>
+<h3>2. Discussão e Compreensão</h3>
+<p>A equipe discute cada tarefa para garantir que todos os membros entendam o trabalho necessário. Questões e detalhes são esclarecidos nesta etapa.</p>
 
+<h3>3. Estimativa Usando Fibonacci</h3>
+<p>Os membros da equipe utilizam a sequência de Fibonacci para atribuir um valor de esforço a cada tarefa. Isso é frequentemente feito utilizando a técnica do Planning Poker, onde cada membro da equipe escolhe uma carta com um número da sequência de Fibonacci para estimar o esforço necessário.</p>
 
+<h3>4. Consenso e Ajustes</h3>
+<p>Se houver discrepâncias significativas entre as estimativas, a equipe discute as razões por trás das diferenças e tenta chegar a um consenso. Isso pode envolver ajustar a estimativa para um valor intermediário ou redefinir a tarefa para maior clareza.</p>
 
+<h2>Vantagens de Usar Fibonacci no Scrum</h2>
+<p>Utilizar a sequência de Fibonacci para estimativas no Scrum apresenta várias vantagens:</p>
+<ul>
+    <li><strong>Reflete a Incerteza:</strong> Os números crescem rapidamente, refletindo a incerteza e complexidade crescentes à medida que o tamanho das tarefas aumenta.</li>
+    <li><strong>Facilita o Consenso:</strong> Ajuda a equipe a chegar a um consenso sobre o esforço necessário para tarefas com diferentes níveis de complexidade.</li>
+    <li><strong>Simples e Intuitivo:</strong> A sequência é simples de entender e aplicar, facilitando a adoção pela equipe.</li>
+</ul>
 
+<h2>Conclusão</h2>
+<p>A sequência de Fibonacci é uma ferramenta eficaz no Scrum para estimar o esforço necessário para completar tarefas. Ao utilizar essa técnica, as equipes podem melhorar a precisão de suas estimativas e planejar seus sprints de forma mais eficiente.</p>
 
-
-
-
-    {% include 'include_files/pagination.html' %}
-    {% include 'include_files/footer.html' %}
-
-
-
+</div>
+{% include 'include_files/pagination.html' %}
+{% include 'include_files/footer.html' %}
 {%endblock conteudo%}
