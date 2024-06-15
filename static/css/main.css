@@ -1352,10 +1352,10 @@ text-align: center;
 }
 
 
-@media screen and (max-width:400px){
+@media screen and (max-width:450px){
 
 .cards-section{
-  padding: 0.5rem;
+  padding: 0.1rem;
 }
 
 .quemsomos {
@@ -1363,9 +1363,8 @@ text-align: center;
 }
 
 .quemsomos h2{
-  font-size: 2rem;
+  font-size: 1.2rem;
 }
-
 .quemsomos p{
   font-size: 1rem;
 }
