@@ -6,6 +6,7 @@ from wtforms import StringField, PasswordField, SubmitField
 from wtforms.validators import InputRequired, Length, ValidationError
 from flask_bcrypt import Bcrypt
 from wtforms.validators import EqualTo
+from flask import jsonify
 
 
 db = SQLAlchemy()
@@ -83,6 +84,7 @@ class ChangePasswordForm(FlaskForm):
 ##########################################     APP ROUTE          ###################################################
 @app.route('/', methods=['GET', 'POST'])
 def home():
+   
     return render_template('main/index.html')
 
 @app.route('/login', methods=['GET','POST'])
@@ -288,6 +290,7 @@ def avaliar():
             nova_lista = databaseProjeto(nome, registro, idade, modulos_feitos_str, classificacao)
             db.session.add(nova_lista)
             db.session.commit()
+           
             return redirect(url_for('home'))
     return render_template('avaliacao/avaliar.html')
 

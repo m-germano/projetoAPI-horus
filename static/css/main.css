@@ -66,6 +66,12 @@ body {
 }
 
 ul {
+  list-style: circle;
+  margin-block: 2rem;
+
+}
+
+li{
   list-style: none;
 }
 
@@ -73,6 +79,13 @@ a {
   text-decoration: none;
 }
 
+.bolder-centralized{
+  font-weight: bolder;
+  text-align: center;
+
+  
+
+}
 
 
 
@@ -168,18 +181,16 @@ a {
   text-transform: uppercase;
 }
 
-.theme-intro p{
-  font-size: 1.4rem;
-  color: white;
-}
+
 
 
 /* #####################SECTION CONTENT - CONTENT PAGES STANDARD */
 h1,h2,h3{
   color: var(--blue-theme);
 }
+
 h1{
-  font-size: 3rem;
+  font-size: 4rem;
 }
 h2{
   font-size: 2.2rem;
@@ -199,6 +210,9 @@ p{
 }
 
 @media screen and (max-width:1024px){
+  .container-video h1{
+    font-size: 5rem
+  }
   h1{
     font-size: 2.5rem;
   }
@@ -215,7 +229,31 @@ p{
   }
 }
 
+@media screen and (max-width:500px){
+  .container-video h1{
+    font-size: 4rem
+  }
+  h1{
+    font-size: 1.8rem;
+  }
+  h2{
+    font-size: 1.3rem;
+  }
+  
+  h3{
+    font-size: 1.1rem;
+  }
+  
+  p{
+    font-size: 0.9rem;
+  }
+}
+
 @media screen and (max-width:250px){
+
+  .container-video h1{
+    font-size: 3rem
+  }
   h1{
     font-size: 1.2rem;
   }
@@ -224,7 +262,7 @@ p{
   }
   
   h3{
-    font-size: 0,9rem;
+    font-size: 0.9rem;
   }
   
   p{
@@ -241,20 +279,8 @@ p{
 
 
 
-.section-content h2{
+.section-content h2, h3{
   text-align: left;
-}
-
-.section-content h3{
-  text-align: left;
-}
-
-
-
-
-.section-content ul{
-  margin-block: 2rem;
-  padding-left: 10%;
 }
 
 .section-content li{
@@ -265,23 +291,27 @@ p{
 
 @media screen and (max-width:350px){
 
+  summary{
+    font-size: 0.5rem!important;
+  }
 
   .section-content p{
     font-size: 1rem;
+    line-height: 1.8rem;
 
   }
 
   .section-content h1{
-    font-size: 1rem;
+    font-size: 1.4rem;
   }
 
   .section-content h2{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     text-align: center;
   }
 
   .section-content h3{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 
   .section-content li{
@@ -292,6 +322,66 @@ p{
   
 }
 
+@media screen and (max-width:200px){
+
+  .quemsomos{
+    padding:10px;
+  }
+  .container-video h1{
+    font-size: 1.6rem
+  }
+
+  .section-content li{
+    font-size: 0.5rem;
+
+  }
+
+  .section-content p{
+    font-size: 0.5rem;
+
+  }
+
+  .section-content h1{
+    font-size: 1rem;
+  }
+
+  .section-content h2{
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  .section-content h3{
+    font-size: 0.7rem;
+  }
+
+ 
+
+  li{
+    font-size: 0.5rem;
+
+  }
+
+  p{
+    font-size: 0.5rem;
+    line-height: 1.5rem;
+
+  }
+
+  h1{
+    font-size: 1rem;
+  }
+
+  h2{
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  h3{
+    font-size: 0.9rem;
+  }
+
+ 
+}
 /* DIV IMAGEM IMG */
 .img{
   width: 100%;
@@ -448,10 +538,11 @@ p{
     transition: opacity 0.4s ease;
 }
 .menu-wrap .menu > div > div > ul > li {
-    list-style: none;
+   
     color: #fff;
     font-size: 1.5rem;
     padding: 1rem;
+    padding-left: 10%;
 }
 
 .menu-wrap .menu >div > div > ul > li > a{
@@ -1066,7 +1157,6 @@ p{
 .quemsomos{
   padding: 0;
   width: 95%;
-
   margin-top: 8rem;
 }
 
@@ -1104,6 +1194,7 @@ text-align: justify;
   text-align: center;
   margin-bottom: 5rem;
   color: #fff;
+
 }
 
 
@@ -1314,13 +1405,13 @@ animation: open 1s ease;
 
 .faq-container p{
 margin-top: 2rem;
-font-size: 1.5rem;
+
 background: rgb(255, 255, 132);
 }
 
 .faq-container p.source {
 padding-top: 50px;
-font-size: 1rem;
+
 text-align: center;
 
 }
@@ -1341,11 +1432,8 @@ text-align: center;
 }
 
 .faq-container p{
-    padding: 1rem;
+    padding: 0.5rem;
 }
-  .faq-container h2{
-      font-size: 1.5rem;
-  }
 
 
 
@@ -1358,15 +1446,10 @@ text-align: center;
   padding: 0.1rem;
 }
 
+
+
 .quemsomos {
   padding: 10px;
-}
-
-.quemsomos h2{
-  font-size: 1.2rem;
-}
-.quemsomos p{
-  font-size: 1rem;
 }
 
 
@@ -1389,12 +1472,10 @@ margin: 0 auto;
 
 }
 
-.cards-section h2{
-  font-size: 1.5rem;
-}
+
 
 .ag-courses-item_title{
-  font-size: 1rem;
+  font-size: 0.8rem;
   padding: 0;
   width: 100%;
 }
@@ -1402,6 +1483,24 @@ margin: 0 auto;
 .ag-courses-item_link{
   padding: 10px;
 }
+}
+
+@media screen and (max-width:250px){
+
+  .cards-section{
+    padding: 0.1rem;
+  }
+  
+
+
+  .cards-section h2{
+    font-size: 1.2rem;
+  }
+
+  .faq-container details p{
+    font-size:0.5rem;
+    line-height: 1.4rem;
+    }
 }
 
 @media screen and (min-width:1200px){
@@ -1573,12 +1672,9 @@ margin: 0 auto;
   border: 1px solid #888;
   width: 80%;
 }
-.dict-content{
-  list-style: none;
-}
+
 .dict-content li{
   border: 0.1rem solid black;
-  list-style: none;
   padding: 1rem;
 }
 .dict-content li a{

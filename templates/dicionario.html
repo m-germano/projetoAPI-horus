@@ -69,10 +69,10 @@
 }
 
 .dict-section{
-    background: var(--blue-theme);
-    margin-top: 2rem;
+    background: #222;
+    margin-top: 3rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     padding: 3rem;
 
 }
@@ -85,19 +85,38 @@
 .dict-section input{
     border-radius: 2rem;
     padding: 1rem;
+    width: 40%;
+}
+
+@media screen and (max-width:1024px){
+
+    .dict-section{
+        padding: 0rem;
+        padding-block: 2rem;
+    }
+    .dict-section input{
+    width: 80%;
+    
+}
+}
+
+@media screen and (max-width:350px){
+    .dict-section input{
+    width: 100%;
+}
 }
 </style>
-
+{% include 'include_files/navbar-dropdown.html' %} 
 <div class="dict-section">
-    <h1>Dicionário Scrum</h1>
-    <input type="text" id="searchInput" placeholder="Buscar no dicionário" >
+
+    <input type="text" id="searchInput" placeholder="Buscar" >
 </div>
 
 <div class="section-content">
 
-   
-    
     <p>Clique em um termo para ver a descrição:</p>
+    
+    
 
 
 
@@ -158,6 +177,9 @@
 
         <li class="dict-heading">J</li>
         <li><a href="#" class="term" data-term="justInTime">Just-in-Time (JIT)</a></li>
+
+        <li class="dict-heading">K</li>
+        <li><a href="#" class="term" data-term="kanban">Kanban</a></li>
 
         <li class="dict-heading">L</li>
         <li><a href="#" class="term" data-term="leadTime">Lead Time</a></li>

@@ -27,12 +27,17 @@
     display: inline-block;
     margin-block: 2rem;
     text-decoration: none;
-    font-size: 2rem;
+    
     font-weight: 700;
     color: var(--blue-theme);
 
 }
 
+@media screen and (min-width:1024px){
+    .subtitulos-div a{
+        font-size: 2.5rem;
+    }
+}
 .subtitulos-div ul{
     gap: 3rem;
 }
@@ -41,7 +46,6 @@
     text-align: left;
     list-style: circle;
     margin-block: 1rem;
-    font-size: 1.6rem;
 
 }
 /* ############# Conceitos ################ */
@@ -60,12 +64,9 @@
  
 }
 
-.content-flex:last-child{
-    width: 60rem;
-
-    
+.content-flex{
+    margin-top: 2rem;
 }
-
 
 
 
@@ -111,7 +112,7 @@
 .vantagens p{
     display: flex;
     justify-content: center;
-    font-size: medium;
+
 }
 
 .card-flex{
@@ -161,8 +162,7 @@
  
 
     .subtitulos-div ul li{
-        text-align: center;
-        align-items: center;
+
         list-style: none;
     }
 
@@ -184,5 +184,34 @@
     .vantagens{
         text-align: center;
     }
+
+}
+
+@media screen and (max-width:400px){
+    .display-flex{
+
+        width: 100%;
+        padding: 0;
+     
+    
+    }
+    
+    
+    .card-flex{
+        border: 0.1rem solid #0075dc;
+        padding-block: 1rem;
+        background-color:aliceblue;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        text-align: center;
+
+        margin: 2rem auto;
+        
+        
+    }
+   
 
 }

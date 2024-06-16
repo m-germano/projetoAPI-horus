@@ -1,7 +1,5 @@
 {% extends 'main/base.html' %}
 
-{%block css%}
-<link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">{%endblock css%}
 
 {%block conteudo%}
 
@@ -9,9 +7,10 @@
 
 <div class="container-video">
 
-  <video autoplay loop muted playsinline class="background-clip video-bg" >
+  <video loop muted playsinline class="background-clip video-bg">
     <source src="/static/imagens/business.mp4" type="video/mp4">
   </video>
+  
   <div class="overlay"></div>
   <div class="content-home">
     <h1 class="animated">SCRUM</h1>
@@ -28,7 +27,7 @@
 
 <div class="quemsomos" id="quemsomos">
 
-  <h2>Quem Somos?</h2>
+  <h2 class="bolder-centralized">Quem Somos?</h2>
   <p class="animated">Somos o Grupo Horus, uma equipe apaixonada por trazer conhecimento prático e acessível sobre a
     metodologia Scrum. Nosso objetivo é fornecer recursos educacionais que ajudem indivíduos e organizações a entender e
     implementar o Scrum de maneira eficaz.</p>
@@ -150,7 +149,7 @@
 </svg>
 
 <div class="cards-section" id="trilha">
-  <h2 id="trilha">Trilha de Aprendizado</h2>
+  <h2 id="trilha" class="bolder-centralized">Trilha de Aprendizado</h2>
   <div class="ag-format-container">
     <div class="ag-courses_box">
       <div class="ag-courses_item">
@@ -269,9 +268,11 @@
 
 
 <div class="faq-container animated" id="faq">
+
   <div class="row">
+
     <div class="col-10 offset-1">
-      <h2 style="text-align: center">FAQ - Perguntas Frequentes</h2>
+      <h2 style="text-align: center" class="bolder-centralized">FAQ - Perguntas Frequentes</h2>
       <br />
       <details>
         <summary>O que é a metodologia Scrum e por que devo considerar aprendê-la?</summary>
@@ -321,9 +322,19 @@
 
 <script>
   document.addEventListener('DOMContentLoaded', function() {
-    var video = document.getElementById('video-bg');
-    video.play();
-});
+    var video = document.querySelector('.video-bg');
+    
+    // Verifica se é iOS usando a detecção de agente do usuário (User Agent)
+    var isiOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+
+    // Se for iOS, remova o atributo autoplay
+    if (isiOS) {
+      video.removeAttribute('autoplay');
+    } else {
+      // Caso contrário, inicie o vídeo automaticamente
+      video.play();
+    }
+  });
 </script>
 {% include 'include_files/footer.html' %}
 {%endblock conteudo%}

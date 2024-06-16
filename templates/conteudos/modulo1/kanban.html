@@ -13,7 +13,18 @@
 </div>
 
 
+    <div class="section-content">
+        <div class="img">
+            <img src="{{url_for('static', filename='imagens/scrumvskanban.png')}}" alt="">
+        </div>
+        <p>No mundo dinâmico do desenvolvimento ágil, duas metodologias se destacam por sua popularidade e eficácia: Scrum e Kanban. Embora ambos compartilhem a mesma filosofia ágil de promover a flexibilidade, a colaboração e a melhoria contínua, suas abordagens, práticas e finalidades apresentam diferenças significativas. Compreender essas diferenças é crucial para qualquer equipe ou organização que busca implementar metodologias ágeis de forma eficaz.</p>
 
+        <p>Distinguir entre Scrum e Kanban não é apenas uma questão teórica; é uma necessidade prática. A escolha entre essas duas metodologias pode influenciar diretamente a eficiência, a produtividade e a satisfação da equipe. Scrum é conhecido por seu uso de sprints, papéis definidos e cerimônias estruturadas, proporcionando um ambiente altamente organizado e focado em entregas incrementais. Por outro lado, Kanban oferece uma abordagem mais fluida e contínua, visualizando o fluxo de trabalho e promovendo a melhoria gradual sem a necessidade de uma estrutura rígida.</p>
+
+        <p>A escolha adequada entre Scrum e Kanban depende de vários fatores, incluindo a natureza do projeto, a composição da equipe e os objetivos organizacionais. Equipes que lidam com projetos complexos e que se beneficiam de um ritmo regular podem achar Scrum extremamente útil. Já aquelas que precisam de uma maior flexibilidade e têm um fluxo de trabalho mais variável podem preferir Kanban.</p>
+
+        <p>Ao dedicar esta página para comparar Scrum e Kanban, nosso objetivo é proporcionar uma compreensão clara das características, vantagens e desvantagens de cada metodologia. Dessa forma, as equipes podem tomar decisões informadas, adaptando a metodologia que melhor se alinha com suas necessidades e objetivos específicos. A clareza nesta escolha pode ser a chave para o sucesso na implementação de práticas ágeis, levando a projetos mais bem-sucedidos e equipes mais satisfeitas.</p>
+    </div>
 
         
     <div class='subtitulos'>
@@ -58,7 +69,7 @@
     <section class='section-content conceitos'id='conceitos'>
 
         
-        <h2 style="text-align: center; ">Conceitos</h2>
+        <h2 style="text-align: center; " >Conceitos</h2>
     
         <div class="content-flex">           
             <h3>Visualização do Trabalho:</h3>
@@ -82,14 +93,16 @@
             </p>
         </div>
 
-            
-        <img src="/static/imagens/kanban1.png" class='img' alt="QuadroKanban">
+        <div class="img">
+            <img src="/static/imagens/kanban1.png" alt="QuadroKanban">
+        </div>    
+        
             
 
     </section>
 
-    <section class='section-content ' id='Aplicação'>
-        <h2 style="text-align: center;">Aplicação</h2>
+    <section class='section-content' id='Aplicação'>
+        <h2 style="text-align: center; margin-bottom: 2rem;">Aplicação</h2>
        
         <h3>Projeto do Quadro Kanban</h3>
         <p>
@@ -109,7 +122,9 @@
        
     </section>
 
-    <section class="section-content" id='vantagens'>
+    <section class="container-fluid" id='vantagens'>
+
+
 
         <h2 style="text-align: center;">Kanban vs Scrum</h2>
           
@@ -136,6 +151,8 @@
 </div>
 
 
+
+</div>
 
 
 {% include 'include_files/pagination.html' %}
