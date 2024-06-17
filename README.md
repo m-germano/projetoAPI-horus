@@ -18,6 +18,7 @@
 * [📽️ Vídeo do protótipo - Sprint 1](#️-vídeo-do-protótipo---sprint-1)
 * [📽️ Vídeo do protótipo - Sprint 2](#️-vídeo-do-protótipo---sprint-2)
 * [📽️ Vídeo do protótipo - Sprint 3](#️-vídeo-do-protótipo---sprint-3)
+* [📽️ Vídeo do protótipo - Sprint 4](#️-vídeo-do-protótipo---sprint-4)
 * [❓ Como usar o site no seu computador - Windows](#-como-usar-o-site-no-seu-computador---windows)
 * [❓ Como usar o site no seu computador - Linux](#-como-usar-o-site-no-seu-computador---linux)
 
@@ -69,7 +70,6 @@ Desenvolver um site informativo simples e funcional sobre a Metodologia Ágil qu
 |**Celso Moreira Freitas**|Desenvolvedor|[@GitHub](https://github.com/yCels)|
 |**Guilherme Henrique Cassula**|Desenvolvedor|[@GitHub](https://github.com/guih0412)|
 |**Josue da Cunha Olopes**|Desenvolvedor|[@GitHub](https://github.com/jo-olopes)|
-|**Vanessa da Costa Rodrigues**|Desenvolvedor|[@GitHub](https://github.com/Doryumi)|
 |**Victor Hugo Barbosa Souza**|Desenvolvedor|[@GitHub](https://github.com/victor4486)|
 
 <br><br>
@@ -103,6 +103,12 @@ https://github.com/m-germano/projetoAPI-horus/assets/107308515/1f97bafe-1a7f-46f
 
 
 https://github.com/m-germano/projetoAPI-horus/assets/107308515/04181982-4428-4c58-89dd-69741880bbb3
+
+## 📽️ Vídeo do protótipo - Sprint 4
+
+
+https://github.com/m-germano/projetoAPI-horus/assets/107308515/eb052b0d-c32e-4278-8076-c378994bee85
+
 
 
 <br>
