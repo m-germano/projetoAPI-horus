@@ -192,18 +192,16 @@ a {
   overflow-x: hidden;
   overflow-y: hidden;
   margin-bottom: 3rem;
-
-}
-
-
-
-.container-video video{
+  
+  }
+  
+  .container-video video{
   object-fit: cover;
   z-index: -1;
-
-}
-
-.overlay{
+  
+  }
+  
+  .overlay{
   position: absolute;
   top: 0;
   left: 0;
@@ -213,10 +211,9 @@ a {
   mix-blend-mode: overlay;
   z-index: -1;
   
-  
   }
-
-.content-home{
+  
+  .content-home{
   text-align: left;
   width: 100%;
   padding-left: 4rem;
@@ -224,25 +221,23 @@ a {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-
-}
-
-.content-home h1{
+  
+  }
+  
+  .content-home h1{
   font-family: "poppins",serif;
   font-weight: 800;
   color: #fff;
   line-height: 1em;
   text-transform: uppercase;
-
-
-
-}
-
-.content-home p{
+  
+  }
+  
+  .content-home p{
   font-size: 1.5rem;
   color: #fff;
-}
-.content-home a{
+  }
+  .content-home a{
   display: inline-block;
   max-width: 200px;
   font-size: 23px;
@@ -255,65 +250,74 @@ a {
   z-index: 1;
   text-align: center;
   
-}
-
-.content-home a:hover{
+  }
+  
+  .content-home a
+  {
   background-color: #fff;
   color: #000;
-
-}
-
-
-.background-clip{
+  
+  }
+  
+  .background-clip{
   position: absolute;
   right: 0;
   bottom: 0;
   z-index: -1;
   width: 100%;
   
-}
-
-
-@media (min-aspect-ratio:16/9) {
-  .background-clip{
-      width: 100%;
-      height: auto;
-  }
-}
-
-@media (max-aspect-ratio:16/9) {
-  .background-clip{
-      width: auto;
-      height: 100%;
-  }
-}
-
-@media screen and (max-width:750px){
-  .content-home{
-    padding: 1rem;
-    text-align: center;
   }
   
-
-.content-home p{
-    font-size: 1.1rem;
-    
-   
-}
-
-
-.content-home a{
+  @media (min-aspect-ratio:16/9) {
+  .background-clip{
+  width: 100%;
+  height: auto;
+  }
+  }
+  
+  @media (max-aspect-ratio:16/9) {
+  .background-clip{
+  width: auto;
+  height: 100%;
+  }
+  }
+  
+  @media screen and (max-width:750px){
+  .content-home{
+  padding: 1rem;
+  text-align: center;
+  }
+  
+  .content-home p{
+  font-size: 1.1rem;
+  
+  }
+  
+  .content-home a{
   max-width:150px;
   font-size: 19px;
   margin: 0 auto;
+  
+  }
+  
+  }
+  
 
+
+/* Estilos específicos para dispositivos iOS */
+@media only screen and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait),
+       only screen and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .ios-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #222;
+    z-index: -1;
+    display: block; 
+  }
 }
-
-
-
-
-}
-
 
 /* #####################SECTION CONTENT - CONTENT PAGES STANDARD */
 h1,h2,h3{

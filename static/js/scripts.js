@@ -26,15 +26,6 @@ details.forEach(targetDetail => {
 });
 
 
-window.sr = ScrollReveal({reset:true});
-
-sr.reveal('.animated', {duration:1500});
-
-sr.reveal('.animated-y', {
-    rotate:{x:0, y:80, z:0},
-    duration:2000
-});
-
 
 const mobileBtn = document.getElementById('hamburger-icon')
 const mobileMenu = document.getElementById('mobile-menu')
@@ -54,5 +45,16 @@ if(!mobileMenu.classList.contains('hidden')) {
 }
 
 })
+
+
+window.sr = ScrollReveal({reset:true});
+
+sr.reveal('.animated', {duration:3000});
+
+sr.reveal('.animated-y', {
+    rotate:{x:0, y:80, z:0},
+    duration:2000
+});
+
 
 
