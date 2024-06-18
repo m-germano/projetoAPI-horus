@@ -18,6 +18,7 @@
 * [📽️ Vídeo do protótipo - Sprint 1](#️-vídeo-do-protótipo---sprint-1)
 * [📽️ Vídeo do protótipo - Sprint 2](#️-vídeo-do-protótipo---sprint-2)
 * [📽️ Vídeo do protótipo - Sprint 3](#️-vídeo-do-protótipo---sprint-3)
+* [📽️ Vídeo do protótipo - Sprint 4](#️-vídeo-do-protótipo---sprint-4)
 * [❓ Como usar o site no seu computador - Windows](#-como-usar-o-site-no-seu-computador---windows)
 * [❓ Como usar o site no seu computador - Linux](#-como-usar-o-site-no-seu-computador---linux)
 
@@ -49,14 +50,8 @@ Desenvolver um site informativo simples e funcional sobre a Metodologia Ágil qu
 
 ## 🔧 Tecnologias utilizadas
 
-- ![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-- ![CSS](https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white)
-- ![Python](https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white)
-- ![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white) 
-- ![FLASK](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white) 
-- ![Javascript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-- ![Microsoft](https://img.shields.io/badge/Microsoft_Office-D83B01?style=for-the-badge&logo=microsoft-office&logoColor=white)
-- ![GITHUB](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
+![TECNOLOGIAS](https://github.com/m-germano/projetoAPI-horus/assets/107308515/48b5db6a-64f4-4de5-8b79-58e142bd9a14)
+
 
 ## 👥 Grupo Horus
 
@@ -69,7 +64,6 @@ Desenvolver um site informativo simples e funcional sobre a Metodologia Ágil qu
 |**Celso Moreira Freitas**|Desenvolvedor|[@GitHub](https://github.com/yCels)|
 |**Guilherme Henrique Cassula**|Desenvolvedor|[@GitHub](https://github.com/guih0412)|
 |**Josue da Cunha Olopes**|Desenvolvedor|[@GitHub](https://github.com/jo-olopes)|
-|**Vanessa da Costa Rodrigues**|Desenvolvedor|[@GitHub](https://github.com/Doryumi)|
 |**Victor Hugo Barbosa Souza**|Desenvolvedor|[@GitHub](https://github.com/victor4486)|
 
 <br><br>
@@ -103,6 +97,12 @@ https://github.com/m-germano/projetoAPI-horus/assets/107308515/1f97bafe-1a7f-46f
 
 
 https://github.com/m-germano/projetoAPI-horus/assets/107308515/04181982-4428-4c58-89dd-69741880bbb3
+
+## 📽️ Vídeo do protótipo - Sprint 4
+
+
+https://github.com/m-germano/projetoAPI-horus/assets/107308515/eb052b0d-c32e-4278-8076-c378994bee85
+
 
 
 <br>
