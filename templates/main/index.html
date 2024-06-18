@@ -7,7 +7,7 @@
 
 <div class="container-video">
 
-  <video loop muted playsinline class="background-clip video-bg">
+  <video loop muted autoplay playsinline class="background-clip video-bg">
     <source src="/static/imagens/business.mp4" type="video/mp4">
   </video>
   
@@ -320,21 +320,6 @@
   </div>
 </div>
 
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    var video = document.querySelector('.video-bg');
-    
-    // Verifica se é iOS usando a detecção de agente do usuário (User Agent)
-    var isiOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
 
-    // Se for iOS, remova o atributo autoplay
-    if (isiOS) {
-      video.removeAttribute('autoplay');
-    } else {
-      // Caso contrário, inicie o vídeo automaticamente
-      video.play();
-    }
-  });
-</script>
 {% include 'include_files/footer.html' %}
 {%endblock conteudo%}

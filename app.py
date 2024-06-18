@@ -84,7 +84,6 @@ class ChangePasswordForm(FlaskForm):
 ##########################################     APP ROUTE          ###################################################
 @app.route('/', methods=['GET', 'POST'])
 def home():
-   
     return render_template('main/index.html')
 
 @app.route('/login', methods=['GET','POST'])
@@ -290,8 +289,8 @@ def avaliar():
             nova_lista = databaseProjeto(nome, registro, idade, modulos_feitos_str, classificacao)
             db.session.add(nova_lista)
             db.session.commit()
-           
             return redirect(url_for('home'))
+        
     return render_template('avaliacao/avaliar.html')
 
 @app.route('/avaliacoes', methods=['POST', 'GET'])
@@ -319,4 +318,3 @@ if __name__ == "__main__":
         db.create_all()
 
     app.run(debug=True)
-
